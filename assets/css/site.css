@@ -80,6 +80,16 @@ code {
   text-decoration: none;
 }
 
+.site-logo-image {
+  width: min(150px, 22vw);
+  height: auto;
+  display: block;
+}
+
+.footer-logo-image {
+  width: min(220px, 100%);
+}
+
 .brand-mark {
   display: grid;
   gap: 0.05rem;

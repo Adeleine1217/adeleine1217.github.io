@@ -14,19 +14,15 @@
     <div class="site-shell">
       <header class="site-header">
         <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="Adeleine Wang home">
-          <span class="brand-mark">
-            <span class="brand-initials">AW</span>
-            <span class="brand-caption">Strategy x Search x Growth</span>
-          </span>
+          <img class="site-logo-image" src="{{ '/assets/images/adeleine-logo.png' | relative_url }}" alt="Adeleine Wang logo">
         </a>
         <nav class="site-nav" aria-label="Primary">
           <a href="{{ '/cv/' | relative_url }}" {% if page.url == '/cv/' %}aria-current="page"{% endif %}>My Resume</a>
           <a href="{{ '/blog/' | relative_url }}" {% if page.url == '/blog/' %}aria-current="page"{% endif %}>My Blog</a>
-          <a href="mailto:hsiaotungw@gmail.com">Contact Me</a>
           <a href="{{ '/portfolio/' | relative_url }}" {% if page.url == '/portfolio/' %}aria-current="page"{% endif %}>My Creations</a>
         </nav>
         <div class="header-actions">
-          <a class="button button-dark" href="https://www.linkedin.com/in/hsiao-tung-wang/" target="_blank" rel="noopener noreferrer">Hire me!</a>
+          <a class="button button-dark" href="mailto:hsiaotungw@gmail.com?subject=Congratulation%21%20WE%20ARE%20TRILLED%20TO%20INVIED%20YOU%20TO%20JOIN%20OUR%20TEAM%21">Hire me!</a>
         </div>
       </header>
 
@@ -39,10 +35,7 @@
       <footer class="site-footer">
         <div class="footer-logo-card page-panel">
           <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="Adeleine Wang home">
-            <span class="brand-mark">
-              <span class="brand-initials">AW</span>
-              <span class="brand-caption">Portfolio x Resume x Writing</span>
-            </span>
+            <img class="site-logo-image footer-logo-image" src="{{ '/assets/images/adeleine-logo.png' | relative_url }}" alt="Adeleine Wang logo">
           </a>
         </div>
         <div class="footer-block">
