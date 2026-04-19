@@ -2,6 +2,8 @@
 layout: default
 title: Portfolio
 description: Search growth, paid media, content systems, and multilingual performance work.
+lang: en
+alt_url: /fr/portfolio/
 ---
 <section class="page-panel portfolio-header">
   <div class="eyebrow">My Positioning</div>

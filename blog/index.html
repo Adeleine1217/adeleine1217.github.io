@@ -2,6 +2,8 @@
 layout: default
 title: Blog
 description: Notes, essays, and updates written in Markdown.
+lang: en
+alt_url: /fr/blog/
 ---
 {% assign blog_posts = site.pages | where_exp: "item", "item.path contains 'blog/content/'" | sort: "date" | reverse %}
 <section class="page-panel">

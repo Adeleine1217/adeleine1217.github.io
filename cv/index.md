@@ -2,6 +2,8 @@
 layout: default
 title: CV
 description: Experience, skills, education, and core strengths.
+lang: en
+alt_url: /fr/cv/
 ---
 <section class="page-panel text-center align-center">
   <div class="eyebrow">Global Marketing &amp; AI Specialist</div>

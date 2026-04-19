@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: 'en' }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    {% assign page_lang = page.lang | default: 'en' %}
+    {% assign canonical_url = page.url | absolute_url %}
+    <link rel="canonical" href="{{ canonical_url }}">
+    <link rel="alternate" hreflang="{{ page_lang }}" href="{{ canonical_url }}">
+    {% if page.alt_url %}
+      <link rel="alternate" hreflang="{% if page_lang == 'fr' %}en{% else %}fr{% endif %}" href="{{ page.alt_url | absolute_url }}">
+    {% endif %}
+    <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Fragment+Mono:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,12 +25,27 @@
           <img class="site-logo-image" src="{{ '/assets/images/adeleine-logo.png' | relative_url }}" alt="Adeleine Wang logo">
         </a>
         <nav class="site-nav" aria-label="Primary">
-          <a href="{{ '/cv/' | relative_url }}" {% if page.url == '/cv/' %}aria-current="page"{% endif %}>My Resume</a>
-          <a href="{{ '/blog/' | relative_url }}" {% if page.url == '/blog/' %}aria-current="page"{% endif %}>My Blog</a>
-          <a href="{{ '/portfolio/' | relative_url }}" {% if page.url == '/portfolio/' %}aria-current="page"{% endif %}>My Creations</a>
+          {% if page_lang == 'fr' %}
+            <a href="{{ '/fr/cv/' | relative_url }}" {% if page.url == '/fr/cv/' %}aria-current="page"{% endif %}>Mon CV</a>
+            <a href="{{ '/fr/blog/' | relative_url }}" {% if page.url == '/fr/blog/' %}aria-current="page"{% endif %}>Mon Blog</a>
+            <a href="{{ '/fr/portfolio/' | relative_url }}" {% if page.url == '/fr/portfolio/' %}aria-current="page"{% endif %}>Mes Creations</a>
+          {% else %}
+            <a href="{{ '/cv/' | relative_url }}" {% if page.url == '/cv/' %}aria-current="page"{% endif %}>My Resume</a>
+            <a href="{{ '/blog/' | relative_url }}" {% if page.url == '/blog/' %}aria-current="page"{% endif %}>My Blog</a>
+            <a href="{{ '/portfolio/' | relative_url }}" {% if page.url == '/portfolio/' %}aria-current="page"{% endif %}>My Creations</a>
+          {% endif %}
         </nav>
         <div class="header-actions">
-          <a class="button button-dark" href="mailto:hsiaotungw@gmail.com?subject=Congratulation%21%20WE%20ARE%20TRILLED%20TO%20INVIED%20YOU%20TO%20JOIN%20OUR%20TEAM%21">Hire me!</a>
+          <div class="lang-switch" aria-label="Language switcher">
+            {% if page_lang == 'fr' %}
+              <a class="lang-link" href="{{ page.alt_url | default: '/' | relative_url }}" lang="en" hreflang="en">EN</a>
+              <span class="lang-link active" lang="fr">FR</span>
+            {% else %}
+              <span class="lang-link active" lang="en">EN</span>
+              <a class="lang-link" href="{{ page.alt_url | default: '/fr/' | relative_url }}" lang="fr" hreflang="fr">FR</a>
+            {% endif %}
+          </div>
+          <a class="button button-dark" href="mailto:hsiaotungw@gmail.com?subject=Congratulation%21%20WE%20ARE%20TRILLED%20TO%20INVIED%20YOU%20TO%20JOIN%20OUR%20TEAM%21">{% if page_lang == 'fr' %}Hire me!{% else %}Hire me!{% endif %}</a>
         </div>
       </header>
 
@@ -39,16 +62,23 @@
           </a>
         </div>
         <div class="footer-block">
-          <div class="footer-heading">Contact Me:</div>
+          <div class="footer-heading">{% if page_lang == 'fr' %}Contact{% else %}Contact Me:{% endif %}</div>
           <a class="footer-link" href="mailto:hsiaotungw@gmail.com">hsiaotungw@gmail.com</a>
           <a class="footer-link" href="https://www.linkedin.com/in/hsiao-tung-wang/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
         <div class="footer-block">
-          <div class="footer-heading">View Pages</div>
-          <a class="footer-link" href="{{ '/' | relative_url }}">My Home Page</a>
-          <a class="footer-link" href="{{ '/cv/' | relative_url }}">My Resume</a>
-          <a class="footer-link" href="{{ '/blog/' | relative_url }}">My Blog</a>
-          <a class="footer-link" href="{{ '/portfolio/' | relative_url }}">My Creations</a>
+          <div class="footer-heading">{% if page_lang == 'fr' %}Pages{% else %}View Pages{% endif %}</div>
+          {% if page_lang == 'fr' %}
+            <a class="footer-link" href="{{ '/fr/' | relative_url }}">Accueil</a>
+            <a class="footer-link" href="{{ '/fr/cv/' | relative_url }}">Mon CV</a>
+            <a class="footer-link" href="{{ '/fr/blog/' | relative_url }}">Mon Blog</a>
+            <a class="footer-link" href="{{ '/fr/portfolio/' | relative_url }}">Mes Creations</a>
+          {% else %}
+            <a class="footer-link" href="{{ '/' | relative_url }}">My Home Page</a>
+            <a class="footer-link" href="{{ '/cv/' | relative_url }}">My Resume</a>
+            <a class="footer-link" href="{{ '/blog/' | relative_url }}">My Blog</a>
+            <a class="footer-link" href="{{ '/portfolio/' | relative_url }}">My Creations</a>
+          {% endif %}
         </div>
       </footer>
     </div>

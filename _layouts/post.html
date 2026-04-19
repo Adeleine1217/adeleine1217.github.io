@@ -3,8 +3,8 @@ layout: default
 ---
 <article class="article-frame">
   <div class="article-topline">
-    <div class="eyebrow">Blog Post</div>
-    <a class="article-back-link" href="{{ '/blog/' | relative_url }}">Back to blog</a>
+    <div class="eyebrow">{% if page.lang == 'fr' %}Article de blog{% else %}Blog Post{% endif %}</div>
+    <a class="article-back-link" href="{% if page.lang == 'fr' %}{{ '/fr/blog/' | relative_url }}{% else %}{{ '/blog/' | relative_url }}{% endif %}">{% if page.lang == 'fr' %}Retour au blog{% else %}Back to blog{% endif %}</a>
   </div>
   <header class="article-header">
     <h1>{{ page.title }}</h1>

@@ -1,0 +1,71 @@
+---
+layout: default
+title: Blog
+description: Notes, essais et updates en Markdown.
+lang: fr
+alt_url: /blog/
+---
+{% assign blog_posts = site.pages | where_exp: "item", "item.path contains 'fr/blog/content/'" | sort: "date" | reverse %}
+<section class="page-panel">
+  <div class="section-heading">
+    <div class="eyebrow">Mon Blog</div>
+    <p class="accent-script">Notes, experimentations et systemes marketing.</p>
+    <h1>Une ecriture qui vit dans le meme univers de marque.</h1>
+    <p class="lede">Cette version francaise suit la meme direction visuelle que le reste du site. Chaque fichier Markdown ajoute dans <code>fr/blog/content</code> devient automatiquement un article publie sur GitHub Pages.</p>
+    <div class="button-row">
+      <a class="button button-dark" href="#posts">Voir les articles</a>
+      <a class="button button-light" href="#new-post">Comment publier</a>
+    </div>
+  </div>
+</section>
+
+<section class="page-panel" id="posts">
+  <div class="section-heading">
+    <div class="eyebrow">Articles publies</div>
+    <h2>Blog</h2>
+  </div>
+  {% if blog_posts.size > 0 %}
+    <div class="blog-cards">
+      {% for post in blog_posts %}
+        <article class="post-card">
+          <div class="meta-row">
+            {% if post.date %}
+              <span class="meta-pill">{{ post.date | date: "%d/%m/%Y" }}</span>
+            {% endif %}
+            {% if post.tags and post.tags.size > 0 %}
+              <span class="meta-pill">{{ post.tags | join: ", " }}</span>
+            {% endif %}
+          </div>
+          <h3><a class="post-title" href="{{ post.url | relative_url }}">{{ post.title | default: post.name }}</a></h3>
+          <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+          <a class="post-link" href="{{ post.url | relative_url }}">Lire l'article</a>
+        </article>
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="empty-state">
+      <p>Aucun article pour le moment. Ajoutez un fichier Markdown dans <code>fr/blog/content</code> et il apparaitra ici au prochain build GitHub Pages.</p>
+    </div>
+  {% endif %}
+</section>
+
+<section class="page-panel" id="new-post">
+  <div class="section-heading">
+    <div class="eyebrow">Modele de nouvel article</div>
+    <h2>Copiez cette structure pour vos futurs articles</h2>
+  </div>
+  <pre><code>---
+layout: post
+title: Titre de votre article
+date: 2026-04-19
+lang: fr
+alt_url: /blog/content/votre-article/
+tags:
+  - notes
+  - marketing
+excerpt: Un court resume pour la carte du blog.
+---
+
+Ecrivez votre article en Markdown ici.</code></pre>
+</section>
+
