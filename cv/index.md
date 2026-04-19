@@ -3,203 +3,178 @@ layout: default
 title: CV
 description: Experience, skills, education, and core strengths.
 ---
-<section class="page">
-  <div class="eyebrow">Curriculum Vitae</div>
-  <h1>Adeleine Wang</h1>
-  <p class="lede">Trilingual growth marketing manager focused on global expansion through SEO, AEO, frontend execution, and AI-enabled workflows.</p>
+<section class="page-panel text-center align-center">
+  <div class="eyebrow">Global Marketing &amp; AI Specialist</div>
+  <h1>Adeleine</h1>
+  <p class="accent-script">"Bridging human creativity with AI efficiency to scale global marketing growth."</p>
   <div class="button-row">
-    <a class="button" href="mailto:hsiaotungw@gmail.com
-">hsiaotungw@gmail.com</a>
-    <a class="button ghost" href="https://www.linkedin.com/in/hsiao-tung-wang/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a class="button button-dark" href="mailto:hsiaotungw@gmail.com">Contact Me</a>
+    <a class="button button-light" href="https://www.linkedin.com/in/hsiao-tung-wang/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
   </div>
 </section>
 
-<section class="page">
+<section class="page-panel">
   <div class="section-heading">
-    <div>
-      <div class="eyebrow">Executive Summary</div>
-      <h2>Global growth with technical depth</h2>
-    </div>
+    <div class="eyebrow">Executive Summary</div>
+    <h2>Global growth with technical depth</h2>
   </div>
-  <div class="card">
-    <p>I am a trilingual growth marketing manager working across French, English, and Mandarin markets. My work sits at the intersection of data-driven SEO and AEO strategy, frontend implementation, and advanced AI workflows.</p>
-    <p>Across app growth, content systems, and market expansion, I use tools such as Claude, Gemini, OpenAI, n8n, and Make to turn marketing plans into repeatable growth engines. That includes improving organic visibility, optimizing acquisition performance, and designing landing page experiences that convert.</p>
+  <div class="resume-panel">
+    <p>I am a trilingual growth marketing manager specializing in accelerating global app and business expansion through a unique intersection of <strong>data-driven SEO and AEO strategies, frontend engineering, and advanced AI workflows.</strong></p>
+    <p>By leveraging AI-native tools such as Claude, Gemini, OpenAI, and automated pipelines through n8n and Make, I orchestrate campaigns by architecting scalable growth engines. From dominating US organic search to slashing CPI through precision Meta Ads, my methodology turns high-level strategy into elegant, high-converting digital realities.</p>
   </div>
 </section>
 
-<section class="page">
-  <div class="section-heading">
-    <div>
-      <div class="eyebrow">Highlights</div>
-      <h2>Selected metrics and outcomes</h2>
-    </div>
-  </div>
-  <div class="stats-grid">
-    <div class="stat-card">
-      <strong>55.48%</strong>
-      organic share in the marketing mix
-    </div>
-    <div class="stat-card">
-      <strong>870+</strong>
-      AI engine mentions captured in early 2026
-    </div>
-    <div class="stat-card">
-      <strong>$0.66-$0.98</strong>
-      CPI range in competitive US and UK campaigns
-    </div>
-  </div>
-</section>
-
-<section class="page">
-  <div class="section-heading">
-    <div>
-      <div class="eyebrow">Experience</div>
-      <h2>Professional timeline</h2>
-    </div>
+<section class="page-panel">
+  <div class="section-heading text-center align-center">
+    <h2>Professional Experience</h2>
+    <div class="divider-line"></div>
   </div>
   <div class="timeline">
     <article class="timeline-item">
-      <div class="meta-row">
-        <span class="meta-pill">April 2025 - Present</span>
-        <span class="meta-pill">Swipr Corporation (BeFriend)</span>
-      </div>
       <h3>Marketing Manager</h3>
-      <p>Leading strategic growth, organic search performance, acquisition execution, and technical content optimization for a global app business.</p>
-      <div class="tag-row">
-        <span class="tag">SEO / AEO / GEO</span>
-        <span class="tag">Meta Ads</span>
-        <span class="tag">Frontend optimization</span>
-        <span class="tag">AI workflows</span>
+      <div class="meta-row">
+        <span class="meta-pill">Swipr Corporation (BeFriend)</span>
+        <span class="meta-pill">April 2025 - Present</span>
       </div>
-      <p><strong>Organic growth:</strong> Orchestrated a multilingual SEO strategy that moved organic traffic to 55.48% of the marketing mix while sustaining a global average position of 6.4 in Google Search Console.</p>
-      <p><strong>AI search visibility:</strong> Captured the emerging AI-search market with 870+ mentions in AI engines by early February 2026, exceeding prior monthly totals within a week.</p>
-      <p><strong>Market expansion:</strong> Helped scale the US into the number one market with 17.48% of global traffic and secured top Google rankings across the US, UK, Germany, and France.</p>
-      <p><strong>Paid acquisition:</strong> Built a UGC-driven Meta campaign system that achieved roughly $0.66 to $0.98 CPI in competitive iOS-first US and UK markets.</p>
-      <p><strong>Technical execution:</strong> Applied HTML, CSS, and JavaScript to improve landing page experience and support an average session duration of 1 minute 37 seconds for high-intent Gen Z audiences.</p>
-      <p><strong>Organic traction:</strong> Generated more than 1.06 million global impressions and stabilized over 1,000 daily organic sessions within three months.</p>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <strong>55.5%</strong>
+          <p>SEO Mix Share</p>
+        </div>
+        <div class="stat-card">
+          <strong>870+</strong>
+          <p>AI Mentions</p>
+        </div>
+        <div class="stat-card">
+          <strong>1m 37s</strong>
+          <p>Avg Session</p>
+        </div>
+      </div>
+      <div class="resume-points">
+        <p><strong>Dominant organic presence:</strong> Orchestrated a multilingual SEO strategy shifting the marketing mix to 55.48% organic while sustaining a global average position of 6.4 in Google Search Console.</p>
+        <p><strong>AI Search pioneer:</strong> Captured the emerging AI-search market, scaling to 870+ mentions in AI engines by early February 2026.</p>
+        <p><strong>Strategic market dominance:</strong> Helped scale the US into the number one market with 17.48% of global traffic and secured leading rankings across the US, UK, Germany, and France.</p>
+        <p><strong>Acquisition execution:</strong> Designed a UGC-driven Meta growth system that maintained roughly $0.66 to $0.98 CPI in highly competitive iOS-first US and UK markets.</p>
+        <p><strong>Technical content engineering:</strong> Used HTML, CSS, and JavaScript to optimize landing page experience and preserve deep session quality among Gen Z users.</p>
+      </div>
     </article>
 
     <article class="timeline-item">
-      <div class="meta-row">
-        <span class="meta-pill">June 2023 - December 2023</span>
-        <span class="meta-pill">Omnichat</span>
-      </div>
       <h3>SEA Content Marketing Manager</h3>
-      <p>Owned B2B content programs and localization-focused performance initiatives across Singapore and Malaysia.</p>
-      <p><strong>Lead generation:</strong> Increased qualified inbound leads by 20% through targeted webinars, whitepapers, and segmented LinkedIn and Meta campaigns.</p>
-      <p><strong>Conversion:</strong> Achieved a 70% customer conversion rate through data-driven optimization and market localization.</p>
-      <p><strong>Award-winning execution:</strong> Contributed to campaigns recognized by the 2023 Singapore Marketing Interactive Award while helping drive an 80% increase in pipeline customers during major expo periods.</p>
+      <div class="meta-row">
+        <span class="meta-pill">Omnichat</span>
+        <span class="meta-pill">June 2023 - December 2023</span>
+      </div>
+      <div class="resume-points">
+        <p><strong>B2B lead generation engine:</strong> Increased qualified inbound leads by 20% through targeted webinars, whitepapers, and segmented LinkedIn and Meta advertising strategies.</p>
+        <p><strong>High-conversion funnels:</strong> Achieved a 70% customer conversion rate through disciplined optimization and localization in Singapore and Malaysia.</p>
+        <p><strong>Award-winning execution:</strong> Contributed to campaigns associated with the 2023 Singapore Marketing Interactive Award while driving an 80% increase in pipeline customers during peak expo seasons.</p>
+      </div>
     </article>
 
     <article class="timeline-item">
-      <div class="meta-row">
-        <span class="meta-pill">July 2022 - January 2023</span>
-        <span class="meta-pill">Back Market (France)</span>
-      </div>
       <h3>Content Manager Intern</h3>
-      <p>Supported international B2B content strategy, bilingual asset creation, and digital PR for a fast-scaling European marketplace.</p>
-      <p><strong>Business impact:</strong> Executed content strategies that contributed to a 40% improvement in GMV in November 2022.</p>
-      <p><strong>Bilingual content systems:</strong> Created English and French knowledge bases, SEO articles, and sales enablement material that streamlined seller onboarding and communication.</p>
-      <p><strong>Authority building:</strong> Assisted with digital PR and link-building efforts to strengthen domain authority across European markets.</p>
-    </article>
-  </div>
-</section>
-
-<section class="page">
-  <div class="section-heading">
-    <div>
-      <div class="eyebrow">AI and Tech Workflows</div>
-      <h2>How tools become systems</h2>
-    </div>
-  </div>
-  <div class="split-grid">
-    <article class="card">
-      <h3>Automated SEO content pipeline</h3>
-      <p>Connected SERP analysis, keyword clustering, and localized drafting workflows through n8n, Make, and LLM APIs to cut content production time by roughly 75%.</p>
-      <div class="tag-row">
-        <span class="tag">n8n</span>
-        <span class="tag">Make</span>
-        <span class="tag">Claude</span>
-        <span class="tag">OpenAI</span>
+      <div class="meta-row">
+        <span class="meta-pill">Back Market (France)</span>
+        <span class="meta-pill">July 2022 - January 2023</span>
       </div>
-    </article>
-    <article class="card">
-      <h3>Frontend and AEO optimization</h3>
-      <p>Used HTML, CSS, and JavaScript to create faster, clearer landing pages and structured content for answer-engine visibility and natural language discovery.</p>
-      <div class="tag-row">
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">JavaScript</span>
-        <span class="tag">Schema and structure</span>
+      <div class="resume-points">
+        <p><strong>Tangible business impact:</strong> Executed international B2B content strategies that contributed to a 40% improvement in GMV in November 2022.</p>
+        <p><strong>Bilingual digital assets:</strong> Developed English and French knowledge bases, SEO articles, and seller enablement materials for global onboarding.</p>
+        <p><strong>Digital PR and link building:</strong> Supported authority growth through high-quality backlink acquisition and European domain strengthening.</p>
       </div>
     </article>
   </div>
 </section>
 
-<section class="page">
-  <div class="section-heading">
-    <div>
-      <div class="eyebrow">Education</div>
-      <h2>Academic background</h2>
-    </div>
+<section class="page-panel">
+  <div class="section-heading text-center align-center">
+    <h2>Featured AI &amp; Tech Workflows</h2>
+    <p class="lede">How I turn tools into scalable, automated growth engines.</p>
   </div>
-  <div class="card">
+  <div class="resume-grid">
+    <article class="resume-panel">
+      <h4>Automated SEO Content Pipeline</h4>
+      <p>Leveraging n8n and Make.com to connect SERP analysis tools with Claude and OpenAI APIs. This workflow automates keyword clustering, localized drafting, and HTML-ready structure.</p>
+      <div class="tag-row">
+        <span class="tag">n8n / Make</span>
+        <span class="tag">Claude API</span>
+      </div>
+    </article>
+    <article class="resume-panel">
+      <h4>Web Frontend &amp; AEO Optimization</h4>
+      <p>Utilizing HTML, CSS, and JavaScript to build interactive, fast-loading landing pages and structure content for answer-engine discovery.</p>
+      <div class="tag-row">
+        <span class="tag">HTML / JS</span>
+        <span class="tag">AEO / GEO</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="page-panel">
+  <div class="section-heading text-center align-center">
+    <h2>Education</h2>
+  </div>
+  <article class="resume-panel">
+    <h3>Master of Science - MS, Marketing Management</h3>
     <div class="meta-row">
+      <span class="meta-pill">Grenoble Ecole de Management (France)</span>
       <span class="meta-pill">Sep 2021 - Jun 2023</span>
-      <span class="meta-pill">Grenoble Ecole de Management</span>
     </div>
-    <h3>Master of Science in Marketing Management</h3>
-    <p>Built advanced expertise in international marketing strategy, brand positioning, and cross-cultural consumer psychology within a bilingual academic environment.</p>
-  </div>
+    <div class="resume-points">
+      <p><strong>Global business acumen:</strong> Built advanced expertise in international marketing strategy, brand positioning, and cross-cultural consumer psychology.</p>
+      <p><strong>Multilingual professionalism:</strong> Thrived in a bilingual academic and professional environment, integrating French and English logic into presentations and business thinking.</p>
+    </div>
+  </article>
 </section>
 
-<section class="page">
-  <div class="section-heading">
-    <div>
-      <div class="eyebrow">Core Competencies</div>
-      <h2>Strengths and working languages</h2>
-    </div>
+<section class="page-panel">
+  <div class="section-heading text-center align-center">
+    <h2>Core Competencies</h2>
+    <p class="lede">A powerful synergy of technical execution and multilingual growth marketing.</p>
   </div>
-  <div class="split-grid">
-    <div class="card">
-      <h3>Global communication</h3>
+  <div class="resume-grid">
+    <article class="resume-panel">
+      <h4>Global Communication</h4>
+      <p>Native and full professional proficiency across three major global markets.</p>
       <div class="tag-row">
         <span class="tag">French</span>
         <span class="tag">English</span>
         <span class="tag">Mandarin</span>
       </div>
-    </div>
-    <div class="card">
-      <h3>AI and tech stack</h3>
+    </article>
+    <article class="resume-panel">
+      <h4>AI &amp; Tech Stack</h4>
       <div class="tag-row">
-        <span class="tag">Prompt engineering</span>
-        <span class="tag">AI agent workflows</span>
+        <span class="tag">AI Prompt Engineering</span>
+        <span class="tag">AI Agent Workflows</span>
         <span class="tag">Claude / Gemini / OpenAI</span>
-        <span class="tag">n8n / Make</span>
+        <span class="tag">n8n / Make.com</span>
         <span class="tag">HTML5 / CSS3</span>
         <span class="tag">JavaScript</span>
       </div>
-    </div>
-    <div class="card">
-      <h3>Growth and acquisition</h3>
+    </article>
+    <article class="resume-panel">
+      <h4>Growth &amp; Acquisition</h4>
       <div class="tag-row">
         <span class="tag">SEO / AEO / GEO</span>
-        <span class="tag">Performance marketing</span>
+        <span class="tag">Performance Marketing</span>
         <span class="tag">Meta Ads</span>
         <span class="tag">Digital PR</span>
-        <span class="tag">Global expansion</span>
+        <span class="tag">Global Expansion</span>
       </div>
-    </div>
-    <div class="card">
-      <h3>Content and design</h3>
+    </article>
+    <article class="resume-panel">
+      <h4>Content &amp; Design</h4>
       <div class="tag-row">
-        <span class="tag">Frontend web design</span>
-        <span class="tag">Bilingual content creation</span>
+        <span class="tag">Frontend Web Design</span>
+        <span class="tag">Bilingual Content Creation</span>
         <span class="tag">Blogging</span>
-        <span class="tag">Press releases</span>
-        <span class="tag">Social strategy</span>
-        <span class="tag">Influencer marketing</span>
+        <span class="tag">Press Releases</span>
+        <span class="tag">Social Media Strategy</span>
+        <span class="tag">Influencer Marketing</span>
       </div>
-    </div>
+    </article>
   </div>
 </section>

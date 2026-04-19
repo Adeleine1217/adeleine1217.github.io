@@ -1,66 +1,96 @@
 ---
 layout: default
 title: Home
-description: Personal site with portfolio, CV, and blog.
+description: Growth marketing portfolio, resume, and blog.
 ---
-<section class="hero">
+<section class="page-panel">
   <div class="hero-grid">
-    <div class="stack">
-      <div class="eyebrow">Marketing strategist · operator · writer</div>
-      <h1>Build a body of work that is easy to browse and easy to update.</h1>
-      <p class="lede">This site is set up for GitHub Pages, with dedicated portfolio and CV pages plus a blog that automatically lists every Markdown post you place in <code>blog/content</code>.</p>
+    <div class="hero-visual">
+      <img src="https://unebalade1984.wordpress.com/wp-content/uploads/2026/04/befriend-blog.png" alt="A preview of editorial and growth marketing work">
+    </div>
+    <div class="section-stack">
+      <p class="accent-script">Hi! My name is Adeleine. Nice to connect with you.</p>
+      <h1 class="home-title">Your Next Growth Marketing Expert.</h1>
+      <div class="divider-line"></div>
+      <div class="role-list">
+        <span>Front-end Web Developer</span>
+        <span>Specialist in SEO, AEO &amp; GEO</span>
+        <span>Paid Media Strategist</span>
+        <span>Content Architect</span>
+      </div>
       <div class="button-row">
-        <a class="button" href="{{ '/portfolio/' | relative_url }}">View Portfolio</a>
-        <a class="button ghost" href="{{ '/blog/' | relative_url }}">Read the Blog</a>
+        <a class="button button-dark" href="mailto:hsiaotungw@gmail.com">Let's Connect</a>
+        <a class="button button-light" href="{{ '/portfolio/' | relative_url }}">View Portfolio</a>
       </div>
     </div>
-    <div class="stack">
-      <div class="card">
-        <div class="eyebrow">What is included</div>
-        <h3>Three clear destinations</h3>
-        <p>A homepage to orient visitors, a portfolio page for selected work, a CV page for experience, and a blog index generated from your Markdown files.</p>
-      </div>
-      <div class="card">
-        <div class="eyebrow">Publishing flow</div>
-        <h3>Write, push, publish</h3>
-        <p>Add a new file inside <code>blog/content</code> with front matter and Markdown content. GitHub Pages will build it into the site and the post will show up on the blog page automatically.</p>
-      </div>
-    </div>
+  </div>
+</section>
+
+<section class="page-panel text-center align-center">
+  <div class="section-heading align-center">
+    <div class="eyebrow">Impact &amp; Results</div>
+    <h2>My Key Achievements</h2>
+    <div class="divider-line"></div>
   </div>
   <div class="stats-grid">
-    <div class="stat-card">
-      <strong>3</strong>
-      core sections
-    </div>
-    <div class="stat-card">
-      <strong>0</strong>
-      build tools required locally
-    </div>
-    <div class="stat-card">
-      <strong>100%</strong>
-      static-host friendly
+    <article class="stat-card">
+      <strong>#6.4</strong>
+      <p>Global SEO Performance</p>
+    </article>
+    <article class="stat-card">
+      <strong>870+</strong>
+      <p>AI Search Visibility</p>
+    </article>
+    <article class="stat-card">
+      <strong>1m 37s</strong>
+      <p>Audience Quality</p>
+    </article>
+    <article class="stat-card">
+      <strong>55.5%</strong>
+      <p>Organic SEO Dominance</p>
+    </article>
+    <article class="stat-card">
+      <strong>17.4%</strong>
+      <p>US Market Expansion</p>
+    </article>
+    <article class="stat-card">
+      <strong>#1</strong>
+      <p>Market Dominance</p>
+    </article>
+  </div>
+</section>
+
+<section class="quote-panel">
+  <div class="quote-mark" aria-hidden="true">
+    “
+  </div>
+  <div class="quote-copy">
+    <p>"Michael Stelzner, founder of Social Media Examiner, says it best: It's hard work. I'm not going to lie. Anyone who tells you that it's really easy to build a content business is not telling you the truth."</p>
+    <div class="quote-author">
+      <strong>Joe Pulizzi</strong>
+      <span>Content Inc.: How Entrepreneurs Use Content to Build Massive Audiences and Create Radically Successful Businesses</span>
     </div>
   </div>
 </section>
 
-<section class="page">
+<section class="page-panel">
   <div class="section-heading">
-    <div>
-      <div class="eyebrow">Quick Start</div>
-      <h2>Where visitors should go next</h2>
-    </div>
+    <div class="eyebrow">Explore the Site</div>
+    <h2>One consistent brand system across every page.</h2>
+    <p class="lede">This GitHub site now mirrors the core language of your Framer presence: soft ivory background, editorial serif headings, champagne-gold details, dark capsule buttons, and portfolio-led storytelling.</p>
   </div>
   <div class="split-grid">
-    <div class="card">
-      <h3>Portfolio</h3>
-      <p>Showcase case studies, measurable outcomes, and the kinds of work you want more of.</p>
-      <p><a href="{{ '/portfolio/' | relative_url }}">Open portfolio</a></p>
-    </div>
-    <div class="card">
-      <h3>CV</h3>
-      <p>Present your experience, education, skills, awards, and contact details in a scannable format.</p>
-      <p><a href="{{ '/cv/' | relative_url }}">Open CV</a></p>
-    </div>
+    <article class="resume-panel">
+      <div class="eyebrow">Resume</div>
+      <h3>Professional experience and AI workflows</h3>
+      <p class="body-copy">The CV page presents your roles, quantified impact, education, and technical stack in a polished, public-facing format.</p>
+      <a class="contact-inline" href="{{ '/cv/' | relative_url }}">Open resume</a>
+    </article>
+    <article class="resume-panel">
+      <div class="eyebrow">Blog</div>
+      <h3>Markdown-powered publishing on GitHub Pages</h3>
+      <p class="body-copy">New posts still appear automatically when you add Markdown files under <code>blog/content</code> and push to GitHub.</p>
+      <a class="contact-inline" href="{{ '/blog/' | relative_url }}">Open blog</a>
+    </article>
   </div>
 </section>
-

@@ -1,14 +1,14 @@
 ---
 layout: default
 ---
-<article class="article-page article-frame">
+<article class="article-frame">
   <div class="article-topline">
     <div class="eyebrow">Blog Post</div>
     <a class="article-back-link" href="{{ '/blog/' | relative_url }}">Back to blog</a>
   </div>
   <header class="article-header">
     <h1>{{ page.title }}</h1>
-    <div class="meta-row article-meta">
+    <div class="meta-row">
       {% if page.date %}
         <span class="meta-pill">{{ page.date | date: "%B %-d, %Y" }}</span>
       {% endif %}
@@ -17,7 +17,7 @@ layout: default
       {% endif %}
     </div>
     {% if page.excerpt %}
-      <p class="lede article-lede">{{ page.excerpt }}</p>
+      <p class="lede">{{ page.excerpt }}</p>
     {% endif %}
   </header>
   <div class="article-content">
