@@ -8,7 +8,8 @@ description: Experience, skills, education, and core strengths.
   <h1>Adeleine Wang</h1>
   <p class="lede">Trilingual growth marketing manager focused on global expansion through SEO, AEO, frontend execution, and AI-enabled workflows.</p>
   <div class="button-row">
-    <a class="button" href="mailto:madeleinew@gmail.com">madeleinew@gmail.com</a>
+    <a class="button" href="mailto:hsiaotungw@gmail.com
+">hsiaotungw@gmail.com</a>
     <a class="button ghost" href="https://www.linkedin.com/in/hsiao-tung-wang/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
   </div>
 </section>
