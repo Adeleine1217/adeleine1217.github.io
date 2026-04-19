@@ -1,0 +1,10 @@
+title: Adeleine Wang
+description: Portfolio, CV, and writing by Adeleine Wang.
+baseurl: ""
+url: ""
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: pretty
+timezone: Asia/Taipei
+

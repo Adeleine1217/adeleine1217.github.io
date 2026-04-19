@@ -1,0 +1,66 @@
+---
+layout: default
+title: Blog
+description: Notes, essays, and updates written in Markdown.
+---
+{% assign blog_posts = site.pages | where_exp: "item", "item.path contains 'blog/content/'" | sort: "date" | reverse %}
+<section class="page">
+  <div class="eyebrow">Blog</div>
+  <h1>Writing that updates itself from Markdown files.</h1>
+  <p class="lede">Every Markdown file in <code>blog/content</code> with valid Jekyll front matter will be rendered as a post and listed here automatically when GitHub Pages builds the site.</p>
+</section>
+
+<section class="blog-list">
+  <div class="section-heading">
+    <div>
+      <div class="eyebrow">Posts</div>
+      <h2>Published entries</h2>
+    </div>
+  </div>
+
+  {% if blog_posts.size > 0 %}
+    <div class="blog-cards">
+      {% for post in blog_posts %}
+        <article class="post-card">
+          <div class="meta-row">
+            {% if post.date %}
+              <span class="meta-pill">{{ post.date | date: "%B %-d, %Y" }}</span>
+            {% endif %}
+            {% if post.tags and post.tags.size > 0 %}
+              <span class="meta-pill">{{ post.tags | join: ", " }}</span>
+            {% endif %}
+          </div>
+          <h3><a class="post-title" href="{{ post.url | relative_url }}">{{ post.title | default: post.name }}</a></h3>
+          <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="empty-state">
+      <p>No posts yet. Add a Markdown file in <code>blog/content</code> and it will appear here on the next GitHub Pages build.</p>
+    </div>
+  {% endif %}
+</section>
+
+<section class="page">
+  <div class="section-heading">
+    <div>
+      <div class="eyebrow">New Post Template</div>
+      <h2>Copy this structure for future posts</h2>
+    </div>
+  </div>
+  <div class="card">
+    <pre><code>---
+layout: post
+title: Your Post Title
+date: 2026-04-19
+tags:
+  - notes
+  - marketing
+excerpt: A short summary for the blog listing.
+---
+
+Write your post in Markdown here.</code></pre>
+  </div>
+</section>
+

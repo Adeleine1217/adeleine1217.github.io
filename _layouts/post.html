@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article class="page article-page">
+  <div class="eyebrow">Blog Post</div>
+  <h1>{{ page.title }}</h1>
+  <p class="lede">
+    {% if page.date %}{{ page.date | date: "%B %-d, %Y" }}{% endif %}
+    {% if page.tags and page.tags.size > 0 %}
+      · {{ page.tags | join: ", " }}
+    {% endif %}
+  </p>
+  <div class="article-content">
+    {{ content }}
+  </div>
+  <p class="article-back"><a href="{{ '/blog/' | relative_url }}">Back to blog</a></p>
+</article>
+
