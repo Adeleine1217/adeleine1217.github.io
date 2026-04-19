@@ -1,18 +1,26 @@
 ---
 layout: default
 ---
-<article class="page article-page">
-  <div class="eyebrow">Blog Post</div>
-  <h1>{{ page.title }}</h1>
-  <p class="lede">
-    {% if page.date %}{{ page.date | date: "%B %-d, %Y" }}{% endif %}
-    {% if page.tags and page.tags.size > 0 %}
-      · {{ page.tags | join: ", " }}
+<article class="article-page article-frame">
+  <div class="article-topline">
+    <div class="eyebrow">Blog Post</div>
+    <a class="article-back-link" href="{{ '/blog/' | relative_url }}">Back to blog</a>
+  </div>
+  <header class="article-header">
+    <h1>{{ page.title }}</h1>
+    <div class="meta-row article-meta">
+      {% if page.date %}
+        <span class="meta-pill">{{ page.date | date: "%B %-d, %Y" }}</span>
+      {% endif %}
+      {% if page.tags and page.tags.size > 0 %}
+        <span class="meta-pill">{{ page.tags | join: ", " }}</span>
+      {% endif %}
+    </div>
+    {% if page.excerpt %}
+      <p class="lede article-lede">{{ page.excerpt }}</p>
     {% endif %}
-  </p>
+  </header>
   <div class="article-content">
     {{ content }}
   </div>
-  <p class="article-back"><a href="{{ '/blog/' | relative_url }}">Back to blog</a></p>
 </article>
-

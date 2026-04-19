@@ -4,18 +4,34 @@ title: Blog
 description: Notes, essays, and updates written in Markdown.
 ---
 {% assign blog_posts = site.pages | where_exp: "item", "item.path contains 'blog/content/'" | sort: "date" | reverse %}
-<section class="page">
-  <div class="eyebrow">Blog</div>
-  <h1>Writing that updates itself from Markdown files.</h1>
-  <p class="lede">Every Markdown file in <code>blog/content</code> with valid Jekyll front matter will be rendered as a post and listed here automatically when GitHub Pages builds the site.</p>
+<section class="blog-hero">
+  <div class="blog-hero-copy">
+    <div class="eyebrow">My Blog</div>
+    <h1>Thoughtful notes, experiments, and marketing systems.</h1>
+    <p class="lede">A cleaner editorial space inspired by your Framer site: soft neutral background, monochrome structure, champagne-gold accents, and plenty of breathing room. New Markdown files in <code>blog/content</code> still publish here automatically.</p>
+    <div class="button-row">
+      <a class="button blog-button-dark" href="#posts">Browse posts</a>
+      <a class="button ghost blog-button-light" href="#new-post">How to add an article</a>
+    </div>
+  </div>
+  <aside class="blog-hero-panel">
+    <div class="blog-panel-label">Style Direction</div>
+    <ul class="blog-feature-list">
+      <li>Warm gray canvas with restrained contrast</li>
+      <li>Rounded pills and quiet editorial cards</li>
+      <li>Monospace labels and structured metadata</li>
+      <li>Same luxury-tech tone as the reference site</li>
+    </ul>
+  </aside>
 </section>
 
-<section class="blog-list">
+<section class="blog-list blog-list-framer" id="posts">
   <div class="section-heading">
     <div>
       <div class="eyebrow">Posts</div>
       <h2>Published entries</h2>
     </div>
+    <p class="blog-section-note">Rendered from Markdown files in <code>blog/content</code>.</p>
   </div>
 
   {% if blog_posts.size > 0 %}
@@ -32,6 +48,7 @@ description: Notes, essays, and updates written in Markdown.
           </div>
           <h3><a class="post-title" href="{{ post.url | relative_url }}">{{ post.title | default: post.name }}</a></h3>
           <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+          <a class="post-link" href="{{ post.url | relative_url }}">Read article</a>
         </article>
       {% endfor %}
     </div>
@@ -42,7 +59,7 @@ description: Notes, essays, and updates written in Markdown.
   {% endif %}
 </section>
 
-<section class="page">
+<section class="page blog-template-panel" id="new-post">
   <div class="section-heading">
     <div>
       <div class="eyebrow">New Post Template</div>
@@ -63,4 +80,3 @@ excerpt: A short summary for the blog listing.
 Write your post in Markdown here.</code></pre>
   </div>
 </section>
-
