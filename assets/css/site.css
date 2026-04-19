@@ -619,6 +619,39 @@ p {
   padding: 1rem 1.1rem 1.2rem;
 }
 
+.gallery-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 0.35rem;
+}
+
+.gallery-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5rem;
+  padding: 0.68rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.86rem;
+  border: 1px solid rgba(197, 160, 89, 0.28);
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--text);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.gallery-link:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(31, 26, 18, 0.08);
+}
+
+.gallery-link.primary {
+  background: linear-gradient(180deg, #1d1d1f 0%, #2c2c30 100%);
+  border-color: #1d1d1f;
+  color: #fff;
+}
+
 .gallery-title {
   font-family: "Cormorant Garamond", serif;
   font-size: 1.5rem;
@@ -693,6 +726,39 @@ p {
   background: rgba(197, 160, 89, 0.08);
   border-radius: 18px;
   color: #3d3d42;
+}
+
+.code-showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.code-preview-card,
+.code-snippet-card {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.code-preview-card img {
+  width: 100%;
+  display: block;
+}
+
+.code-preview-copy,
+.code-snippet-copy {
+  display: grid;
+  gap: 0.7rem;
+  padding: 1rem 1.1rem 1.2rem;
+}
+
+.code-snippet-copy pre {
+  font-size: 0.82rem;
+  line-height: 1.55;
 }
 
 .article-content pre,
@@ -865,6 +931,10 @@ pre {
   .stats-grid,
   .cards-grid,
   .blog-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .code-showcase {
     grid-template-columns: 1fr;
   }
 
