@@ -6,7 +6,7 @@ description: Lisez le blog d'Adeleine Wang pour ses notes sur le SEO, la croissa
 lang: fr
 alt_url: /blog/
 ---
-{% assign blog_posts = site.pages | where_exp: "item", "item.path contains 'fr/blog/content/' and item.lang == 'fr'" | sort: "date" | reverse %}
+{% assign blog_posts = site.pages | where: "lang", "fr" | where_exp: "item", "item.path contains 'fr/blog/content/'" | sort: "date" | reverse %}
 <section class="page-panel">
   <div class="section-heading">
     <div class="eyebrow">Mon Blog</div>
