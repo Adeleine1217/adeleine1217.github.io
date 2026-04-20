@@ -5,7 +5,7 @@ description: Notes, essays, and updates written in Markdown.
 lang: en
 alt_url: /fr/blog/
 ---
-{% assign blog_posts = site.pages | where_exp: "item", "item.path contains 'blog/content/'" | sort: "date" | reverse %}
+{% assign blog_posts = site.pages | where_exp: "item", "item.path contains 'blog/content/' and item.path contains 'fr/' == false and item.lang == 'en'" | sort: "date" | reverse %}
 <section class="page-panel">
   <div class="section-heading">
     <div class="eyebrow">My Blog</div>

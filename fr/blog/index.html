@@ -5,7 +5,7 @@ description: Notes, essais et updates en Markdown.
 lang: fr
 alt_url: /blog/
 ---
-{% assign blog_posts = site.pages | where_exp: "item", "item.path contains 'fr/blog/content/'" | sort: "date" | reverse %}
+{% assign blog_posts = site.pages | where_exp: "item", "item.path contains 'fr/blog/content/' and item.lang == 'fr'" | sort: "date" | reverse %}
 <section class="page-panel">
   <div class="section-heading">
     <div class="eyebrow">Mon Blog</div>
@@ -68,4 +68,3 @@ excerpt: Un court resume pour la carte du blog.
 
 Ecrivez votre article en Markdown ici.</code></pre>
 </section>
-
