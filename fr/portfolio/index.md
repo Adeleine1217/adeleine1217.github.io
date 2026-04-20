@@ -118,6 +118,9 @@ alt_url: /portfolio/
       <div class="gallery-copy">
         <div class="gallery-title">Moteur editorial Befriend</div>
         <p>Le blog Gen Z comme systeme de croissance search, d'autorite et de profondeur de session.</p>
+        <div class="gallery-actions">
+          <a class="gallery-link primary" href="https://befriend.cc/blog/page/8/" target="_blank" rel="noopener noreferrer">Voir le blog</a>
+        </div>
       </div>
     </article>
     <article class="gallery-card">
@@ -125,6 +128,9 @@ alt_url: /portfolio/
       <div class="gallery-copy">
         <div class="gallery-title">Page editoriale d'autorite</div>
         <p>Contenu a forte intention pense pour ranker, convertir et inspirer confiance.</p>
+        <div class="gallery-actions">
+          <a class="gallery-link primary" href="https://befriend.cc/2026/02/03/teen-chat-app-safety-2026/" target="_blank" rel="noopener noreferrer">Lire l'article</a>
+        </div>
       </div>
     </article>
   </div>
@@ -218,6 +224,9 @@ alt_url: /portfolio/
       <div class="gallery-copy">
         <div class="gallery-title">Compatibilite amicale des signes astro</div>
         <p>Contenu editorial francophone ecrit par moi, avec un ton culturel naturel et une vraie intention narrative.</p>
+        <div class="gallery-actions">
+          <a class="gallery-link primary" href="https://befriend.cc/fr/2025/11/27/compatibilite-amicale-des-signes-astro-qui-est-ton-bestie-ideal-selon-les-etoiles/" target="_blank" rel="noopener noreferrer">Lire l'article en francais</a>
+        </div>
       </div>
     </article>
     <article class="gallery-card">
@@ -244,3 +253,103 @@ alt_url: /portfolio/
   </div>
 </section>
 
+<section class="page-panel">
+  <div class="section-heading">
+    <div class="eyebrow">Collaboration design &amp; execution front-end</div>
+    <h2>Travailler avec une designer, puis construire le hero moi-meme</h2>
+    <p class="lede">Cette section montre comment je collabore avec des designers, traduis une direction visuelle en structure front-end, puis redige moi-meme la copie finale du hero et la logique des CTA. Le module ci-dessous preserve l'energie visuelle du concept tout en gardant des liens App Store et Google Play exacts et directement exploitables.</p>
+  </div>
+
+  <div class="code-showcase">
+    <article class="code-preview-card">
+      <img src="https://unebalade1984.wordpress.com/wp-content/uploads/2026/04/befriend-blog-cta-hero-section.png" alt="Preview du hero CTA du blog Befriend">
+      <div class="code-preview-copy">
+        <div class="gallery-title">Preview du module hero en production</div>
+        <p>Je suis partie d'une direction design collaborative, puis j'ai ecrit la structure du hero, la hierarchie de copie, le placement des CTA et le comportement responsive pour l'implementation finale.</p>
+        <div class="gallery-actions">
+          <a class="gallery-link" href="https://apps.apple.com/us/app/befriend-make-new-friends/id1537012560" target="_blank" rel="noopener noreferrer">App Store</a>
+          <a class="gallery-link" href="https://play.google.com/store/apps/details?id=com.guppir.swipr" target="_blank" rel="noopener noreferrer">Google Play</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="code-snippet-card">
+      <div class="code-snippet-copy">
+        <div class="gallery-title">Code que j'ai ecrit pour le Hero section</div>
+        <p>Le code ci-dessous montre la vraie structure front-end et le comportement des CTA pour le hero banner Befriend, tandis que la copie de presentation reste en anglais pour correspondre au produit final.</p>
+        <pre><code>&lt;style&gt;
+  :root{
+    --section-w: 960px; --section-h: 339px;
+    --pad-x: clamp(32px, 6vw, 80px); --pad-y: clamp(24px, 4vw, 48px);
+  }
+  [data-bef-hero]{
+    position:relative;overflow:hidden;display:grid;place-items:center;
+    isolation:isolate;border-radius:12px;background:#fff;
+    width:var(--section-w);height:var(--section-h)
+  }
+  [data-bef-hero] .bef-bg{
+    position:absolute !important;inset:0 !important;width:100% !important;
+    height:100% !important;object-fit:cover !important;
+    object-position:70% 50% !important;display:block !important;
+    z-index:0 !important;pointer-events:none
+  }
+  [data-bef-hero]::before{display:none}
+  [data-bef-hero] .bef-inner{
+    position:relative;z-index:2;width:100%;height:100%;
+    padding:var(--pad-y) var(--pad-x);display:flex;flex-direction:column;
+    justify-content:flex-start;align-items:flex-start;color:#111;
+    font-family:'Anton',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    box-sizing:border-box
+  }
+  [data-bef-hero] .bef-copy{max-width:560px}
+  [data-bef-hero] .bef-title{
+    font-family:'Anton',sans-serif;line-height:.95;letter-spacing:.4px;
+    font-size:48px;margin:0 0 12px;color:#111
+  }
+  [data-bef-hero] .bef-sub{
+    font-family:'MD system',system-ui,sans-serif;font-size:18px;
+    font-weight:400;line-height:1.3;margin:0 0 35.9008px;color:#111
+  }
+  [data-bef-hero] .bef-cta{
+    position:absolute;bottom:61px;left:var(--pad-x);display:flex;gap:14px
+  }
+  [data-bef-hero] .bef-badge{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:175.47px;height:56px;transition:transform .16s ease
+  }
+  [data-bef-hero] .bef-badge:hover{transform:scale(1.06)}
+  [data-bef-hero] .bef-badge img{
+    height:100% !important;width:auto !important;display:block !important
+  }
+&lt;/style&gt;
+
+&lt;section data-bef-hero aria-label="BeFriend hero banner"&gt;
+  &lt;img class="bef-bg"
+    src="https://befriend.cc/wp-content/uploads/2025/08/Group-1205.png"
+    alt="BeFriend app hero banner with Gen Z teens enjoying anime, manga, and pop music" /&gt;
+
+  &lt;div class="bef-inner"&gt;
+    &lt;div class="bef-copy"&gt;
+      &lt;h1 class="bef-title"&gt;Ready to connect?&lt;/h1&gt;
+      &lt;p class="bef-sub"&gt;A space for real friendships — no pressure, no pretending.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="bef-cta"&gt;
+      &lt;a class="bef-badge bef-badge--ios"
+        href="https://apps.apple.com/us/app/befriend-make-new-friends/id1537012560"
+        target="_blank" rel="noreferrer noopener"&gt;
+        &lt;img src="https://befriend.cc/wp-content/uploads/2025/04/normal-1.webp"
+          alt="Download on the App Store" /&gt;
+      &lt;/a&gt;
+      &lt;a class="bef-badge bef-badge--android"
+        href="https://play.google.com/store/apps/details?id=com.guppir.swipr"
+        target="_blank" rel="noreferrer noopener"&gt;
+        &lt;img src="https://befriend.cc/wp-content/uploads/2025/04/normal.webp"
+          alt="Get it on Google Play" /&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+      </div>
+    </article>
+  </div>
+</section>
