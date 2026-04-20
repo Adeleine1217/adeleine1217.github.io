@@ -1,7 +1,8 @@
 ---
 layout: default
 title: CV
-description: Experience, competences, formation et points forts.
+seo_title: CV | Growth Marketing, SEO et IA | Adeleine Wang
+description: Consultez le CV d'Adeleine Wang avec son experience en growth marketing, SEO, workflows IA, strategie de contenu multilingue et execution technique.
 lang: fr
 alt_url: /cv/
 ---
@@ -180,4 +181,3 @@ alt_url: /cv/
     </article>
   </div>
 </section>
-

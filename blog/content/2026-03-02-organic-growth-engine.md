@@ -1,6 +1,7 @@
 ---
 layout: post
 title: My Journey of Building an Organic Growth Engine
+seo_title: My Journey of Building an Organic Growth Engine | Adeleine Wang
 date: 2026-03-02
 lang: en
 alt_url: /fr/blog/content/2026-03-02-moteur-croissance-organique/
@@ -10,6 +11,7 @@ tags:
   - localisation
   - content-strategy
 excerpt: From technical illusions to understanding human intent. My journey of building an organic SEO growth engine for highly competitive Western markets.
+description: Adeleine Wang shares how she built an organic SEO growth engine for Western markets through localisation, content strategy, and human-centred search intent.
 ---
 
 From technical illusions to understanding human intent. This is my journey of building an organic SEO growth engine for highly competitive Western markets.

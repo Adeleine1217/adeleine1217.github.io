@@ -1,7 +1,8 @@
 ---
 layout: default
 title: CV
-description: Experience, skills, education, and core strengths.
+seo_title: Resume | Growth Marketing, SEO & AI Specialist | Adeleine Wang
+description: Review Adeleine Wang's resume, including growth marketing experience, SEO leadership, AI workflows, multilingual content strategy, and technical skills.
 lang: en
 alt_url: /fr/cv/
 ---

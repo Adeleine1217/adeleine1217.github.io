@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Portfolio
-description: Croissance search, paid media, systemes de contenu et performance multilingue.
+seo_title: Portfolio | SEO, Paid Media et Growth Content | Adeleine Wang
+description: Explorez le portfolio d'Adeleine Wang avec ses projets en SEO, paid media, systemes editoriaux multilingues, content strategy et performance internationale.
 lang: fr
 alt_url: /portfolio/
 ---

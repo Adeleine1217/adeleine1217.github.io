@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bienvenue sur le blog
+seo_title: Bienvenue sur le blog | Adeleine Wang
 date: 2026-04-19
 lang: fr
 alt_url: /blog/content/2026-04-19-welcome/
@@ -8,6 +9,7 @@ tags:
   - setup
   - github-pages
 excerpt: Un article exemple qui montre comment les fichiers Markdown deviennent automatiquement des publications visibles sur le blog.
+description: Un guide rapide pour comprendre comment les articles Markdown sont publies automatiquement sur le blog GitHub Pages d'Adeleine Wang.
 ---
 
 Voici un article d'exemple pour la version francaise du site.

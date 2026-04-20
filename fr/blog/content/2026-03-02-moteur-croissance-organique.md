@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Mon parcours dans la construction d'un moteur de croissance organique
+seo_title: Mon parcours dans la construction d'un moteur de croissance organique | Adeleine Wang
 date: 2026-03-02
 lang: fr
 alt_url: /blog/content/2026-03-02-organic-growth-engine/
@@ -10,6 +11,7 @@ tags:
   - localisation
   - strategie-editoriale
 excerpt: Des illusions techniques a la comprehension de l'intention humaine. Mon parcours dans la construction d'un moteur SEO organique pour des marches occidentaux tres competitifs.
+description: Adeleine Wang raconte comment elle a construit un moteur SEO organique pour les marches occidentaux grace a la localisation, au contenu et a l'intention humaine.
 ---
 
 Des illusions techniques a la comprehension de l'intention humaine. Voici mon parcours dans la construction d'un moteur SEO organique pour des marches occidentaux tres competitifs.
