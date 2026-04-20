@@ -262,7 +262,7 @@ alt_url: /portfolio/
 
   <div class="code-showcase">
     <article class="code-preview-card">
-      <img src="https://unebalade1984.wordpress.com/wp-content/uploads/2026/04/befriend-blog-cta-hero-section.png" alt="Preview du hero CTA du blog Befriend">
+      <img src="https://unebalade1984.wordpress.com/wp-content/uploads/2026/04/hero-section-fr.png" alt="Preview du hero CTA du blog Befriend en francais">
       <div class="code-preview-copy">
         <div class="gallery-title">Preview du module hero en production</div>
         <p>Je suis partie d'une direction design collaborative, puis j'ai ecrit la structure du hero, la hierarchie de copie, le placement des CTA et le comportement responsive pour l'implementation finale.</p>
@@ -282,69 +282,51 @@ alt_url: /portfolio/
     --section-w: 960px; --section-h: 339px;
     --pad-x: clamp(32px, 6vw, 80px); --pad-y: clamp(24px, 4vw, 48px);
   }
-  [data-bef-hero]{
-    position:relative;overflow:hidden;display:grid;place-items:center;
-    isolation:isolate;border-radius:12px;background:#fff;
-    width:var(--section-w);height:var(--section-h)
-  }
-  [data-bef-hero] .bef-bg{
-    position:absolute !important;inset:0 !important;width:100% !important;
-    height:100% !important;object-fit:cover !important;
-    object-position:70% 50% !important;display:block !important;
-    z-index:0 !important;pointer-events:none
-  }
+  [data-bef-hero]{position:relative;overflow:hidden;display:grid;place-items:center;isolation:isolate;border-radius:12px;background:#fff;width:var(--section-w);height:var(--section-h)}
+  [data-bef-hero] .bef-bg{position:absolute !important;inset:0 !important;width:100% !important;height:100% !important;object-fit:cover !important;object-position:70% 50% !important;display:block !important;z-index:0 !important;pointer-events:none}
+
   [data-bef-hero]::before{display:none}
-  [data-bef-hero] .bef-inner{
-    position:relative;z-index:2;width:100%;height:100%;
-    padding:var(--pad-y) var(--pad-x);display:flex;flex-direction:column;
-    justify-content:flex-start;align-items:flex-start;color:#111;
-    font-family:'Anton',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-    box-sizing:border-box
-  }
+
+  [data-bef-hero] .bef-inner{position:relative;z-index:2;width:100%;height:100%;padding:var(--pad-y) var(--pad-x);display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;color:#111;font-family:'Anton',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,'PingFang TC','Noto Sans TC','Microsoft JhengHei',sans-serif;box-sizing:border-box}
   [data-bef-hero] .bef-copy{max-width:560px}
-  [data-bef-hero] .bef-title{
-    font-family:'Anton',sans-serif;line-height:.95;letter-spacing:.4px;
-    font-size:48px;margin:0 0 12px;color:#111
-  }
-  [data-bef-hero] .bef-sub{
-    font-family:'MD system',system-ui,sans-serif;font-size:18px;
-    font-weight:400;line-height:1.3;margin:0 0 35.9008px;color:#111
-  }
-  [data-bef-hero] .bef-cta{
-    position:absolute;bottom:61px;left:var(--pad-x);display:flex;gap:14px
-  }
-  [data-bef-hero] .bef-badge{
-    display:inline-flex;align-items:center;justify-content:center;
-    width:175.47px;height:56px;transition:transform .16s ease
-  }
+  [data-bef-hero] .bef-title{font-family:'Anton',sans-serif;line-height:.95;letter-spacing:.4px;font-size:48px;margin:0 0 12px;color:#111}
+  [data-bef-hero] .bef-sub{font-family:'MD system',system-ui,sans-serif;font-size:18px;font-weight:400;line-height:1.3;margin:0 0 35.9008px;color:#111;word-break:keep-all}
+
+  [data-bef-hero] .bef-cta{position:absolute;bottom:61px;left:var(--pad-x);display:flex;gap:14px}
+  [data-bef-hero] .bef-badge{display:inline-flex;align-items:center;justify-content:center;width:175.47px;height:56px;transition:transform .16s ease}
   [data-bef-hero] .bef-badge:hover{transform:scale(1.06)}
-  [data-bef-hero] .bef-badge img{
-    height:100% !important;width:auto !important;display:block !important
+  [data-bef-hero] .bef-badge img{height:100% !important;width:auto !important;display:block !important}
+
+  @media (max-width:768px){
+    [data-bef-hero]{width:100%;height:auto;border-radius:8px}
+    [data-bef-hero] .bef-bg{content:url('https://befriend.cc/wp-content/uploads/2025/08/bg-1.png');object-position:center top !important}
+    [data-bef-hero] .bef-inner{padding:32px 20px 96px;justify-content:flex-start;align-items:flex-start;text-align:left}
+    [data-bef-hero] .bef-cta{position:absolute;bottom:20px;left:20px;transform:none}
+    [data-bef-hero] .bef-badge{width:119.06px;height:38px}
+    [data-bef-hero] .bef-title{font-size:36px}
+    [data-bef-hero] .bef-sub{font-size:16px;margin-bottom:28px}
   }
+
+  .br-any{display:inline}
+  .br-any::after{content:"\A";white-space:pre}
+  @media (max-width:768px){.br-sm{display:inline}.br-sm::after{content:"\A";white-space:pre}}
+  @media (min-width:769px){.br-sm{display:none}}
 &lt;/style&gt;
 
 &lt;section data-bef-hero aria-label="BeFriend hero banner"&gt;
-  &lt;img class="bef-bg"
-    src="https://befriend.cc/wp-content/uploads/2025/08/Group-1205.png"
-    alt="BeFriend app hero banner with Gen Z teens enjoying anime, manga, and pop music" /&gt;
+  &lt;img data-recalc-dims="1" class="bef-bg" src="https://i0.wp.com/befriend.cc/wp-content/uploads/2025/08/Group-1205.png?w=1600&amp;#038;ssl=1" alt="BeFriend app hero banner with Gen Z teens enjoying anime, manga, and pop music" title="BeFriend Hero Banner - Connect over anime, manga &amp;#038; pop music" decoding="async" loading="lazy" /&gt;
 
   &lt;div class="bef-inner"&gt;
     &lt;div class="bef-copy"&gt;
-      &lt;h1 class="bef-title"&gt;Ready to connect?&lt;/h1&gt;
-      &lt;p class="bef-sub"&gt;A space for real friendships — no pressure, no pretending.&lt;/p&gt;
+      &lt;h1 class="bef-title"&gt;Rencontrer ton crew&lt;/h1&gt;
+      &lt;p class="bef-sub"&gt;Des milliers de nouvelles amities commencent ici chaque jour. -&lt;span class="br-any"&gt;&lt;/span&gt;Ne rate pas ta chance.&lt;/p&gt;
     &lt;/div&gt;
     &lt;div class="bef-cta"&gt;
-      &lt;a class="bef-badge bef-badge--ios"
-        href="https://apps.apple.com/us/app/befriend-make-new-friends/id1537012560"
-        target="_blank" rel="noreferrer noopener"&gt;
-        &lt;img src="https://befriend.cc/wp-content/uploads/2025/04/normal-1.webp"
-          alt="Download on the App Store" /&gt;
+      &lt;a class="bef-badge bef-badge--ios" href="https://apps.apple.com/us/app/befriend-make-new-friends/id1537012560" target="_blank" rel="noreferrer noopener"&gt;
+        &lt;img data-recalc-dims="1" decoding="async" src="https://i0.wp.com/befriend.cc/wp-content/uploads/2025/04/normal-1.webp?w=1600&amp;#038;ssl=1" alt="Download on the App Store" /&gt;
       &lt;/a&gt;
-      &lt;a class="bef-badge bef-badge--android"
-        href="https://play.google.com/store/apps/details?id=com.guppir.swipr"
-        target="_blank" rel="noreferrer noopener"&gt;
-        &lt;img src="https://befriend.cc/wp-content/uploads/2025/04/normal.webp"
-          alt="Get it on Google Play" /&gt;
+      &lt;a class="bef-badge bef-badge--android" href="https://play.google.com/store/apps/details?id=com.guppir.swipr" target="_blank" rel="noreferrer noopener"&gt;
+        &lt;img data-recalc-dims="1" decoding="async" src="https://i0.wp.com/befriend.cc/wp-content/uploads/2025/04/normal.webp?w=1600&amp;#038;ssl=1" alt="Get it on Google Play" /&gt;
       &lt;/a&gt;
     &lt;/div&gt;
   &lt;/div&gt;
