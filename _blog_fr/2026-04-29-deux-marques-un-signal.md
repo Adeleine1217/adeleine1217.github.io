@@ -6,7 +6,7 @@ date: 2026-04-29
 author: Adeleine Wang
 lang: fr
 alt_url: /blog/content/2026-04-29-two-brands-one-signal/
-cover_image: /assets/blogs/2026-04-29-deux-marques-un-signal-hero.png
+cover_image: /assets/images/Blogs/2026-04-29-deux-marques-un-signal-hero.png
 cover_alt: "Image de couverture éditoriale pour Deux marques, un signal, montrant un univers preppy américain inspiré de Tommy Hilfiger et une esthétique cuir nostalgique inspirée de Coach, reliés par une onde de signal culturel."
 tags:
   - strategie de marque

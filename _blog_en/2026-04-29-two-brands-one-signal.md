@@ -6,7 +6,7 @@ date: 2026-04-29
 author: Adeleine Wang
 lang: en
 alt_url: /fr/blog/content/2026-04-29-deux-marques-un-signal/
-cover_image: /assets/blogs/2026-04-29-two-brands-one-signal-hero.png
+cover_image: /assets/images/Blogs/2026-04-29-two-brands-one-signal-hero.png
 cover_alt: "Editorial blog cover for Two Brands, One Signal, showing Tommy Hilfiger-inspired preppy Americana and Coach-inspired warm leather nostalgia connected by a central cultural signal waveform."
 tags:
   - brand strategy
