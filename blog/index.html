@@ -29,6 +29,11 @@ alt_url: /fr/blog/
     <div class="blog-cards">
       {% for post in blog_posts %}
         <article class="post-card">
+          {% if post.cover_image %}
+            <a class="post-card-cover" href="{{ post.url | relative_url }}">
+              <img src="{{ post.cover_image | relative_url }}" alt="{{ post.cover_alt | default: post.title }}">
+            </a>
+          {% endif %}
           <div class="meta-row">
             {% if post.date %}
               <span class="meta-pill">{{ post.date | date: "%B %-d, %Y" }}</span>

@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Deux marques, un signal : comment Tommy Hilfiger et Coach réécrivent tranquillement le contrat culturel de la mode"
+title: "Deux marques, un signal"
 seo_title: "Tommy Hilfiger, Coach et la culture mode en 2026 | Adeleine Wang"
 date: 2026-04-29
 author: Adeleine Wang
 lang: fr
 alt_url: /blog/content/2026-04-29-two-brands-one-signal/
+cover_image: /assets/blogs/2026-04-29-deux-marques-un-signal-hero.png
+cover_alt: "Image de couverture éditoriale pour Deux marques, un signal, montrant un univers preppy américain inspiré de Tommy Hilfiger et une esthétique cuir nostalgique inspirée de Coach, reliés par une onde de signal culturel."
 tags:
   - strategie de marque
   - marketing mode

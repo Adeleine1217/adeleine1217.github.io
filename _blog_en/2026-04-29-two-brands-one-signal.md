@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Two Brands, One Signal: How Tommy Hilfiger and Coach Are Quietly Rewriting Fashion's Cultural Contract"
+title: "Two Brands, One Signal"
 seo_title: "Tommy Hilfiger, Coach and Fashion Culture in 2026 | Adeleine Wang"
 date: 2026-04-29
 author: Adeleine Wang
 lang: en
 alt_url: /fr/blog/content/2026-04-29-deux-marques-un-signal/
+cover_image: /assets/blogs/2026-04-29-two-brands-one-signal-hero.png
+cover_alt: "Editorial blog cover for Two Brands, One Signal, showing Tommy Hilfiger-inspired preppy Americana and Coach-inspired warm leather nostalgia connected by a central cultural signal waveform."
 tags:
   - brand strategy
   - fashion marketing

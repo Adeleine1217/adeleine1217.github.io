@@ -20,6 +20,11 @@ layout: default
       <p class="lede">{{ page.excerpt }}</p>
     {% endif %}
   </header>
+  {% if page.cover_image %}
+    <figure class="article-cover">
+      <img src="{{ page.cover_image | relative_url }}" alt="{{ page.cover_alt | default: page.title }}">
+    </figure>
+  {% endif %}
   <div class="article-content">
     {{ content }}
   </div>
