@@ -6,13 +6,13 @@ description: Lisez le blog d'Adeleine Wang pour ses notes sur le SEO, la croissa
 lang: fr
 alt_url: /blog/
 ---
-{% assign blog_posts = site.pages | where: "lang", "fr" | where_exp: "item", "item.path contains 'fr/blog/content/'" | sort: "date" | reverse %}
+{% assign blog_posts = site.blog_fr | sort: "date" | reverse %}
 <section class="page-panel">
   <div class="section-heading">
     <div class="eyebrow">Mon Blog</div>
     <p class="accent-script">Notes, experimentations et systemes marketing.</p>
     <h1>Une ecriture qui vit dans le meme univers de marque.</h1>
-    <p class="lede">Cette version francaise suit la meme direction visuelle que le reste du site. Chaque fichier Markdown ajoute dans <code>fr/blog/content</code> devient automatiquement un article publie sur GitHub Pages.</p>
+    <p class="lede">Cette version francaise suit la meme direction visuelle que le reste du site. Chaque fichier Markdown ajoute dans <code>_blog_fr</code> devient automatiquement un article publie sur GitHub Pages.</p>
     <div class="button-row">
       <a class="button button-dark" href="#posts">Voir les articles</a>
       <a class="button button-light" href="#new-post">Comment publier</a>
@@ -45,7 +45,7 @@ alt_url: /blog/
     </div>
   {% else %}
     <div class="empty-state">
-      <p>Aucun article pour le moment. Ajoutez un fichier Markdown dans <code>fr/blog/content</code> et il apparaitra ici au prochain build GitHub Pages.</p>
+      <p>Aucun article pour le moment. Ajoutez un fichier Markdown dans <code>_blog_fr</code> et il apparaitra ici au prochain build GitHub Pages.</p>
     </div>
   {% endif %}
 </section>

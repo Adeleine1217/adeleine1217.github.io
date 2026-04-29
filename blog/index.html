@@ -6,13 +6,13 @@ description: Read Adeleine Wang's blog for essays on SEO, organic growth, locali
 lang: en
 alt_url: /fr/blog/
 ---
-{% assign blog_posts = site.pages | where: "lang", "en" | where_exp: "item", "item.path contains 'blog/content/'" | sort: "date" | reverse %}
+{% assign blog_posts = site.blog_en | sort: "date" | reverse %}
 <section class="page-panel">
   <div class="section-heading">
     <div class="eyebrow">My Blog</div>
     <p class="accent-script">Thoughtful notes, experiments, and marketing systems.</p>
     <h1>Writing that feels native to the same brand world.</h1>
-    <p class="lede">This blog now follows the same Framer-inspired system as the rest of the site. Every Markdown file in <code>blog/content</code> still becomes a published post automatically on GitHub Pages.</p>
+    <p class="lede">This blog now follows the same Framer-inspired system as the rest of the site. Every Markdown file in <code>_blog_en</code> becomes a published post automatically on GitHub Pages.</p>
     <div class="button-row">
       <a class="button button-dark" href="#posts">Browse posts</a>
       <a class="button button-light" href="#new-post">How to add an article</a>
@@ -45,7 +45,7 @@ alt_url: /fr/blog/
     </div>
   {% else %}
     <div class="empty-state">
-      <p>No posts yet. Add a Markdown file in <code>blog/content</code> and it will appear here on the next GitHub Pages build.</p>
+      <p>No posts yet. Add a Markdown file in <code>_blog_en</code> and it will appear here on the next GitHub Pages build.</p>
     </div>
   {% endif %}
 </section>

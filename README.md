@@ -4,11 +4,12 @@ Static personal site for GitHub Pages with:
 
 - `/portfolio/` for selected work
 - `/cv/` for experience and background
-- `/blog/` for posts generated from Markdown files in `blog/content`
+- `/blog/` for posts generated from Markdown files in `_blog_en`
+- `/fr/blog/` for posts generated from Markdown files in `_blog_fr`
 
 ## How the blog works
 
-Add a new Markdown file under `blog/content` with Jekyll front matter:
+Add a new English Markdown file under `_blog_en` or a French Markdown file under `_blog_fr` with Jekyll front matter:
 
 ```md
 ---
@@ -26,7 +27,7 @@ Write your post here.
 When GitHub Pages builds the site, that file will:
 
 1. become its own post page
-2. appear automatically in `/blog/`
+2. appear automatically in `/blog/` or `/fr/blog/`
 
 ## Publish on GitHub Pages
 

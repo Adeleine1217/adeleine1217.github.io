@@ -46,13 +46,13 @@ C'est a cet instant que le fantasme de l'"expansion globale" commence a s'effond
 
 Chez Befriend, la difference d'intention de recherche entre les marches etait frappante.
 
-Aux Etats-Unis, l'intention etait extremement transactionnelle et efficace. Un utilisateur de Chicago ou de New York cherchait des choses comme "best swipe app for Gen Z" ou "fastest way to meet people near me". Il voulait de la clarte, des fonctionnalites, de la preuve sociale, et il les voulait immediatement. C'etait un comportement de drive-through applique au digital.
+Aux Etats-Unis, l'intention etait extremement transactionnelle et efficace. Un utilisateur a Chicago ou a New York cherchait des choses comme "best swipe app for Gen Z" ou "fastest way to meet people near me". Il voulait de la clarte, des fonctionnalites, de la preuve sociale et de la rapidite. C'etait un comportement de drive-through numerique.
 
-En Europe, c'etait tout autre chose.
+L'Europe etait completement differente.
 
-Au Royaume-Uni, en France et en Allemagne, la barre de recherche ressemblait davantage a un tribunal. Les utilisateurs arrivaient avec une mefiance nourrie par des annees de scandales sur les donnees et par une sensibilite beaucoup plus forte a la confidentialite. Leurs requetes portaient une texture emotionnelle completement differente: "Are dating apps actually safe?", "Befriend app data privacy", ou "How to meet people organically without swiping." Ils ne cherchaient pas la vitesse. Ils cherchaient la confiance.
+Au Royaume-Uni, en France et en Allemagne, la barre de recherche ressemblait souvent a une salle d'audience. Les utilisateurs arrivaient avec un scepticisme forge par des annees de scandales lies aux donnees et une sensibilite beaucoup plus forte a la vie privee. Leurs requetes portaient une texture emotionnelle completement differente: "Are dating apps actually safe?", "Befriend app data privacy", ou "How to meet people organically without swiping." Ils ne cherchaient pas la vitesse. Ils cherchaient la confiance.
 
-Ce fut mon vrai moment de bascule. La traduction seule ne suffirait jamais. Une traduction litterale d'un angle americain agressif comme "Find a date fast" tomberait a plat en France. Les utilisateurs ne cherchaient pas une promesse de performance brute. Ils cherchaient une legitimite emotionnelle et culturelle.
+Cela a ete mon vrai tournant. La traduction seule n'allait jamais suffire. Une traduction directe d'un hook americain agressif comme "Find a date fast" serait tombee a plat en France. Les utilisateurs ne cherchaient pas une promesse de performance brute. Ils cherchaient une legitimite emotionnelle et culturelle.
 
 Pour gagner en recherche organique, nous devions arreter d'optimiser pour l'algorithme et commencer a optimiser pour la personne humaine de l'autre cote de l'ecran. Nous devions comprendre le bagage culturel derriere chaque requete. Il fallait cesser de traduire les mots et commencer a traduire l'intention.
 

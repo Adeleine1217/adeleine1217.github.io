@@ -14,7 +14,7 @@ description: Un guide rapide pour comprendre comment les articles Markdown sont 
 
 Voici un article d'exemple pour la version francaise du site.
 
-Lorsque vous voulez publier un nouvel article, il suffit de creer un autre fichier Markdown dans `fr/blog/content` avec un front matter en haut du fichier. GitHub Pages transformera ce fichier en page et l'index du blog l'affichera automatiquement.
+Lorsque vous voulez publier un nouvel article, il suffit de creer un autre fichier Markdown dans `_blog_fr` avec un front matter en haut du fichier. GitHub Pages transformera ce fichier en page et l'index du blog l'affichera automatiquement.
 
 ## Champs recommandes
 

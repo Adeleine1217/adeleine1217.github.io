@@ -3,8 +3,14 @@ description: Portfolio, CV, and writing by Adeleine Wang.
 baseurl: ""
 url: ""
 markdown: kramdown
+collections:
+  blog_en:
+    output: true
+    permalink: /blog/content/:name/
+  blog_fr:
+    output: true
+    permalink: /fr/blog/content/:name/
 kramdown:
   input: GFM
 permalink: pretty
 timezone: Asia/Taipei
-
