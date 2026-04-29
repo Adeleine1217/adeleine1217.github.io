@@ -41,17 +41,17 @@ alt_url: /portfolio/
     <article class="stat-card">
       <span class="stat-value">17.48%</span>
       <p>Part du marche US</p>
-      <span class="stat-label">Les Etats-Unis sont devenus la premiere source de trafic globale.</span>
+      <span class="stat-label">Les Etats-Unis ont atteint 17,48 % du trafic total et sont devenus le premier marche global.</span>
     </article>
     <article class="stat-card">
       <span class="stat-value">55.48%</span>
       <p>Part du trafic SEO</p>
-      <span class="stat-label">L'organique est devenu la principale source de trafic.</span>
+      <span class="stat-label">Le search organique a represente 55,48 % du trafic total pendant la phase principale de croissance.</span>
     </article>
     <article class="stat-card">
       <span class="stat-value">870+</span>
       <p>Citations AI Search</p>
-      <span class="stat-label">Visibilite IA cross-platform installee en quelques semaines.</span>
+      <span class="stat-label">870+ citations dans les moteurs IA obtenues en deux semaines grace a l'AEO et a l'optimisation de contenu.</span>
     </article>
   </div>
 </section>
@@ -66,18 +66,26 @@ alt_url: /portfolio/
   <article class="case-study">
     <div class="case-study-header">
       <h3>1. Croissance IA - Strategie AEO/GEO globale &amp; expansion US/UE</h3>
+      <div class="pill-row">
+        <span class="soft-pill">Role : pilotee en autonomie</span>
+        <span class="soft-pill">Perimetre : strategie, architecture, execution SEO</span>
+      </div>
       <div class="divider-line"></div>
     </div>
     <div class="case-study-text">
       <p><strong>Objectif :</strong> installer un avantage organique durable sur les marches globaux et construire la visibilite sur les moteurs IA emergents.</p>
       <p><strong>Actions :</strong> execution de la strategie AEO, amelioration de la structure de page et optimisation de l'experience de landing page pour les audiences Gen Z.</p>
-      <p><strong>Resultats :</strong> 870+ citations en moteurs IA en deux semaines, 59,1 K clics et 2,18 M impressions en trois mois, avec les Etats-Unis etablis comme premiere source de trafic.</p>
+      <p><strong>Resultats :</strong> 870+ citations en moteurs IA en deux semaines, 59,1 K clics et 2,18 M impressions en trois mois, une position moyenne Google de 6,4, et les Etats-Unis etablis comme premiere source de trafic.</p>
     </div>
   </article>
 
   <article class="case-study">
     <div class="case-study-header">
       <h3>2. Content marketing - Creation d'un blog Gen Z &amp; strategie AIGC from scratch</h3>
+      <div class="pill-row">
+        <span class="soft-pill">Role : direction editoriale</span>
+        <span class="soft-pill">Collaboration : contenus et design en transverse</span>
+      </div>
       <div class="divider-line"></div>
     </div>
     <div class="case-study-text">
@@ -90,6 +98,10 @@ alt_url: /portfolio/
   <article class="case-study">
     <div class="case-study-header">
       <h3>3. Acquisition cross-border haute performance &amp; optimisation data</h3>
+      <div class="pill-row">
+        <span class="soft-pill">Role : lead performance</span>
+        <span class="soft-pill">Collaboration : equipes creative et paid media</span>
+      </div>
       <div class="divider-line"></div>
     </div>
     <div class="case-study-text">
@@ -119,6 +131,7 @@ alt_url: /portfolio/
       <div class="gallery-copy">
         <div class="gallery-title">Moteur editorial Befriend</div>
         <p>Le blog Gen Z comme systeme de croissance search, d'autorite et de profondeur de session.</p>
+        <span class="stat-label">Role : strategie editoriale, architecture de contenu et systeme de publication oriente croissance.</span>
         <div class="gallery-actions">
           <a class="gallery-link primary" href="https://befriend.cc/blog/page/8/" target="_blank" rel="noopener noreferrer">Voir le blog</a>
         </div>
@@ -129,6 +142,7 @@ alt_url: /portfolio/
       <div class="gallery-copy">
         <div class="gallery-title">Page editoriale d'autorite</div>
         <p>Contenu a forte intention pense pour ranker, convertir et inspirer confiance.</p>
+        <span class="stat-label">Role : cadrage SEO, direction de contenu et structure editoriale orientee conversion.</span>
         <div class="gallery-actions">
           <a class="gallery-link primary" href="https://befriend.cc/2026/02/03/teen-chat-app-safety-2026/" target="_blank" rel="noopener noreferrer">Lire l'article</a>
         </div>
@@ -225,6 +239,7 @@ alt_url: /portfolio/
       <div class="gallery-copy">
         <div class="gallery-title">Compatibilite amicale des signes astro</div>
         <p>Contenu editorial francophone ecrit par moi, avec un ton culturel naturel et une vraie intention narrative.</p>
+        <span class="stat-label">Role : texte redige directement en francais par moi, sans adaptation automatique depuis l'anglais.</span>
         <div class="gallery-actions">
           <a class="gallery-link primary" href="https://befriend.cc/fr/2025/11/27/compatibilite-amicale-des-signes-astro-qui-est-ton-bestie-ideal-selon-les-etoiles/" target="_blank" rel="noopener noreferrer">Lire l'article en francais</a>
         </div>

@@ -411,11 +411,15 @@ p {
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   padding: 1.55rem;
-  min-height: 140px;
+  min-height: 168px;
   display: grid;
-  align-content: center;
+  align-content: start;
   gap: 0.3rem;
   box-shadow: var(--shadow-soft);
+}
+
+.stat-card p {
+  margin: 0;
 }
 
 .stat-value {
@@ -434,8 +438,10 @@ p {
 }
 
 .stat-label {
+  display: block;
   color: var(--muted);
   font-size: 0.72rem;
+  line-height: 1.45;
 }
 
 .quote-panel {
@@ -932,6 +938,10 @@ pre {
   .cards-grid,
   .blog-cards {
     grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    min-height: auto;
   }
 
   .code-showcase {

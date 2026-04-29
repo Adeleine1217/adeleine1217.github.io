@@ -54,7 +54,8 @@ alt_url: /cv/
         </div>
       </div>
       <div class="resume-points">
-        <p><strong>Presence organique dominante :</strong> pilotage d'une strategie SEO multilingue ayant fait passer l'organique a 55,48 % du mix marketing tout en maintenant une position moyenne mondiale de 6,4 dans Google Search Console.</p>
+        <p><strong>Role :</strong> pilotage en autonomie de la roadmap SEO et AEO multilingue, avec coordination transverse avec les equipes contenu et produit.</p>
+        <p><strong>Presence organique dominante :</strong> pilotage d'une strategie SEO multilingue ayant fait passer l'organique a 55,48 % du mix marketing tout en maintenant une position moyenne Google Search Console de 6,4, soit des classements souvent situes autour des positions 6 a 7.</p>
         <p><strong>Pionniere AI Search :</strong> capture du marche emergent de la recherche IA avec 870+ mentions dans des moteurs IA des debut fevrier 2026.</p>
         <p><strong>Domination de marche :</strong> contribution a la montee des Etats-Unis comme premier marche avec 17,48 % du trafic global et obtention de positions leaders sur les US, le Royaume-Uni, l'Allemagne et la France.</p>
         <p><strong>Execution acquisition :</strong> conception d'un systeme de croissance Meta base sur des creatives UGC, avec un CPI d'environ 0,66 a 0,98 USD sur des marches iOS tres competitifs.</p>
@@ -69,6 +70,7 @@ alt_url: /cv/
         <span class="meta-pill">Juin 2023 - Decembre 2023</span>
       </div>
       <div class="resume-points">
+        <p><strong>Role :</strong> pilotage de l'execution content marketing en collaboration avec les equipes sales, design et campagnes regionales.</p>
         <p><strong>Moteur de lead generation B2B :</strong> hausse de 20 % des leads inbound qualifies grace a des webinars cibles, des white papers et des campagnes LinkedIn et Meta segmentees.</p>
         <p><strong>Funnels a forte conversion :</strong> taux de conversion client de 70 % grace a l'optimisation et a la localisation des marches singapourien et malaisien.</p>
         <p><strong>Execution primee :</strong> participation a des campagnes liees au Singapore Marketing Interactive Award 2023, avec une augmentation de 80 % des clients dans le pipeline pendant les periodes d'exposition.</p>
@@ -82,6 +84,7 @@ alt_url: /cv/
         <span class="meta-pill">Juillet 2022 - Janvier 2023</span>
       </div>
       <div class="resume-points">
+        <p><strong>Role :</strong> soutien a l'equipe contenu B2B internationale sur les operations editoriales en anglais et en francais, le SEO et la digital PR.</p>
         <p><strong>Impact business tangible :</strong> execution de strategies de contenu B2B internationales ayant contribue a une hausse de 40 % du GMV en novembre 2022.</p>
         <p><strong>Assets bilingues :</strong> production de bases de connaissances en anglais et en francais, d'articles SEO et de supports d'onboarding pour les vendeurs.</p>
         <p><strong>Digital PR et netlinking :</strong> soutien au renforcement de l'autorite du domaine via des backlinks de qualite et des campagnes de relations presse digitales.</p>

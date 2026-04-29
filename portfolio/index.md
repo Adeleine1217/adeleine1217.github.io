@@ -41,17 +41,17 @@ alt_url: /fr/portfolio/
     <article class="stat-card">
       <span class="stat-value">17.48%</span>
       <p>US Market Share</p>
-      <span class="stat-label">Successfully built the US into the number one global traffic market.</span>
+      <span class="stat-label">The United States reached 17.48% of total traffic and became the number one market globally.</span>
     </article>
     <article class="stat-card">
       <span class="stat-value">55.48%</span>
       <p>SEO Traffic Share</p>
-      <span class="stat-label">Organic traffic became the core source of total traffic.</span>
+      <span class="stat-label">Organic search accounted for 55.48% of total traffic during the main growth phase.</span>
     </article>
     <article class="stat-card">
       <span class="stat-value">870+</span>
       <p>AI Search Citations</p>
-      <span class="stat-label">Cross-platform AI search visibility established within weeks.</span>
+      <span class="stat-label">Cross-platform AI search citations secured within two weeks through AEO and content refinement.</span>
     </article>
   </div>
 </section>
@@ -66,18 +66,26 @@ alt_url: /fr/portfolio/
   <article class="case-study">
     <div class="case-study-header">
       <h3>1. AI Growth - Global AEO/GEO Strategy &amp; US/EU Market Expansion</h3>
+      <div class="pill-row">
+        <span class="soft-pill">Ownership: Led independently</span>
+        <span class="soft-pill">Scope: strategy, information architecture, SEO execution</span>
+      </div>
       <div class="divider-line"></div>
     </div>
     <div class="case-study-text">
       <p><strong>Core objective:</strong> Establish the product's organic search advantage in global markets and build visibility across emerging AI search engines.</p>
       <p><strong>Key actions:</strong> Executed AEO strategy, strengthened page structure, and improved landing page experience for Gen Z users through technical optimization and content refinement.</p>
-      <p><strong>Results:</strong> Achieved 870+ AI engine citations in two weeks, drove 59.1K clicks and 2.18M impressions in three months, and established the United States as the top global traffic source.</p>
+      <p><strong>Results:</strong> Achieved 870+ AI engine citations in two weeks, drove 59.1K clicks and 2.18M impressions in three months, sustained an average Google ranking position of 6.4, and established the United States as the top global traffic source.</p>
     </div>
   </article>
 
   <article class="case-study">
     <div class="case-study-header">
       <h3>2. Content Marketing - Building a Gen Z Trend Blog &amp; AIGC Strategy from Scratch</h3>
+      <div class="pill-row">
+        <span class="soft-pill">Ownership: Led editorial strategy</span>
+        <span class="soft-pill">Collaboration: cross-functional content and design input</span>
+      </div>
       <div class="divider-line"></div>
     </div>
     <div class="case-study-text">
@@ -90,6 +98,10 @@ alt_url: /fr/portfolio/
   <article class="case-study">
     <div class="case-study-header">
       <h3>3. High-Performance Cross-Border Acquisition Strategy &amp; Data Optimization</h3>
+      <div class="pill-row">
+        <span class="soft-pill">Ownership: Performance lead</span>
+        <span class="soft-pill">Collaboration: worked with creative and paid media stakeholders</span>
+      </div>
       <div class="divider-line"></div>
     </div>
     <div class="case-study-text">
@@ -119,6 +131,7 @@ alt_url: /fr/portfolio/
       <div class="gallery-copy">
         <div class="gallery-title">Befriend editorial engine</div>
         <p>The Gen Z trend blog supporting search growth, authority building, and session depth.</p>
+        <span class="stat-label">Role: editorial strategy, content architecture, and growth-led publishing system.</span>
         <div class="gallery-actions">
           <a class="gallery-link primary" href="https://befriend.cc/blog/page/8/" target="_blank" rel="noopener noreferrer">Visit the blog</a>
         </div>
@@ -129,6 +142,7 @@ alt_url: /fr/portfolio/
       <div class="gallery-copy">
         <div class="gallery-title">Editorial authority page</div>
         <p>High-intent content designed to rank, convert, and build trust in sensitive search categories.</p>
+        <span class="stat-label">Role: SEO framing, content direction, and conversion-aware editorial structure.</span>
         <div class="gallery-actions">
           <a class="gallery-link primary" href="https://befriend.cc/2026/02/03/teen-chat-app-safety-2026/" target="_blank" rel="noopener noreferrer">Read the article</a>
         </div>
@@ -225,6 +239,7 @@ alt_url: /fr/portfolio/
       <div class="gallery-copy">
         <div class="gallery-title">Compatibilite amicale des signes astro</div>
         <p>French editorial content written by me, demonstrating multilingual storytelling and native-feeling cultural tone.</p>
+        <span class="stat-label">Role: written independently in French, not machine-translated from an English source.</span>
         <div class="gallery-actions">
           <a class="gallery-link primary" href="https://befriend.cc/fr/2025/11/27/compatibilite-amicale-des-signes-astro-qui-est-ton-bestie-ideal-selon-les-etoiles/" target="_blank" rel="noopener noreferrer">Read the French article</a>
         </div>

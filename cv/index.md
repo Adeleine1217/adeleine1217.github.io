@@ -54,7 +54,8 @@ alt_url: /fr/cv/
         </div>
       </div>
       <div class="resume-points">
-        <p><strong>Dominant organic presence:</strong> Orchestrated a multilingual SEO strategy shifting the marketing mix to 55.48% organic while sustaining a global average position of 6.4 in Google Search Console.</p>
+        <p><strong>Ownership:</strong> Led the multilingual SEO and AEO roadmap independently, with cross-functional support from content and product stakeholders.</p>
+        <p><strong>Dominant organic presence:</strong> Orchestrated a multilingual SEO strategy shifting the marketing mix to 55.48% organic while sustaining an average Google Search Console position of 6.4, meaning core rankings held around positions 6 to 7.</p>
         <p><strong>AI Search pioneer:</strong> Captured the emerging AI-search market, scaling to 870+ mentions in AI engines by early February 2026.</p>
         <p><strong>Strategic market dominance:</strong> Helped scale the US into the number one market with 17.48% of global traffic and secured leading rankings across the US, UK, Germany, and France.</p>
         <p><strong>Acquisition execution:</strong> Designed a UGC-driven Meta growth system that maintained roughly $0.66 to $0.98 CPI in highly competitive iOS-first US and UK markets.</p>
@@ -69,6 +70,7 @@ alt_url: /fr/cv/
         <span class="meta-pill">June 2023 - December 2023</span>
       </div>
       <div class="resume-points">
+        <p><strong>Ownership:</strong> Led content marketing execution in collaboration with sales, design, and regional campaign stakeholders.</p>
         <p><strong>B2B lead generation engine:</strong> Increased qualified inbound leads by 20% through targeted webinars, whitepapers, and segmented LinkedIn and Meta advertising strategies.</p>
         <p><strong>High-conversion funnels:</strong> Achieved a 70% customer conversion rate through disciplined optimization and localization in Singapore and Malaysia.</p>
         <p><strong>Award-winning execution:</strong> Contributed to campaigns associated with the 2023 Singapore Marketing Interactive Award while driving an 80% increase in pipeline customers during peak expo seasons.</p>
@@ -82,6 +84,7 @@ alt_url: /fr/cv/
         <span class="meta-pill">July 2022 - January 2023</span>
       </div>
       <div class="resume-points">
+        <p><strong>Ownership:</strong> Supported the international B2B content team across English and French content operations, SEO, and digital PR.</p>
         <p><strong>Tangible business impact:</strong> Executed international B2B content strategies that contributed to a 40% improvement in GMV in November 2022.</p>
         <p><strong>Bilingual digital assets:</strong> Developed English and French knowledge bases, SEO articles, and seller enablement materials for global onboarding.</p>
         <p><strong>Digital PR and link building:</strong> Supported authority growth through high-quality backlink acquisition and European domain strengthening.</p>
