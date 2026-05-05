@@ -4,7 +4,7 @@ layout: default
 <article class="article-frame">
   <div class="article-topline">
     <div class="eyebrow">{% if page.lang == 'fr' %}Article de blog{% else %}Blog Post{% endif %}</div>
-    <a class="article-back-link" href="{% if page.lang == 'fr' %}{{ '/fr/blog/' | relative_url }}{% else %}{{ '/blog/' | relative_url }}{% endif %}">{% if page.lang == 'fr' %}Retour au blog{% else %}Back to blog{% endif %}</a>
+    <a class="article-back-link" href="{% if page.lang == 'fr' %}/fr/blog/{% else %}/blog/{% endif %}">{% if page.lang == 'fr' %}Retour au blog{% else %}Back to blog{% endif %}</a>
   </div>
   <header class="article-header">
     <h1>{{ page.title }}</h1>
@@ -22,7 +22,7 @@ layout: default
   </header>
   {% if page.cover_image %}
     <figure class="article-cover">
-      <img src="{{ page.cover_image | relative_url }}" alt="{{ page.cover_alt | default: page.title }}">
+      <img src="{{ page.cover_image }}" alt="{{ page.cover_alt | default: page.title }}">
     </figure>
   {% endif %}
   <div class="article-content">

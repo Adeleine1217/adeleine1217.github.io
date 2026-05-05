@@ -6,7 +6,7 @@ date: 2026-05-05
 author: Adeleine Wang
 lang: fr
 alt_url: /blog/content/2026-05-05-why-miu-miu-won-gen-z/
-cover_image: /assets/images/Blogs/2026-05-05-pourquoi-miu-miu-a-conquis-la-gen-z-hero.png
+cover_image: /assets/blogs/2026-05-05-pourquoi-miu-miu-a-conquis-la-gen-z-hero-fr.png
 cover_alt: "Couverture éditoriale pour Pourquoi Miu Miu a conquis la Gen Z, avec un sac matelassé rose poudré inspiré de Miu Miu, entre un décor architectural gris inspiré de Prada et un univers rose doux Miu Miu."
 tags:
   - strategie de marque
@@ -16,7 +16,7 @@ tags:
   - Prada
   - Miu Miu
 excerpt: Miu Miu a conquis la Gen Z en transformant le luxe en un langage lisible de contradiction, d'intelligence et de jeunesse inachevee.
-description: Analyse stratégique : comment Miu Miu est devenue le signal culturel de la Gen Z, là où Prada a préservé son autorité intellectuelle. Essai de marque.
+description: "Analyse stratégique : comment Miu Miu est devenue le signal culturel de la Gen Z, là où Prada a préservé son autorité intellectuelle. Essai de marque."
 ---
 
 # Pourquoi Miu Miu a conquis la Gen Z
