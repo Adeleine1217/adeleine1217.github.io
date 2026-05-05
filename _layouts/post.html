@@ -10,7 +10,28 @@ layout: default
     <h1>{{ page.title }}</h1>
     <div class="meta-row">
       {% if page.date %}
-        <span class="meta-pill">{{ page.date | date: "%B %-d, %Y" }}</span>
+        <span class="meta-pill">
+          {% if page.lang == 'fr' %}
+            {% assign month_number = page.date | date: "%-m" %}
+            {% case month_number %}
+              {% when '1' %}{% assign month_name = 'janvier' %}
+              {% when '2' %}{% assign month_name = 'fevrier' %}
+              {% when '3' %}{% assign month_name = 'mars' %}
+              {% when '4' %}{% assign month_name = 'avril' %}
+              {% when '5' %}{% assign month_name = 'mai' %}
+              {% when '6' %}{% assign month_name = 'juin' %}
+              {% when '7' %}{% assign month_name = 'juillet' %}
+              {% when '8' %}{% assign month_name = 'aout' %}
+              {% when '9' %}{% assign month_name = 'septembre' %}
+              {% when '10' %}{% assign month_name = 'octobre' %}
+              {% when '11' %}{% assign month_name = 'novembre' %}
+              {% when '12' %}{% assign month_name = 'decembre' %}
+            {% endcase %}
+            {{ page.date | date: "%-d" }} {{ month_name }} {{ page.date | date: "%Y" }}
+          {% else %}
+            {{ page.date | date: "%B %-d, %Y" }}
+          {% endif %}
+        </span>
       {% endif %}
       {% if page.tags and page.tags.size > 0 %}
         <span class="meta-pill">{{ page.tags | join: ", " }}</span>
