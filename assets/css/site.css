@@ -444,6 +444,40 @@ p {
   line-height: 1.45;
 }
 
+.recommendation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.1rem;
+}
+
+.recommendation-card {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 1.55rem;
+  display: grid;
+  gap: 1rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.recommendation-meta {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.recommendation-role {
+  color: var(--gold-deep);
+  font-size: 0.95rem;
+}
+
+.recommendation-meta .meta-pill {
+  width: fit-content;
+}
+
+.recommendation-copy {
+  color: #38383d;
+}
+
 .quote-panel {
   display: grid;
   grid-template-columns: 180px minmax(0, 1fr);
@@ -832,6 +866,7 @@ pre {
   .resume-grid,
   .gallery-grid,
   .portfolio-metrics,
+  .recommendation-grid,
   .quote-panel,
   .site-footer {
     grid-template-columns: 1fr;
