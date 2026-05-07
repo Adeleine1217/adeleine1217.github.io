@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if meta_title %}{{ meta_title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if meta_description %}{{ meta_description }}{% else %}{{ site.description }}{% endif %}">
+    {% if site.google_site_verification %}
+      <meta name="google-site-verification" content="{{ site.google_site_verification }}">
+    {% endif %}
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-33P5ZZ5K3H"></script>
     <script>

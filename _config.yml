@@ -1,7 +1,9 @@
 title: Adeleine Wang
 description: Portfolio, CV, and writing by Adeleine Wang.
 baseurl: ""
-url: ""
+url: "https://adeleine1217.github.io"
+# Paste the token from Search Console's HTML tag method when ready.
+google_site_verification: ""
 markdown: kramdown
 collections:
   blog_en:
