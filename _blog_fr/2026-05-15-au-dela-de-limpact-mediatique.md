@@ -78,6 +78,26 @@ Si l'on admet que la saturation est reelle, la question suivante est : qu'est-ce
 
 Peu d'alliances cochent toutes les cases. Les plus interessantes sont celles qui marquent tres haut sur les criteres les plus pertinents pour leur moment.
 
+<div class="page-panel" style="margin:0.6rem 0;padding:clamp(1.8rem,4vw,2.8rem);">
+  <div class="idol-hero-grid" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:2.4rem;align-items:center;">
+    <div style="display:grid;gap:1.1rem;">
+      <span style="display:inline-flex;align-items:center;font-family:'Fragment Mono',ui-monospace,monospace;font-size:0.68rem;text-transform:uppercase;letter-spacing:0.15em;padding:0.3rem 0.85rem;border-radius:999px;background:rgba(16,24,60,0.06);color:#1a2050;border:1px solid rgba(16,24,60,0.18);width:fit-content;">Ambassadrice Mondiale Dior &middot; Depuis 2021</span>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,7vw,4.8rem);font-weight:600;line-height:0.9;letter-spacing:-0.04em;color:#202022;">Jisoo</div>
+      <div class="divider-line"></div>
+      <p class="accent-script">&laquo;&thinsp;Elle n&rsquo;interrompt pas la langue de la maison.&thinsp;&raquo;</p>
+      <div class="tag-row">
+        <span class="tag">Your Love</span>
+        <span class="tag">BLACKPINK &middot; Solo</span>
+        <span class="tag">2025</span>
+      </div>
+      <div><a class="button button-dark" href="https://www.youtube.com/watch?v=6y70hwfVeVU" target="_blank" rel="noopener noreferrer">Regarder sur YouTube ↗</a></div>
+    </div>
+    <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:24px;overflow:hidden;background:#111;box-shadow:0 18px 50px rgba(31,26,18,0.1);">
+      <iframe style="position:absolute;inset:0;width:100%;height:100%;border:none;" src="https://www.youtube.com/embed/6y70hwfVeVU" title="JISOO &ndash; Your Love Special Video | Rainforest Wild ASIA, Singapour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
+
 ## Etude de cas : Jisoo x Dior - l'architecture de la continuite
 
 Il est plutot difficile d'ecrire sur Jisoo sans glisser, brievement, dans le registre de l'admiration. Il y a quelque chose dans son visage - la machoire douce, la legere distance dans les yeux, la maniere dont son sourire arrive avec une demi-seconde de retenue - qui semble appartenir a une autre decennie. Elle a une beaute qui ne se demode pas. Ce qui est, a sa maniere, la qualification parfaite pour le role qu'elle perfectionne discretement depuis 2021.
@@ -96,6 +116,26 @@ Si l'on voulait une seule phrase pour decrire l'alliance, ce serait celle-ci : *
 
 C'est, me semble-t-il, la competence la plus rare du luxe, et l'on se demande, en regardant les photographies de l'AW26, si quelqu'un l'a faite aussi bien au cours de la derniere decennie.
 
+<div class="page-panel" style="margin:0.6rem 0;padding:clamp(1.8rem,4vw,2.8rem);">
+  <div class="idol-hero-grid" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:2.4rem;align-items:center;">
+    <div style="display:grid;gap:1.1rem;">
+      <span style="display:inline-flex;align-items:center;font-family:'Fragment Mono',ui-monospace,monospace;font-size:0.68rem;text-transform:uppercase;letter-spacing:0.15em;padding:0.3rem 0.85rem;border-radius:999px;background:rgba(210,100,150,0.07);color:#b03870;border:1px solid rgba(210,100,150,0.22);width:fit-content;">Ambassadrice Mode &amp; Beaute Miu Miu</span>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,7vw,4.8rem);font-weight:600;line-height:0.9;letter-spacing:-0.04em;color:#202022;">Wonyoung</div>
+      <div class="divider-line"></div>
+      <p class="accent-script">&laquo;&thinsp;La jeune fille comme aspiration, comme projet.&thinsp;&raquo;</p>
+      <div class="tag-row">
+        <span class="tag">BLACKHOLE</span>
+        <span class="tag">IVE 아이브</span>
+        <span class="tag">2026</span>
+      </div>
+      <div><a class="button button-dark" href="https://www.youtube.com/watch?v=1Lmy7qwmSMc" target="_blank" rel="noopener noreferrer">Regarder sur YouTube ↗</a></div>
+    </div>
+    <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:24px;overflow:hidden;background:#111;box-shadow:0 18px 50px rgba(31,26,18,0.1);">
+      <iframe style="position:absolute;inset:0;width:100%;height:100%;border:none;" src="https://www.youtube.com/embed/1Lmy7qwmSMc" title="IVE 아이브 &lsquo;BLACKHOLE&rsquo; MV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
+
 ## Etude de cas : Wonyoung x Miu Miu - la jeune fille curatee et la question du temps
 
 Il y a une qualite particuliere de jeune fille que Jang Wonyoung s'est entierement appropriee. Ce n'est pas exactement l'innocence ; ce n'est pas la naivete. C'est quelque chose de plus delibere - une forme de jeune fille polie, performee, presque dirigee artistiquement. Hyper-feminine, hyper-disciplinee, hyper-consciente de l'objectif. Avec ses noeuds roses et ses dentelles, mais jamais par accident. C'est la jeune fille comme aspiration, la jeune fille comme projet, la jeune fille comme une marque que l'on entretient en se levant a cinq heures du matin.
@@ -113,6 +153,26 @@ Wonyoung x Miu Miu obtient de tres bons resultats sur la justesse visuelle, cult
 On le soupconne, parce que Miu Miu est plutot intelligente precisement a ce sujet. La maison a soigneusement elargi le repertoire de Wonyoung - la mode d'abord, puis la joaillerie via Fred et Bvlgari, desormais la beaute et le parfum. Chaque categorie lui offre un registre legerement plus mur dans lequel grandir. Le noeud n'a pas besoin d'etre defait ; il a simplement besoin d'apprendre de nouvelles manieres d'etre noue.
 
 Il y a aussi, s'il faut etre honnete, quelque chose de plutot beau a regarder cette strategie se deployer en temps reel. Wonyoung a vingt-et-un ans. L'alliance en est encore a son premier chapitre. Le travail le plus interessant reste a venir.
+
+<div class="page-panel" style="margin:0.6rem 0;padding:clamp(1.8rem,4vw,2.8rem);">
+  <div class="idol-hero-grid" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:2.4rem;align-items:center;">
+    <div style="display:grid;gap:1.1rem;">
+      <span style="display:inline-flex;align-items:center;font-family:'Fragment Mono',ui-monospace,monospace;font-size:0.68rem;text-transform:uppercase;letter-spacing:0.15em;padding:0.3rem 0.85rem;border-radius:999px;background:rgba(140,20,40,0.06);color:#8c1428;border:1px solid rgba(140,20,40,0.18);width:fit-content;">Ambassadrice Mondiale Valentino &middot; 2026</span>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,7vw,4.8rem);font-weight:600;line-height:0.9;letter-spacing:-0.04em;color:#202022;">Liz</div>
+      <div class="divider-line"></div>
+      <p class="accent-script">&laquo;&thinsp;Une voix qui ressemble deja a son Valentino.&thinsp;&raquo;</p>
+      <div class="tag-row">
+        <span class="tag">BANG BANG</span>
+        <span class="tag">IVE 아이브 &middot; Liz</span>
+        <span class="tag">2026</span>
+      </div>
+      <div><a class="button button-dark" href="https://www.youtube.com/watch?v=_Y5f5I8-vN8" target="_blank" rel="noopener noreferrer">Regarder sur YouTube ↗</a></div>
+    </div>
+    <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:24px;overflow:hidden;background:#111;box-shadow:0 18px 50px rgba(31,26,18,0.1);">
+      <iframe style="position:absolute;inset:0;width:100%;height:100%;border:none;" src="https://www.youtube.com/embed/_Y5f5I8-vN8" title="IVE LIZ (아이브 리즈) &ndash; BANG BANG | Show! Music Core MBC 2026" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
 
 ## Etude de cas : Liz x Valentino - une nouvelle voix pour la reverie romantique de Michele
 
