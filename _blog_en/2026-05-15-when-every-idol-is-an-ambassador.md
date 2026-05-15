@@ -5,6 +5,7 @@ seo_title: "When Every Idol Is an Ambassador: Luxury Partnerships That Feel Beli
 date: 2026-05-15
 author: Adeleine Wang
 lang: en
+alt_url: /fr/blog/content/2026-05-15-au-dela-de-limpact-mediatique/
 cover_image: /assets/images/Blogs/ive-bang-bang.webp
 cover_alt: "IVE editorial group image in front of a blue car, used as the cover image for the article on believable luxury ambassador partnerships."
 tags:
