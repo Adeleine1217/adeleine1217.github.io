@@ -5,6 +5,8 @@ seo_title: "When Every Idol Is an Ambassador: Luxury Partnerships That Feel Beli
 date: 2026-05-15
 author: Adeleine Wang
 lang: en
+cover_image: /assets/images/Blogs/ive-bang-bang.webp
+cover_alt: "IVE editorial group image in front of a blue car, used as the cover image for the article on believable luxury ambassador partnerships."
 tags:
   - brand strategy
   - cultural marketing
