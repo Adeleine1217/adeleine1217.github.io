@@ -75,27 +75,22 @@ If one accepts that ambassador saturation is real, the next question is what dis
 
 Few partnerships score full marks on all six. The interesting ones tend to be those that score very high on the criteria most relevant to their particular moment.
 
-<div class="page-panel idol-hero" style="margin: 0.4rem 0;">
-  <div class="idol-hero-inner">
-    <div class="idol-hero-text">
-      <span class="idol-brand-badge idol-brand-badge--dior">Dior Global Ambassador &middot; Since 2021</span>
-      <h3 class="idol-hero-name">Jisoo</h3>
+<div class="page-panel" style="margin:0.6rem 0;padding:clamp(1.8rem,4vw,2.8rem);">
+  <div class="idol-hero-grid" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:2.4rem;align-items:center;">
+    <div style="display:grid;gap:1.1rem;">
+      <span style="display:inline-flex;align-items:center;font-family:'Fragment Mono',ui-monospace,monospace;font-size:0.68rem;text-transform:uppercase;letter-spacing:0.15em;padding:0.3rem 0.85rem;border-radius:999px;background:rgba(16,24,60,0.06);color:#1a2050;border:1px solid rgba(16,24,60,0.18);width:fit-content;">Dior Global Ambassador &middot; Since 2021</span>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,7vw,4.8rem);font-weight:600;line-height:0.9;letter-spacing:-0.04em;color:#202022;">Jisoo</div>
       <div class="divider-line"></div>
-      <p class="accent-script">"She does not interrupt the house's language."</p>
-      <p class="lede">BLACKPINK's Jisoo has spent five years becoming Dior's most articulate cultural translator &mdash; a face that softens heritage without disturbing it. Her solo work <em>Your Love</em> distils exactly the emotional register she brings to the maison: luminous, unhurried, and quietly unforgettable.</p>
+      <p class="accent-script">&ldquo;She does not interrupt the house&rsquo;s language.&rdquo;</p>
       <div class="tag-row">
         <span class="tag">Your Love</span>
-        <span class="tag">BLACKPINK · Solo</span>
+        <span class="tag">BLACKPINK &middot; Solo</span>
         <span class="tag">2025</span>
       </div>
-      <div class="button-row">
-        <a class="button button-dark" href="https://www.youtube.com/watch?v=6y70hwfVeVU" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a>
-      </div>
+      <div><a class="button button-dark" href="https://www.youtube.com/watch?v=6y70hwfVeVU" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a></div>
     </div>
-    <div>
-      <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/6y70hwfVeVU" title="JISOO – Your Love Special Video | Rainforest Wild ASIA, Singapore" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-      </div>
+    <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:24px;overflow:hidden;background:#111;box-shadow:0 18px 50px rgba(31,26,18,0.1);">
+      <iframe style="position:absolute;inset:0;width:100%;height:100%;border:none;" src="https://www.youtube.com/embed/6y70hwfVeVU" title="JISOO &ndash; Your Love Special Video | Rainforest Wild ASIA, Singapore" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
     </div>
   </div>
 </div>
@@ -118,27 +113,22 @@ If one wanted a single sentence to describe the partnership, it would be this: *
 
 That, it seems to me, is the rarest skill in luxury, and one wonders, looking at the AW26 photographs, whether anyone has done it quite as well in the past decade.
 
-<div class="page-panel idol-hero" style="margin: 0.4rem 0;">
-  <div class="idol-hero-inner">
-    <div class="idol-hero-text">
-      <span class="idol-brand-badge idol-brand-badge--miumiu">Miu Miu Fashion &amp; Beauty Ambassador</span>
-      <h3 class="idol-hero-name">Wonyoung</h3>
+<div class="page-panel" style="margin:0.6rem 0;padding:clamp(1.8rem,4vw,2.8rem);">
+  <div class="idol-hero-grid" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:2.4rem;align-items:center;">
+    <div style="display:grid;gap:1.1rem;">
+      <span style="display:inline-flex;align-items:center;font-family:'Fragment Mono',ui-monospace,monospace;font-size:0.68rem;text-transform:uppercase;letter-spacing:0.15em;padding:0.3rem 0.85rem;border-radius:999px;background:rgba(210,100,150,0.07);color:#b03870;border:1px solid rgba(210,100,150,0.22);width:fit-content;">Miu Miu Fashion &amp; Beauty Ambassador</span>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,7vw,4.8rem);font-weight:600;line-height:0.9;letter-spacing:-0.04em;color:#202022;">Wonyoung</div>
       <div class="divider-line"></div>
-      <p class="accent-script">"Girlhood as aspiration, girlhood as project."</p>
-      <p class="lede">IVE's main visual and K-pop's reigning icon of curated femininity. At a single Paris Fashion Week, her presence generated an estimated $3 million in media impact value. <em>BLACKHOLE</em> captures everything Miu Miu discovered in her: precise, aspirational, and impossible to look away from.</p>
+      <p class="accent-script">&ldquo;Girlhood as aspiration, girlhood as project.&rdquo;</p>
       <div class="tag-row">
         <span class="tag">BLACKHOLE</span>
         <span class="tag">IVE 아이브</span>
         <span class="tag">2026</span>
       </div>
-      <div class="button-row">
-        <a class="button button-dark" href="https://www.youtube.com/watch?v=1Lmy7qwmSMc" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a>
-      </div>
+      <div><a class="button button-dark" href="https://www.youtube.com/watch?v=1Lmy7qwmSMc" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a></div>
     </div>
-    <div>
-      <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/1Lmy7qwmSMc" title="IVE 아이브 'BLACKHOLE' MV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-      </div>
+    <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:24px;overflow:hidden;background:#111;box-shadow:0 18px 50px rgba(31,26,18,0.1);">
+      <iframe style="position:absolute;inset:0;width:100%;height:100%;border:none;" src="https://www.youtube.com/embed/1Lmy7qwmSMc" title="IVE 아이브 &lsquo;BLACKHOLE&rsquo; MV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
     </div>
   </div>
 </div>
@@ -161,27 +151,22 @@ One suspects it will, because Miu Miu is rather clever about exactly this. The m
 
 There is also, if one is being honest, something rather lovely about watching this strategy unfold in real time. Wonyoung is twenty-one. The partnership is still on its first chapter. The most interesting work is still ahead.
 
-<div class="page-panel idol-hero" style="margin: 0.4rem 0;">
-  <div class="idol-hero-inner">
-    <div class="idol-hero-text">
-      <span class="idol-brand-badge idol-brand-badge--valentino">Valentino Global Brand Ambassador &middot; 2026</span>
-      <h3 class="idol-hero-name">Liz</h3>
+<div class="page-panel" style="margin:0.6rem 0;padding:clamp(1.8rem,4vw,2.8rem);">
+  <div class="idol-hero-grid" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:2.4rem;align-items:center;">
+    <div style="display:grid;gap:1.1rem;">
+      <span style="display:inline-flex;align-items:center;font-family:'Fragment Mono',ui-monospace,monospace;font-size:0.68rem;text-transform:uppercase;letter-spacing:0.15em;padding:0.3rem 0.85rem;border-radius:999px;background:rgba(140,20,40,0.06);color:#8c1428;border:1px solid rgba(140,20,40,0.18);width:fit-content;">Valentino Global Brand Ambassador &middot; 2026</span>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,7vw,4.8rem);font-weight:600;line-height:0.9;letter-spacing:-0.04em;color:#202022;">Liz</div>
       <div class="divider-line"></div>
-      <p class="accent-script">"A voice that already sounds like his Valentino."</p>
-      <p class="lede">IVE's Tone Fairy &mdash; and Alessandro Michele's most quietly brilliant casting decision. Her <em>BANG BANG</em> performance distils everything Michele's Valentino is reaching for: emotional depth worn lightly, technique softened by sincerity, beauty that lingers after the room has gone quiet.</p>
+      <p class="accent-script">&ldquo;A voice that already sounds like his Valentino.&rdquo;</p>
       <div class="tag-row">
         <span class="tag">BANG BANG</span>
-        <span class="tag">IVE 아이브 · Liz</span>
+        <span class="tag">IVE 아이브 &middot; Liz</span>
         <span class="tag">2026</span>
       </div>
-      <div class="button-row">
-        <a class="button button-dark" href="https://www.youtube.com/watch?v=_Y5f5I8-vN8" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a>
-      </div>
+      <div><a class="button button-dark" href="https://www.youtube.com/watch?v=_Y5f5I8-vN8" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a></div>
     </div>
-    <div>
-      <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/_Y5f5I8-vN8" title="IVE LIZ (아이브 리즈) – BANG BANG | Show! Music Core MBC 2026" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-      </div>
+    <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:24px;overflow:hidden;background:#111;box-shadow:0 18px 50px rgba(31,26,18,0.1);">
+      <iframe style="position:absolute;inset:0;width:100%;height:100%;border:none;" src="https://www.youtube.com/embed/_Y5f5I8-vN8" title="IVE LIZ (아이브 리즈) &ndash; BANG BANG | Show! Music Core MBC 2026" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
     </div>
   </div>
 </div>

@@ -939,7 +939,8 @@ pre {
   .portfolio-metrics,
   .recommendation-grid,
   .quote-panel,
-  .site-footer {
+  .site-footer,
+  .idol-hero-grid {
     grid-template-columns: 1fr;
   }
 
