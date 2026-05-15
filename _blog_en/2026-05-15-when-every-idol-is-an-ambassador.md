@@ -75,6 +75,31 @@ If one accepts that ambassador saturation is real, the next question is what dis
 
 Few partnerships score full marks on all six. The interesting ones tend to be those that score very high on the criteria most relevant to their particular moment.
 
+<div class="page-panel idol-hero" style="margin: 0.4rem 0;">
+  <div class="idol-hero-inner">
+    <div class="idol-hero-text">
+      <span class="idol-brand-badge idol-brand-badge--dior">Dior Global Ambassador &middot; Since 2021</span>
+      <h3 class="idol-hero-name">Jisoo</h3>
+      <div class="divider-line"></div>
+      <p class="accent-script">"She does not interrupt the house's language."</p>
+      <p class="lede">BLACKPINK's Jisoo has spent five years becoming Dior's most articulate cultural translator &mdash; a face that softens heritage without disturbing it. Her solo work <em>Your Love</em> distils exactly the emotional register she brings to the maison: luminous, unhurried, and quietly unforgettable.</p>
+      <div class="tag-row">
+        <span class="tag">Your Love</span>
+        <span class="tag">BLACKPINK · Solo</span>
+        <span class="tag">2025</span>
+      </div>
+      <div class="button-row">
+        <a class="button button-dark" href="https://www.youtube.com/watch?v=6y70hwfVeVU" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a>
+      </div>
+    </div>
+    <div>
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/6y70hwfVeVU" title="JISOO – Your Love Special Video | Rainforest Wild ASIA, Singapore" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
 ## Case Study: Jisoo x Dior - The Architecture of Continuity
 
 It is rather difficult to write about Jisoo without slipping, briefly, into the register of admiration. There is something about her face - the soft jaw, the gentle distance in her eyes, the way her smile arrives with a half-second of restraint - that seems to belong to another decade entirely. She has a kind of beauty that does not date. Which is, in its way, the perfect qualification for the role she has been quietly perfecting since 2021.
@@ -93,6 +118,31 @@ If one wanted a single sentence to describe the partnership, it would be this: *
 
 That, it seems to me, is the rarest skill in luxury, and one wonders, looking at the AW26 photographs, whether anyone has done it quite as well in the past decade.
 
+<div class="page-panel idol-hero" style="margin: 0.4rem 0;">
+  <div class="idol-hero-inner">
+    <div class="idol-hero-text">
+      <span class="idol-brand-badge idol-brand-badge--miumiu">Miu Miu Fashion &amp; Beauty Ambassador</span>
+      <h3 class="idol-hero-name">Wonyoung</h3>
+      <div class="divider-line"></div>
+      <p class="accent-script">"Girlhood as aspiration, girlhood as project."</p>
+      <p class="lede">IVE's main visual and K-pop's reigning icon of curated femininity. At a single Paris Fashion Week, her presence generated an estimated $3 million in media impact value. <em>BLACKHOLE</em> captures everything Miu Miu discovered in her: precise, aspirational, and impossible to look away from.</p>
+      <div class="tag-row">
+        <span class="tag">BLACKHOLE</span>
+        <span class="tag">IVE 아이브</span>
+        <span class="tag">2026</span>
+      </div>
+      <div class="button-row">
+        <a class="button button-dark" href="https://www.youtube.com/watch?v=1Lmy7qwmSMc" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a>
+      </div>
+    </div>
+    <div>
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/1Lmy7qwmSMc" title="IVE 아이브 'BLACKHOLE' MV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
 ## Case Study: Wonyoung x Miu Miu - Curated Girlhood and the Question of Time
 
 There is a particular quality of girlhood that Jang Wonyoung has made entirely her own. It is not innocence, exactly; it is not naivete. It is something more deliberate - a kind of polished, performed, almost art-directed girlhood. Hyper-feminine, hyper-disciplined, hyper-aware of the camera. Pink-bowed and lace-trimmed, but never accidentally so. It is girlhood as aspiration, girlhood as project, girlhood as a brand one wakes up at five in the morning to maintain.
@@ -110,6 +160,31 @@ Wonyoung x Miu Miu scores beautifully on visual fit, cultural fit, product fit, 
 One suspects it will, because Miu Miu is rather clever about exactly this. The maison has been carefully expanding Wonyoung's repertoire - fashion first, then jewellery via Fred and Bvlgari, now beauty and fragrance. Each category gives her a slightly older register to grow into. The bow does not have to be untied; it simply needs to learn new ways to be tied.
 
 There is also, if one is being honest, something rather lovely about watching this strategy unfold in real time. Wonyoung is twenty-one. The partnership is still on its first chapter. The most interesting work is still ahead.
+
+<div class="page-panel idol-hero" style="margin: 0.4rem 0;">
+  <div class="idol-hero-inner">
+    <div class="idol-hero-text">
+      <span class="idol-brand-badge idol-brand-badge--valentino">Valentino Global Brand Ambassador &middot; 2026</span>
+      <h3 class="idol-hero-name">Liz</h3>
+      <div class="divider-line"></div>
+      <p class="accent-script">"A voice that already sounds like his Valentino."</p>
+      <p class="lede">IVE's Tone Fairy &mdash; and Alessandro Michele's most quietly brilliant casting decision. Her <em>BANG BANG</em> performance distils everything Michele's Valentino is reaching for: emotional depth worn lightly, technique softened by sincerity, beauty that lingers after the room has gone quiet.</p>
+      <div class="tag-row">
+        <span class="tag">BANG BANG</span>
+        <span class="tag">IVE 아이브 · Liz</span>
+        <span class="tag">2026</span>
+      </div>
+      <div class="button-row">
+        <a class="button button-dark" href="https://www.youtube.com/watch?v=_Y5f5I8-vN8" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a>
+      </div>
+    </div>
+    <div>
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/_Y5f5I8-vN8" title="IVE LIZ (아이브 리즈) – BANG BANG | Show! Music Core MBC 2026" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
 
 ## Case Study: Liz x Valentino - A New Voice for Michele's Romantic Reverie
 
