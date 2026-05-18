@@ -407,6 +407,9 @@ p {
 }
 
 .stat-card {
+  --home-reveal-y: 0px;
+  --home-tilt-x: 0deg;
+  --home-tilt-y: 0deg;
   background: rgba(255, 255, 255, 0.72);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
@@ -416,6 +419,10 @@ p {
   align-content: start;
   gap: 0.3rem;
   box-shadow: var(--shadow-soft);
+  transform: translateY(var(--home-reveal-y)) rotateX(var(--home-tilt-x)) rotateY(var(--home-tilt-y));
+  transform-style: preserve-3d;
+  transition: opacity 0.65s ease, transform 0.3s ease, box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+  will-change: transform;
 }
 
 .stat-card p {
@@ -451,6 +458,9 @@ p {
 }
 
 .recommendation-card {
+  --home-reveal-y: 0px;
+  --home-tilt-x: 0deg;
+  --home-tilt-y: 0deg;
   background: rgba(255, 255, 255, 0.72);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
@@ -458,6 +468,54 @@ p {
   display: grid;
   gap: 1rem;
   box-shadow: var(--shadow-soft);
+  transform: translateY(var(--home-reveal-y)) rotateX(var(--home-tilt-x)) rotateY(var(--home-tilt-y));
+  transform-style: preserve-3d;
+  transition: opacity 0.65s ease, transform 0.3s ease, box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+  will-change: transform;
+}
+
+.home-js-ready .home-reveal-target {
+  --home-reveal-y: 18px;
+  opacity: 0;
+  transition-delay: calc(var(--home-reveal-index, 0) * 75ms);
+}
+
+.home-js-ready .home-reveal-target.is-visible {
+  --home-reveal-y: 0px;
+  opacity: 1;
+}
+
+.home-js-ready .stat-card.is-active {
+  border-color: rgba(77, 86, 196, 0.34);
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 18px 44px rgba(77, 86, 196, 0.1), var(--shadow-soft);
+  transform: translateY(calc(var(--home-reveal-y) - 4px)) rotateX(var(--home-tilt-x)) rotateY(var(--home-tilt-y)) scale(1.012);
+}
+
+.home-js-ready .stat-card.is-active strong {
+  color: #b38b3f;
+  text-shadow: 0 8px 28px rgba(197, 160, 89, 0.2);
+}
+
+.home-js-ready .recommendation-card:hover {
+  border-color: rgba(197, 160, 89, 0.42);
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 18px 44px rgba(31, 26, 18, 0.08), var(--shadow-soft);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-js-ready .home-reveal-target,
+  .home-js-ready .home-reveal-target.is-visible {
+    --home-reveal-y: 0px;
+    opacity: 1;
+    transition: none;
+  }
+
+  .stat-card,
+  .recommendation-card,
+  .home-js-ready .stat-card.is-active {
+    transform: none;
+  }
 }
 
 .recommendation-meta {

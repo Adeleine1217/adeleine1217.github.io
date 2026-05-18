@@ -16,6 +16,15 @@
   revealTargets.forEach((target, index) => {
     target.classList.add("home-reveal-target");
     target.style.setProperty("--home-reveal-index", index % 6);
+    target.addEventListener(
+      "transitionend",
+      (event) => {
+        if (event.propertyName === "opacity") {
+          target.style.setProperty("--home-reveal-index", 0);
+        }
+      },
+      { once: true }
+    );
   });
 
   if (reduceMotion) {
