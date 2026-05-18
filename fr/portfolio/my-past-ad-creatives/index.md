@@ -34,51 +34,29 @@ alt_url: /portfolio/my-past-ad-creatives/
 
   <div class="ad-framework-slide-grid">
     <article class="ad-framework-item">
-      <div class="ad-framework-icon" aria-hidden="true">
-        <svg viewBox="0 0 48 48" focusable="false">
-          <rect x="7" y="10" width="34" height="28" rx="4"></rect>
-          <circle cx="17" cy="20" r="3"></circle>
-          <path d="M10 35l10-10 7 7 6-6 7 8"></path>
-        </svg>
-      </div>
-      <h3><span>Type 1 - Branding</span></h3>
+      <div class="ad-framework-num">01</div>
+      <h3>Type 1 — Branding</h3>
       <p><strong>Responsable :</strong> equipe design, sous ma direction creative.</p>
       <p>Construire la confiance et une perception produit plus premium pour des scenarios sociaux a forte intention, avec un langage visuel coherent.</p>
     </article>
 
     <article class="ad-framework-item">
-      <div class="ad-framework-icon" aria-hidden="true">
-        <svg viewBox="0 0 48 48" focusable="false">
-          <circle cx="24" cy="24" r="17"></circle>
-          <circle cx="18" cy="20" r="1.8"></circle>
-          <circle cx="30" cy="20" r="1.8"></circle>
-          <path d="M16 28c3 4 13 4 16 0"></path>
-        </svg>
-      </div>
-      <h3><span>Type 2 - Meme / Native</span></h3>
+      <div class="ad-framework-num">02</div>
+      <h3>Type 2 — Meme / Native</h3>
       <p><strong>Responsable :</strong> execution par un membre d'equipe / subordinate, strategie pilotee par moi.</p>
       <p>Tester a faible cout des observations sociales, identifier rapidement les angles CTR et parler dans un langage natif de la plateforme.</p>
     </article>
 
     <article class="ad-framework-item">
-      <div class="ad-framework-icon" aria-hidden="true">
-        <svg viewBox="0 0 48 48" focusable="false">
-          <circle cx="24" cy="16" r="7"></circle>
-          <path d="M12 39c2.4-8 21.6-8 24 0"></path>
-        </svg>
-      </div>
-      <h3><span>Type 3 - UGC + KOL</span></h3>
+      <div class="ad-framework-num">03</div>
+      <h3>Type 3 — UGC + KOL</h3>
       <p><strong>Responsable :</strong> selection KOL et angle creative pilotes par moi, avec support equipe.</p>
       <p>Creer de l'authenticite, reduire la barriere psychologique liee aux rencontres avec des inconnus et renforcer la confiance avant conversion.</p>
     </article>
 
     <article class="ad-framework-item">
-      <div class="ad-framework-icon" aria-hidden="true">
-        <svg viewBox="0 0 48 48" focusable="false">
-          <path d="M27 5L12 27h12l-3 16 15-23H24z"></path>
-        </svg>
-      </div>
-      <h3><span>Type 4 - Hook / Situation emotionnelle</span></h3>
+      <div class="ad-framework-num">04</div>
+      <h3>Type 4 — Hook / Situation émotionnelle</h3>
       <p><strong>Responsable :</strong> direction conceptuelle pilotee par moi, puis execution assignee selon le type d'asset.</p>
       <p>Utiliser les une a trois premieres secondes pour activer solitude, curiosite, desir, identification, reassurance ou preuve sociale.</p>
     </article>
