@@ -955,6 +955,9 @@ p {
 }
 
 .ad-framework-item {
+  --reveal-y: 0px;
+  --tilt-x: 0deg;
+  --tilt-y: 0deg;
   display: grid;
   gap: 0.8rem;
   align-content: start;
@@ -963,7 +966,10 @@ p {
   border: 1px solid var(--line);
   border-radius: 20px;
   box-shadow: 0 8px 28px rgba(31, 26, 18, 0.05);
-  transition: box-shadow 0.25s ease;
+  transform: translateY(var(--reveal-y)) rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
+  transform-style: preserve-3d;
+  transition: opacity 0.65s ease, transform 0.3s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  will-change: transform;
 }
 
 .ad-framework-item:hover {
@@ -1027,11 +1033,18 @@ p {
 }
 
 .ad-role-card {
+  --reveal-y: 0px;
+  --tilt-x: 0deg;
+  --tilt-y: 0deg;
   display: grid;
   gap: 0.65rem;
   padding: 1.15rem 1.2rem;
   border-radius: 14px;
   border-left: 4px solid rgba(197, 160, 89, 0.55);
+  transform: translateY(var(--reveal-y)) rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
+  transform-style: preserve-3d;
+  transition: opacity 0.65s ease, transform 0.3s ease, box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+  will-change: transform;
 }
 
 .ad-role-card--lead {
@@ -1080,7 +1093,16 @@ p {
   transform: translateY(-50%);
 }
 
+.ad-rules-slide.is-running .ad-flow-track::before {
+  background: linear-gradient(90deg, rgba(197, 160, 89, 0.22), rgba(77, 86, 196, 0.72), rgba(197, 160, 89, 0.22));
+  background-size: 220% 100%;
+  animation: adFlowLine 3.9s ease-in-out infinite;
+}
+
 .ad-flow-card {
+  --reveal-y: 0px;
+  --tilt-x: 0deg;
+  --tilt-y: 0deg;
   position: relative;
   z-index: 1;
   display: grid;
@@ -1089,6 +1111,10 @@ p {
   padding: 1rem;
   border-radius: 10px;
   text-align: center;
+  transform: translateY(var(--reveal-y)) rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
+  transform-style: preserve-3d;
+  transition: opacity 0.65s ease, transform 0.3s ease, box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+  will-change: transform;
 }
 
 .ad-flow-card:nth-child(2)::before {
@@ -1122,12 +1148,15 @@ p {
 }
 
 .ad-scale-rules article {
+  --reveal-y: 0px;
   display: grid;
   gap: 0.6rem;
   padding: 1rem 1rem 0.9rem;
   border-radius: 12px;
   border-top: 2px solid var(--line-strong);
   background: rgba(255, 253, 250, 0.85);
+  transform: translateY(var(--reveal-y));
+  transition: opacity 0.65s ease, transform 0.3s ease, box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease;
 }
 
 .ad-scale-rules span {
@@ -1137,6 +1166,74 @@ p {
 .ad-rules-note {
   max-width: 92ch;
   font-size: 1.05rem;
+}
+
+.ad-js-ready .ad-reveal-target {
+  --reveal-y: 18px;
+  opacity: 0;
+  transition-delay: calc(var(--reveal-index, 0) * 70ms);
+}
+
+.ad-js-ready .ad-reveal-target.is-visible {
+  --reveal-y: 0px;
+  opacity: 1;
+}
+
+.ad-flow-card.is-active,
+.ad-scale-rules article.is-active {
+  border-color: rgba(77, 86, 196, 0.42);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 18px 44px rgba(77, 86, 196, 0.12), var(--shadow-soft);
+}
+
+.ad-flow-card.is-active {
+  transform: translateY(calc(var(--reveal-y) - 4px)) rotateX(var(--tilt-x)) rotateY(var(--tilt-y)) scale(1.015);
+}
+
+.ad-scale-rules article.is-active {
+  transform: translateY(calc(var(--reveal-y) - 4px));
+}
+
+.ad-flow-card.is-active span,
+.ad-scale-rules article.is-active span {
+  background: rgba(77, 86, 196, 0.18);
+  color: #3f49b8;
+}
+
+@keyframes adFlowLine {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ad-js-ready .ad-reveal-target,
+  .ad-js-ready .ad-reveal-target.is-visible {
+    --reveal-y: 0px;
+    opacity: 1;
+    transition: none;
+  }
+
+  .ad-framework-item,
+  .ad-role-card,
+  .ad-flow-card,
+  .ad-scale-rules article,
+  .ad-flow-card.is-active,
+  .ad-scale-rules article.is-active {
+    transform: none;
+  }
+
+  .ad-rules-slide.is-running .ad-flow-track::before {
+    animation: none;
+  }
 }
 
 .ad-leadership-grid {

@@ -342,3 +342,5 @@ alt_url: /portfolio/my-past-ad-creatives/
 
   <p class="ad-rules-note">Ces assets montrent comment j'ai donne a l'equipe un cadre de recherche, de test et d'iteration data pour produire des creatives capables de convertir. Le langage creative final etait ensuite recalibre pour le marche cible et un positionnement social premium.</p>
 </section>
+
+<script src="{{ '/assets/js/ad-creatives.js' | relative_url }}" defer></script>
