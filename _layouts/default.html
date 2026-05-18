@@ -52,6 +52,7 @@
             <a href="{{ '/fr/cv/' | relative_url }}" {% if page.url == '/fr/cv/' %}aria-current="page"{% endif %}>Mon CV</a>
             <a href="{{ '/fr/blog/' | relative_url }}" {% if page.url == '/fr/blog/' %}aria-current="page"{% endif %}>Mon Blog</a>
             <a href="{{ '/fr/portfolio/' | relative_url }}" {% if page.url == '/fr/portfolio/' %}aria-current="page"{% endif %}>Mes Creations</a>
+            <a href="{{ '/fr/portfolio/my-past-ad-creatives/' | relative_url }}" {% if page.url == '/fr/portfolio/my-past-ad-creatives/' %}aria-current="page"{% endif %}>Ads Creatives</a>
           {% else %}
             <a href="{{ '/cv/' | relative_url }}" {% if page.url == '/cv/' %}aria-current="page"{% endif %}>My Resume</a>
             <a href="{{ '/blog/' | relative_url }}" {% if page.url == '/blog/' %}aria-current="page"{% endif %}>My Blog</a>
@@ -97,11 +98,13 @@
             <a class="footer-link" href="{{ '/fr/cv/' | relative_url }}">Mon CV</a>
             <a class="footer-link" href="{{ '/fr/blog/' | relative_url }}">Mon Blog</a>
             <a class="footer-link" href="{{ '/fr/portfolio/' | relative_url }}">Mes Creations</a>
+            <a class="footer-link" href="{{ '/fr/portfolio/my-past-ad-creatives/' | relative_url }}">Ads Creatives</a>
           {% else %}
             <a class="footer-link" href="{{ '/' | relative_url }}">My Home Page</a>
             <a class="footer-link" href="{{ '/cv/' | relative_url }}">My Resume</a>
             <a class="footer-link" href="{{ '/blog/' | relative_url }}">My Blog</a>
             <a class="footer-link" href="{{ '/portfolio/' | relative_url }}">My Creations</a>
+            <a class="footer-link" href="{{ '/portfolio/my-past-ad-creatives/' | relative_url }}">My Past Ad Creatives</a>
           {% endif %}
         </div>
       </footer>

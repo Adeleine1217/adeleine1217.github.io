@@ -1,34 +1,34 @@
 ---
 layout: default
-title: My Past Ad Creatives
-seo_title: My Past Ad Creatives | Meta Ads Portfolio | Adeleine Wang
-description: A dedicated portfolio page featuring Meta ad creatives produced by Adeleine Wang, organized by a four-part paid social creative framework and team-led testing workflow.
-lang: en
-alt_url: /fr/portfolio/my-past-ad-creatives/
+title: Mes anciennes creations publicitaires
+seo_title: Mes anciennes creations publicitaires | Portfolio Meta Ads | Adeleine Wang
+description: Une page portfolio dediee aux creatives Meta Ads produits par Adeleine Wang, organises par un framework paid social en quatre types et un workflow de test pilote en equipe.
+lang: fr
+alt_url: /portfolio/my-past-ad-creatives/
 ---
 <section class="page-panel ad-hero-panel">
   <div class="ad-hero-copy">
-    <div class="eyebrow">Paid Social Portfolio</div>
+    <div class="eyebrow">Portfolio Paid Social</div>
     <p class="accent-script">La preuve par les creatives</p>
-    <h1>My Past Ad Creatives</h1>
-    <p class="lede">A Meta Ads creative archive showing the paid social assets I produced, and the operating system I used to guide research, creative briefs, testing rules, and iteration.</p>
+    <h1>Mes anciennes creations publicitaires</h1>
+    <p class="lede">Une archive de creatives Meta Ads que j'ai produits, avec le systeme operationnel utilise pour guider la recherche, les briefs creatifs, les regles de test et l'iteration.</p>
     <div class="pill-row">
-      <span class="soft-pill">All displayed creatives produced by me</span>
-      <span class="soft-pill">Meta Ads / social app acquisition</span>
-      <span class="soft-pill">Four-type creative framework</span>
+      <span class="soft-pill">Tous les creatives presentes ont ete produits par moi</span>
+      <span class="soft-pill">Meta Ads / acquisition pour app sociale</span>
+      <span class="soft-pill">Framework creatif en quatre types</span>
     </div>
   </div>
   <div class="ad-hero-note">
-    <span class="micro-label">Creative Direction</span>
-    <p>I led the paid ad workflow from competitive research to deployable creative assets: defining the research framework, writing creative briefs, and deciding the creative mix behind each testing batch.</p>
+    <span class="micro-label">Direction Creative</span>
+    <p>J'ai pilote le workflow paid ad depuis la recherche concurrentielle jusqu'aux assets prets a etre lances : definition du framework de recherche, redaction des briefs creatifs et choix du mix creative pour chaque batch de test.</p>
   </div>
 </section>
 
 <section class="page-panel ad-slide-panel ad-framework-slide">
-  <div class="ad-slide-badge">Creative Framework</div>
+  <div class="ad-slide-badge">Framework Creative</div>
   <div class="ad-slide-heading">
-    <h2>My Four-Type Creative Framework</h2>
-    <p>Social app creatives are not only about looking polished. They need to answer quickly: why should I download, who will I meet, is this safe, and does this fit my identity?</p>
+    <h2>Mon framework creative en quatre types</h2>
+    <p>Pour une app sociale, un creative ne doit pas seulement etre joli. Il doit repondre vite : pourquoi telecharger, qui vais-je rencontrer, est-ce rassurant, et est-ce que cela correspond a mon identite ?</p>
   </div>
 
   <div class="ad-framework-slide-grid">
@@ -41,8 +41,8 @@ alt_url: /fr/portfolio/my-past-ad-creatives/
         </svg>
       </div>
       <h3><span>Type 1 - Branding</span></h3>
-      <p><strong>Owner:</strong> design team, under my creative direction.</p>
-      <p>Build trust and premium product quality for high-intent social scenarios, with consistent visual language across paid touchpoints.</p>
+      <p><strong>Responsable :</strong> equipe design, sous ma direction creative.</p>
+      <p>Construire la confiance et une perception produit plus premium pour des scenarios sociaux a forte intention, avec un langage visuel coherent.</p>
     </article>
 
     <article class="ad-framework-item">
@@ -55,8 +55,8 @@ alt_url: /fr/portfolio/my-past-ad-creatives/
         </svg>
       </div>
       <h3><span>Type 2 - Meme / Native</span></h3>
-      <p><strong>Owner:</strong> team member / subordinate execution, strategy directed by me.</p>
-      <p>Use low-cost social observations for prospecting, fast CTR signal discovery, and platform-native language.</p>
+      <p><strong>Responsable :</strong> execution par un membre d'equipe / subordinate, strategie pilotee par moi.</p>
+      <p>Tester a faible cout des observations sociales, identifier rapidement les angles CTR et parler dans un langage natif de la plateforme.</p>
     </article>
 
     <article class="ad-framework-item">
@@ -67,8 +67,8 @@ alt_url: /fr/portfolio/my-past-ad-creatives/
         </svg>
       </div>
       <h3><span>Type 3 - UGC + KOL</span></h3>
-      <p><strong>Owner:</strong> KOL selection and creative angle led by me with team support.</p>
-      <p>Create authenticity, reduce the psychological barrier of meeting strangers, and increase trust before conversion.</p>
+      <p><strong>Responsable :</strong> selection KOL et angle creative pilotes par moi, avec support equipe.</p>
+      <p>Creer de l'authenticite, reduire la barriere psychologique liee aux rencontres avec des inconnus et renforcer la confiance avant conversion.</p>
     </article>
 
     <article class="ad-framework-item">
@@ -77,9 +77,9 @@ alt_url: /fr/portfolio/my-past-ad-creatives/
           <path d="M27 5L12 27h12l-3 16 15-23H24z"></path>
         </svg>
       </div>
-      <h3><span>Type 4 - Hook / Emotional Situation</span></h3>
-      <p><strong>Owner:</strong> I led the concept direction, then assigned execution by asset type.</p>
-      <p>Use the first one to three seconds to activate loneliness, curiosity, desire, identity fit, safety reassurance, or social proof.</p>
+      <h3><span>Type 4 - Hook / Situation emotionnelle</span></h3>
+      <p><strong>Responsable :</strong> direction conceptuelle pilotee par moi, puis execution assignee selon le type d'asset.</p>
+      <p>Utiliser les une a trois premieres secondes pour activer solitude, curiosite, desir, identification, reassurance ou preuve sociale.</p>
     </article>
   </div>
 </section>
@@ -87,72 +87,72 @@ alt_url: /fr/portfolio/my-past-ad-creatives/
 <section class="page-panel ad-category-section">
   <div class="section-heading">
     <div class="eyebrow">Type 1 - Branding</div>
-    <h2>Branding Creatives</h2>
-    <p class="lede">These assets establish trust, product polish, and a more premium app impression while keeping the creative language consistent enough for repeated paid exposure.</p>
+    <h2>Creatives Branding</h2>
+    <p class="lede">Ces assets installent la confiance, la qualite produit et une perception plus premium de l'app, tout en gardant une coherence visuelle sur les points de contact paid.</p>
   </div>
 
   <div class="ad-creative-grid">
     <article class="ad-creative-card">
       <div class="ad-creative-media">
-        <img src="/assets/images/meta-ads/0919_Ad5_Image_UI_LucaChloe_Branding.png" alt="Branding Meta ad creative 01">
+        <img src="/assets/images/meta-ads/0919_Ad5_Image_UI_LucaChloe_Branding.png" alt="Creative Meta Ads branding 01">
       </div>
       <div class="ad-creative-copy">
         <span class="micro-label">Branding</span>
-        <h3>Branding Creative 01</h3>
+        <h3>Creative Branding 01</h3>
       </div>
     </article>
     <article class="ad-creative-card">
       <div class="ad-creative-media">
-        <img src="/assets/images/meta-ads/0919_Ad3_Image_UI_Camille%EF%BC%BFBranding.png" alt="Branding Meta ad creative 02">
+        <img src="/assets/images/meta-ads/0919_Ad3_Image_UI_Camille%EF%BC%BFBranding.png" alt="Creative Meta Ads branding 02">
       </div>
       <div class="ad-creative-copy">
         <span class="micro-label">Branding</span>
-        <h3>Branding Creative 02</h3>
+        <h3>Creative Branding 02</h3>
       </div>
     </article>
     <article class="ad-creative-card">
       <div class="ad-creative-media">
-        <img src="/assets/images/meta-ads/1009_UI_Image_Noemie_Branding_V1.jpg" alt="Branding Meta ad creative 03">
+        <img src="/assets/images/meta-ads/1009_UI_Image_Noemie_Branding_V1.jpg" alt="Creative Meta Ads branding 03">
       </div>
       <div class="ad-creative-copy">
         <span class="micro-label">Branding</span>
-        <h3>Branding Creative 03</h3>
+        <h3>Creative Branding 03</h3>
       </div>
     </article>
     <article class="ad-creative-card">
       <div class="ad-creative-media">
-        <img src="/assets/images/meta-ads/1009_UI_Image_HaEun_Branding_V1.png" alt="Branding Meta ad creative 04">
+        <img src="/assets/images/meta-ads/1009_UI_Image_HaEun_Branding_V1.png" alt="Creative Meta Ads branding 04">
       </div>
       <div class="ad-creative-copy">
         <span class="micro-label">Branding</span>
-        <h3>Branding Creative 04</h3>
+        <h3>Creative Branding 04</h3>
       </div>
     </article>
     <article class="ad-creative-card">
       <div class="ad-creative-media">
-        <img src="/assets/images/meta-ads/0919_Ad4_Image_UI_Harper_Branding.png" alt="Branding Meta ad creative 05">
+        <img src="/assets/images/meta-ads/0919_Ad4_Image_UI_Harper_Branding.png" alt="Creative Meta Ads branding 05">
       </div>
       <div class="ad-creative-copy">
         <span class="micro-label">Branding</span>
-        <h3>Branding Creative 05</h3>
+        <h3>Creative Branding 05</h3>
       </div>
     </article>
     <article class="ad-creative-card">
       <div class="ad-creative-media">
-        <img src="/assets/images/meta-ads/Ad%20Creative%206_branding.png" alt="Branding Meta ad creative 06">
+        <img src="/assets/images/meta-ads/Ad%20Creative%206_branding.png" alt="Creative Meta Ads branding 06">
       </div>
       <div class="ad-creative-copy">
         <span class="micro-label">Branding</span>
-        <h3>Branding Creative 06</h3>
+        <h3>Creative Branding 06</h3>
       </div>
     </article>
     <article class="ad-creative-card">
       <div class="ad-creative-media">
-        <img src="/assets/images/meta-ads/Ad%20Creative%202_branding.png" alt="Branding Meta ad creative 07">
+        <img src="/assets/images/meta-ads/Ad%20Creative%202_branding.png" alt="Creative Meta Ads branding 07">
       </div>
       <div class="ad-creative-copy">
         <span class="micro-label">Branding</span>
-        <h3>Branding Creative 07</h3>
+        <h3>Creative Branding 07</h3>
       </div>
     </article>
   </div>
@@ -161,63 +161,63 @@ alt_url: /fr/portfolio/my-past-ad-creatives/
 <section class="page-panel ad-category-section">
   <div class="section-heading">
     <div class="eyebrow">Type 2 - Meme / Native</div>
-    <h2>Meme And Native-Feeling Creatives</h2>
-    <p class="lede">This category was built for low-cost prospecting: test the social observation, make the first read feel native to the platform, and identify angles with stronger CTR potential.</p>
+    <h2>Creatives Meme Et Native-Feeling</h2>
+    <p class="lede">Cette categorie sert au prospecting a faible cout : tester l'observation sociale, rendre le premier contact natif a la plateforme et reperer les angles avec meilleur potentiel CTR.</p>
   </div>
 
   <div class="ad-creative-grid">
     <article class="ad-creative-card">
       <div class="ad-creative-media">
-        <img src="/assets/images/meta-ads/10_23%20Prospecting%20P806%20_Y2K_meme.png" alt="Meme native Meta ad creative 01">
+        <img src="/assets/images/meta-ads/10_23%20Prospecting%20P806%20_Y2K_meme.png" alt="Creative Meta Ads meme native 01">
       </div>
       <div class="ad-creative-copy">
         <span class="micro-label">Meme / Native</span>
-        <h3>Native Creative 01</h3>
+        <h3>Creative Native 01</h3>
       </div>
     </article>
     <article class="ad-creative-card">
       <div class="ad-creative-media">
-        <img src="/assets/images/meta-ads/G%20friend%203_meme.png" alt="Meme native Meta ad creative 02">
+        <img src="/assets/images/meta-ads/G%20friend%203_meme.png" alt="Creative Meta Ads meme native 02">
       </div>
       <div class="ad-creative-copy">
         <span class="micro-label">Meme / Native</span>
-        <h3>Native Creative 02</h3>
+        <h3>Creative Native 02</h3>
       </div>
     </article>
     <article class="ad-creative-card">
       <div class="ad-creative-media">
-        <img src="/assets/images/meta-ads/Ad%20Creative%209-meme.png" alt="Meme native Meta ad creative 03">
+        <img src="/assets/images/meta-ads/Ad%20Creative%209-meme.png" alt="Creative Meta Ads meme native 03">
       </div>
       <div class="ad-creative-copy">
         <span class="micro-label">Meme / Native</span>
-        <h3>Native Creative 03</h3>
+        <h3>Creative Native 03</h3>
       </div>
     </article>
     <article class="ad-creative-card">
       <div class="ad-creative-media">
-        <img src="/assets/images/meta-ads/Gfriend%202_meme.png" alt="Meme native Meta ad creative 04">
+        <img src="/assets/images/meta-ads/Gfriend%202_meme.png" alt="Creative Meta Ads meme native 04">
       </div>
       <div class="ad-creative-copy">
         <span class="micro-label">Meme / Native</span>
-        <h3>Native Creative 04</h3>
+        <h3>Creative Native 04</h3>
       </div>
     </article>
     <article class="ad-creative-card">
       <div class="ad-creative-media">
-        <img src="/assets/images/meta-ads/Gfriend%201.-memepng.png" alt="Meme native Meta ad creative 05">
+        <img src="/assets/images/meta-ads/Gfriend%201.-memepng.png" alt="Creative Meta Ads meme native 05">
       </div>
       <div class="ad-creative-copy">
         <span class="micro-label">Meme / Native</span>
-        <h3>Native Creative 05</h3>
+        <h3>Creative Native 05</h3>
       </div>
     </article>
     <article class="ad-creative-card">
       <div class="ad-creative-media">
-        <img src="/assets/images/meta-ads/G%20friend%204-meme.png" alt="Meme native Meta ad creative 06">
+        <img src="/assets/images/meta-ads/G%20friend%204-meme.png" alt="Creative Meta Ads meme native 06">
       </div>
       <div class="ad-creative-copy">
         <span class="micro-label">Meme / Native</span>
-        <h3>Native Creative 06</h3>
+        <h3>Creative Native 06</h3>
       </div>
     </article>
     <article class="ad-creative-card">
@@ -227,8 +227,8 @@ alt_url: /fr/portfolio/my-past-ad-creatives/
         </video>
       </div>
       <div class="ad-creative-copy">
-        <span class="micro-label">Meme / Native Video</span>
-        <h3>Native Video 01</h3>
+        <span class="micro-label">Video Meme / Native</span>
+        <h3>Video Native 01</h3>
       </div>
     </article>
     <article class="ad-creative-card">
@@ -238,8 +238,8 @@ alt_url: /fr/portfolio/my-past-ad-creatives/
         </video>
       </div>
       <div class="ad-creative-copy">
-        <span class="micro-label">Meme / Native Video</span>
-        <h3>Native Video 02</h3>
+        <span class="micro-label">Video Meme / Native</span>
+        <h3>Video Native 02</h3>
       </div>
     </article>
   </div>
@@ -248,8 +248,8 @@ alt_url: /fr/portfolio/my-past-ad-creatives/
 <section class="page-panel ad-category-section">
   <div class="section-heading">
     <div class="eyebrow">Type 3 - UGC + KOL</div>
-    <h2>UGC And KOL-Style Creatives</h2>
-    <p class="lede">UGC and KOL-style ads reduce the distance between the viewer and the product. The goal is to make the app feel lived-in, socially safe, and easier to imagine downloading.</p>
+    <h2>Creatives UGC Et KOL-Style</h2>
+    <p class="lede">Les formats UGC et KOL reduisent la distance entre l'audience et le produit. L'objectif est de rendre l'app plus humaine, socialement rassurante et facile a imaginer dans un parcours de telechargement.</p>
   </div>
 
   <div class="ad-creative-grid">
@@ -261,7 +261,7 @@ alt_url: /fr/portfolio/my-past-ad-creatives/
       </div>
       <div class="ad-creative-copy">
         <span class="micro-label">UGC + KOL</span>
-        <h3>UGC Creative 01</h3>
+        <h3>Creative UGC 01</h3>
       </div>
     </article>
     <article class="ad-creative-card">
@@ -272,7 +272,7 @@ alt_url: /fr/portfolio/my-past-ad-creatives/
       </div>
       <div class="ad-creative-copy">
         <span class="micro-label">UGC + KOL</span>
-        <h3>UGC Creative 02</h3>
+        <h3>Creative UGC 02</h3>
       </div>
     </article>
     <article class="ad-creative-card">
@@ -283,7 +283,7 @@ alt_url: /fr/portfolio/my-past-ad-creatives/
       </div>
       <div class="ad-creative-copy">
         <span class="micro-label">UGC + KOL</span>
-        <h3>UGC Creative 03</h3>
+        <h3>Creative UGC 03</h3>
       </div>
     </article>
     <article class="ad-creative-card">
@@ -294,7 +294,7 @@ alt_url: /fr/portfolio/my-past-ad-creatives/
       </div>
       <div class="ad-creative-copy">
         <span class="micro-label">UGC + KOL</span>
-        <h3>UGC Creative 04</h3>
+        <h3>Creative UGC 04</h3>
       </div>
     </article>
   </div>
@@ -302,64 +302,64 @@ alt_url: /fr/portfolio/my-past-ad-creatives/
 
 <section class="page-panel ad-slide-panel ad-rules-slide">
   <div class="ad-slide-heading">
-    <div class="eyebrow">Paid Ad Operating System</div>
-    <h2>How I Led The Team From Research To Scalable Ads</h2>
-    <p>The value of these creatives is not direct copying. It is the process behind them: research, testing, team execution, and data iteration until an idea becomes a deployable paid asset.</p>
+    <div class="eyebrow">Systeme De Pilotage Paid Ad</div>
+    <h2>Comment j'ai mene l'equipe de la recherche aux ads scalables</h2>
+    <p>La valeur de ces creatives ne vient pas d'une copie directe. Elle vient du processus : recherche, test, execution en equipe et iteration data jusqu'a transformer une idee en asset paid exploitable.</p>
   </div>
 
   <div class="ad-rules-layout">
     <div class="ad-role-column">
-      <h3>Role Split</h3>
+      <h3>Repartition Des Roles</h3>
       <article class="ad-role-card ad-role-card--lead">
-        <h4>Manager / Me - Strategy</h4>
-        <p>Defined the competitive research framework, wrote creative briefs, decided each creative batch composition, and set graduate / pause / scale rules.</p>
+        <h4>Manager / Moi - Strategie</h4>
+        <p>Definition du framework de recherche concurrentielle, redaction des briefs creatifs, composition de chaque batch et regles graduate / pause / scale.</p>
       </article>
       <article class="ad-role-card">
-        <h4>Team Member / Subordinate - Execution</h4>
-        <p>Surveyed Tinder and Bumble creatives in the US market, analyzed hooks, CTAs, comments, reactions, and produced meme / UGC / hook references.</p>
+        <h4>Membre D'equipe / Subordinate - Execution</h4>
+        <p>Survey des creatives Tinder et Bumble sur le marche US, analyse des hooks, CTA, commentaires, reactions et references meme / UGC / hook.</p>
       </article>
       <article class="ad-role-card">
-        <h4>Design / Product Team - Brand Consistency</h4>
-        <p>Supported branding assets and maintained visual consistency so performance testing could still feel aligned with the product.</p>
+        <h4>Equipe Design / Product - Coherence De Marque</h4>
+        <p>Support sur les assets branding et maintien d'une coherence visuelle pour que les tests performance restent alignes avec le produit.</p>
       </article>
     </div>
 
     <div class="ad-flow-column">
-      <h3>From Competitors To Creatives</h3>
+      <h3>Des Concurrents Aux Creatives</h3>
       <div class="ad-flow-track">
         <article class="ad-flow-card">
           <span>01</span>
-          <h4>Competitor Research</h4>
-          <p>Deconstruct hook, character, pain point, CTA, and comment patterns from competitor ads.</p>
+          <h4>Recherche Concurrentielle</h4>
+          <p>Deconstruction des hooks, personnages, pain points, CTA et patterns de commentaires des ads concurrentes.</p>
         </article>
         <article class="ad-flow-card">
           <span>02</span>
-          <h4>KOL / UGC Selection</h4>
-          <p>Select creators and formats that match Gen Z social language and feel conversion-ready.</p>
+          <h4>Selection KOL / UGC</h4>
+          <p>Choix des createurs et formats alignes avec le langage Gen Z et le potentiel de conversion.</p>
         </article>
         <article class="ad-flow-card">
           <span>03</span>
-          <h4>Creative Classification</h4>
-          <p>Separate assets into prospecting and evergreen groups, then allocate budget by objective.</p>
+          <h4>Classification Creative</h4>
+          <p>Separation entre prospecting et evergreen, puis allocation budgetaire selon l'objectif.</p>
         </article>
       </div>
 
       <div class="ad-scale-rules">
         <article>
           <span>Graduate</span>
-          <p>Move strong hooks or audience angles into broader testing.</p>
+          <p>Faire passer les hooks ou angles audience solides vers des tests plus larges.</p>
         </article>
         <article>
           <span>Pause</span>
-          <p>Stop weak first-three-second hooks before they dilute budget.</p>
+          <p>Arreter les hooks faibles dans les trois premieres secondes avant dilution du budget.</p>
         </article>
         <article>
           <span>Scale</span>
-          <p>Increase spend only after cost efficiency and creative signal are stable.</p>
+          <p>Augmenter le spend seulement apres stabilisation du cout et du signal creative.</p>
         </article>
       </div>
     </div>
   </div>
 
-  <p class="ad-rules-note">These assets show how I let a team use research, testing, and data iteration to build creatives that could convert. The final creative language was then calibrated for the target market and premium social positioning.</p>
+  <p class="ad-rules-note">Ces assets montrent comment j'ai donne a l'equipe un cadre de recherche, de test et d'iteration data pour produire des creatives capables de convertir. Le langage creative final etait ensuite recalibre pour le marche cible et un positionnement social premium.</p>
 </section>
