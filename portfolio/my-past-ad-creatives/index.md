@@ -221,6 +221,17 @@ alt_url: /fr/portfolio/my-past-ad-creatives/
         <h3>Native Video 02</h3>
       </div>
     </article>
+    <article class="ad-creative-card">
+      <div class="ad-creative-media">
+        <video controls preload="metadata" playsinline>
+          <source src="/assets/images/meta-ads/1113%20Ad%20Creatives%2002_MEME.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="ad-creative-copy">
+        <span class="micro-label">Meme / Native Video</span>
+        <h3>Native Video 03</h3>
+      </div>
+    </article>
   </div>
 </section>
 
@@ -274,6 +285,28 @@ alt_url: /fr/portfolio/my-past-ad-creatives/
       <div class="ad-creative-copy">
         <span class="micro-label">UGC + KOL</span>
         <h3>UGC Creative 04</h3>
+      </div>
+    </article>
+    <article class="ad-creative-card">
+      <div class="ad-creative-media">
+        <video controls preload="metadata" playsinline>
+          <source src="/assets/images/meta-ads/Ad%2002%20So%20Many%20People_UGC.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="ad-creative-copy">
+        <span class="micro-label">UGC + KOL</span>
+        <h3>UGC Creative 05</h3>
+      </div>
+    </article>
+    <article class="ad-creative-card">
+      <div class="ad-creative-media">
+        <video controls preload="metadata" playsinline>
+          <source src="/assets/images/meta-ads/Ad%20Creatives%2001%20One%20Day%20(1)_UGC.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="ad-creative-copy">
+        <span class="micro-label">UGC + KOL</span>
+        <h3>UGC Creative 06</h3>
       </div>
     </article>
   </div>
