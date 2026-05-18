@@ -6,7 +6,7 @@ date: 2026-05-18
 author: Adeleine Wang
 lang: en
 alt_url: /fr/blog/content/2026-05-18-quand-lentretien-devient-la-marque/
-cover_image: /assets/images/when-interview-becomes-brand-cover.png
+cover_image: /assets/images/entretien-devient-marque-annulation-adhesion-vip-cover.png
 cover_alt: "Editorial flat lay of luxury skincare products, a torn VIP membership card, gold scissors, and a cancelled membership form, symbolising how a poor interview experience can reshape brand loyalty."
 tags:
   - brand strategy
