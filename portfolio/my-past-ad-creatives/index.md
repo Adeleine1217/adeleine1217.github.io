@@ -19,6 +19,7 @@ alt_url: /fr/portfolio/my-past-ad-creatives/
     </div>
   </div>
   <div class="ad-hero-note">
+    <img class="ad-hero-cover" src="/assets/images/ChatGPT%20Image%20My%20Past%20Ad%20Creatives_cover%20image%20for%20EN%3AFR.png" alt="Editorial visual showing social ad creative strategy and performance assets">
     <span class="micro-label">Creative Direction</span>
     <p>I led the paid ad workflow from competitive research to deployable creative assets: defining the research framework, writing creative briefs, and deciding the creative mix behind each testing batch.</p>
   </div>

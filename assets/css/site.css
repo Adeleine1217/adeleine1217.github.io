@@ -889,12 +889,22 @@ p {
 
 .ad-hero-note {
   display: grid;
-  align-content: end;
   gap: 0.75rem;
   padding: 1.2rem;
   border-radius: var(--radius-lg);
   color: #38383d;
   border-left: 4px solid rgba(197, 160, 89, 0.7);
+}
+
+.ad-hero-cover {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  min-height: 0;
+  object-fit: cover;
+  object-position: center;
+  border-radius: calc(var(--radius-lg) - 8px);
+  border: 1px solid rgba(197, 160, 89, 0.22);
+  box-shadow: 0 14px 34px rgba(31, 26, 18, 0.08);
 }
 
 .ad-slide-panel {
