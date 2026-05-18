@@ -16,6 +16,15 @@ alt_url: /fr/portfolio/
   </div>
 </section>
 
+<section class="page-panel portfolio-feature-panel">
+  <div class="portfolio-feature-copy">
+    <div class="eyebrow">Meta Ads Creative Archive</div>
+    <h2>My Past Ad Creatives</h2>
+    <p class="lede">A dedicated page for my past Meta ad creatives, organized by my four-type paid social framework and the team workflow I led from competitive research to scale rules.</p>
+  </div>
+  <a class="button button-dark" href="{{ '/portfolio/my-past-ad-creatives/' | relative_url }}">View Ad Creatives</a>
+</section>
+
 <section class="page-panel">
   <div class="section-heading">
     <p class="accent-script">Let the numbers speak</p>
