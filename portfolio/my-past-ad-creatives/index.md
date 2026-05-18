@@ -20,86 +20,66 @@ alt_url: /fr/portfolio/
   </div>
   <div class="ad-hero-note">
     <span class="micro-label">Creative Direction</span>
-    <p>I led the paid ad workflow from competitive research to deployable creative assets: defining the research framework, writing creative briefs, deciding the creative mix, and setting graduate / pause / scale rules before launch.</p>
+    <p>I led the paid ad workflow from competitive research to deployable creative assets: defining the research framework, writing creative briefs, and deciding the creative mix behind each testing batch.</p>
   </div>
 </section>
 
-<section class="page-panel">
-  <div class="section-heading">
-    <div class="eyebrow">From Research To Ads</div>
-    <h2>How I Led Paid Ad Production</h2>
-    <p class="lede">The value of these assets is not direct copying. It is the system behind them: competitor deconstruction, team execution, data feedback, and creative language calibrated for a high-intent social app audience.</p>
+<section class="page-panel ad-slide-panel ad-framework-slide">
+  <div class="ad-slide-badge">Creative Framework</div>
+  <div class="ad-slide-heading">
+    <h2>My Four-Type Creative Framework</h2>
+    <p>Social app creatives are not only about looking polished. They need to answer quickly: why should I download, who will I meet, is this safe, and does this fit my identity?</p>
   </div>
 
-  <div class="ad-leadership-grid">
-    <article class="ad-leadership-card ad-leadership-card--lead">
-      <span class="micro-label">Manager / Me - Strategy</span>
-      <h3>Research framework, creative brief, and scaling rules</h3>
-      <p>I defined the competitive research framework, wrote creative briefs, decided the composition of each creative batch, and set the graduate / pause / scale rules used to manage paid ad testing.</p>
+  <div class="ad-framework-slide-grid">
+    <article class="ad-framework-item">
+      <div class="ad-framework-icon" aria-hidden="true">
+        <svg viewBox="0 0 48 48" focusable="false">
+          <rect x="7" y="10" width="34" height="28" rx="4"></rect>
+          <circle cx="17" cy="20" r="3"></circle>
+          <path d="M10 35l10-10 7 7 6-6 7 8"></path>
+        </svg>
+      </div>
+      <h3><span>Type 1 - Branding</span></h3>
+      <p><strong>Owner:</strong> design team, under my creative direction.</p>
+      <p>Build trust and premium product quality for high-intent social scenarios, with consistent visual language across paid touchpoints.</p>
     </article>
-    <article class="ad-leadership-card">
-      <span class="micro-label">Team Member / Subordinate - Execution Support</span>
-      <h3>Market survey and creative testing inputs</h3>
-      <p>A team member supported the survey of Tinder and Bumble creatives in the US market, including hook analysis, CTA patterns, comments, reactions, and meme / UGC / hook references.</p>
-    </article>
-    <article class="ad-leadership-card">
-      <span class="micro-label">Design / Product Team - Brand Consistency</span>
-      <h3>Visual language and quality control</h3>
-      <p>I coordinated brand consistency with design and product stakeholders so paid creatives could stay visually aligned while still moving fast enough for performance testing.</p>
-    </article>
-  </div>
 
-  <div class="ad-process">
-    <article>
-      <span>01</span>
-      <h4>Competitor Research</h4>
-      <p>Deconstruct Tinder and Bumble angles: hook, character, pain point, CTA, comments, and emotional trigger.</p>
+    <article class="ad-framework-item">
+      <div class="ad-framework-icon" aria-hidden="true">
+        <svg viewBox="0 0 48 48" focusable="false">
+          <circle cx="24" cy="24" r="17"></circle>
+          <circle cx="18" cy="20" r="1.8"></circle>
+          <circle cx="30" cy="20" r="1.8"></circle>
+          <path d="M16 28c3 4 13 4 16 0"></path>
+        </svg>
+      </div>
+      <h3><span>Type 2 - Meme / Native</span></h3>
+      <p><strong>Owner:</strong> team member / subordinate execution, strategy directed by me.</p>
+      <p>Use low-cost social observations for prospecting, fast CTR signal discovery, and platform-native language.</p>
     </article>
-    <article>
-      <span>02</span>
-      <h4>KOL / UGC Selection</h4>
-      <p>Select creators and formats that match Gen Z social language, then test for authenticity and conversion quality.</p>
-    </article>
-    <article>
-      <span>03</span>
-      <h4>Creative Classification</h4>
-      <p>Separate assets into branding, meme / native, UGC + KOL, and hook / emotional situation for cleaner budget allocation.</p>
-    </article>
-    <article>
-      <span>04</span>
-      <h4>Graduate / Pause / Scale</h4>
-      <p>Move winning angles into broader testing, pause weak first-three-second hooks, and scale only after efficiency is stable.</p>
-    </article>
-  </div>
-</section>
 
-<section class="page-panel">
-  <div class="section-heading">
-    <div class="eyebrow">Creative Framework</div>
-    <h2>My Four-Type Ad Creative System</h2>
-    <p class="lede">For social apps, creatives must answer four questions fast: why should I download, who will I meet, is it safe, and does this fit my identity?</p>
-  </div>
+    <article class="ad-framework-item">
+      <div class="ad-framework-icon" aria-hidden="true">
+        <svg viewBox="0 0 48 48" focusable="false">
+          <circle cx="24" cy="16" r="7"></circle>
+          <path d="M12 39c2.4-8 21.6-8 24 0"></path>
+        </svg>
+      </div>
+      <h3><span>Type 3 - UGC + KOL</span></h3>
+      <p><strong>Owner:</strong> KOL selection and creative angle led by me with team support.</p>
+      <p>Create authenticity, reduce the psychological barrier of meeting strangers, and increase trust before conversion.</p>
+    </article>
 
-  <div class="ad-framework-grid">
-    <article class="ad-framework-card">
-      <span class="ad-type-number">Type 1</span>
-      <h3>Branding</h3>
-      <p>Build trust and a premium social feeling. Best for brand-safe acquisition, higher-end social positioning, and visual consistency across paid touchpoints.</p>
-    </article>
-    <article class="ad-framework-card">
-      <span class="ad-type-number">Type 2</span>
-      <h3>Meme / Native</h3>
-      <p>Use platform-native language to test low-cost social observations, prospecting angles, and fast CTR signals before investing in heavier production.</p>
-    </article>
-    <article class="ad-framework-card">
-      <span class="ad-type-number">Type 3</span>
-      <h3>UGC + KOL</h3>
-      <p>Create authenticity and reduce psychological friction for a stranger-social product by making the ad feel human, specific, and easier to trust.</p>
-    </article>
-    <article class="ad-framework-card">
-      <span class="ad-type-number">Type 4</span>
-      <h3>Hook / Emotional Situation</h3>
-      <p>Use the first one to three seconds to activate loneliness, curiosity, desire, identity fit, or safety reassurance before the viewer scrolls away.</p>
+    <article class="ad-framework-item">
+      <div class="ad-framework-icon" aria-hidden="true">
+        <svg viewBox="0 0 48 48" focusable="false">
+          <path d="M27 5L12 27h12l-3 16 15-23H24z"></path>
+        </svg>
+      </div>
+      <h3><span>Type 4 - Hook / Emotional Situation</span></h3>
+      <p><strong>Owner:</strong> I led the concept direction, then assigned execution by asset type.</p>
+      <p>Use the first one to three seconds to activate loneliness, curiosity, desire, identity fit, safety reassurance, or social proof.</p>
     </article>
   </div>
 </section>
@@ -320,23 +300,66 @@ alt_url: /fr/portfolio/
   </div>
 </section>
 
-<section class="page-panel ad-category-section">
-  <div class="section-heading">
-    <div class="eyebrow">Type 4 - Hook / Emotional Situation</div>
-    <h2>Hook-Led Testing Logic</h2>
-    <p class="lede">This type works as the front-end testing logic across paid creative production: sharpen the opening moment first, then extend winning hooks into branding, meme / native, or UGC variants.</p>
+<section class="page-panel ad-slide-panel ad-rules-slide">
+  <div class="ad-slide-heading">
+    <div class="eyebrow">Paid Ad Operating System</div>
+    <h2>How I Led The Team From Research To Scalable Ads</h2>
+    <p>The value of these creatives is not direct copying. It is the process behind them: research, testing, team execution, and data iteration until an idea becomes a deployable paid asset.</p>
   </div>
 
-  <div class="ad-hook-panel">
-    <article>
-      <span class="micro-label">First 1-3 Seconds</span>
-      <h3>Interrupt the scroll with a recognizable feeling</h3>
-      <p>The hook should quickly activate loneliness, curiosity, desire, identity fit, safety reassurance, or social proof before the viewer decides whether the app is relevant.</p>
-    </article>
-    <article>
-      <span class="micro-label">Testing Rule</span>
-      <h3>Separate concept from execution</h3>
-      <p>I treat hook concepts as reusable angles. If an angle works, it can graduate into branding, meme / native, or UGC production instead of staying as one isolated ad.</p>
-    </article>
+  <div class="ad-rules-layout">
+    <div class="ad-role-column">
+      <h3>Role Split</h3>
+      <article class="ad-role-card ad-role-card--lead">
+        <h4>Manager / Me - Strategy</h4>
+        <p>Defined the competitive research framework, wrote creative briefs, decided each creative batch composition, and set graduate / pause / scale rules.</p>
+      </article>
+      <article class="ad-role-card">
+        <h4>Team Member / Subordinate - Execution</h4>
+        <p>Surveyed Tinder and Bumble creatives in the US market, analyzed hooks, CTAs, comments, reactions, and produced meme / UGC / hook references.</p>
+      </article>
+      <article class="ad-role-card">
+        <h4>Design / Product Team - Brand Consistency</h4>
+        <p>Supported branding assets and maintained visual consistency so performance testing could still feel aligned with the product.</p>
+      </article>
+    </div>
+
+    <div class="ad-flow-column">
+      <h3>From Competitors To Creatives</h3>
+      <div class="ad-flow-track">
+        <article class="ad-flow-card">
+          <span>01</span>
+          <h4>Competitor Research</h4>
+          <p>Deconstruct hook, character, pain point, CTA, and comment patterns from competitor ads.</p>
+        </article>
+        <article class="ad-flow-card">
+          <span>02</span>
+          <h4>KOL / UGC Selection</h4>
+          <p>Select creators and formats that match Gen Z social language and feel conversion-ready.</p>
+        </article>
+        <article class="ad-flow-card">
+          <span>03</span>
+          <h4>Creative Classification</h4>
+          <p>Separate assets into prospecting and evergreen groups, then allocate budget by objective.</p>
+        </article>
+      </div>
+
+      <div class="ad-scale-rules">
+        <article>
+          <span>Graduate</span>
+          <p>Move strong hooks or audience angles into broader testing.</p>
+        </article>
+        <article>
+          <span>Pause</span>
+          <p>Stop weak first-three-second hooks before they dilute budget.</p>
+        </article>
+        <article>
+          <span>Scale</span>
+          <p>Increase spend only after cost efficiency and creative signal are stable.</p>
+        </article>
+      </div>
+    </div>
   </div>
+
+  <p class="ad-rules-note">These assets show how I let a team use research, testing, and data iteration to build creatives that could convert. The final creative language was then calibrated for the target market and premium social positioning.</p>
 </section>
