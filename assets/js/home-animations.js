@@ -2,8 +2,9 @@
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const statsGrid = document.querySelector(".stats-grid");
   const recommendationGrid = document.querySelector(".recommendation-grid");
+  const quotePanel = document.querySelector(".quote-panel");
 
-  if (!statsGrid && !recommendationGrid) {
+  if (!statsGrid && !recommendationGrid && !quotePanel) {
     return;
   }
 
@@ -12,6 +13,10 @@
   const revealTargets = [
     ...document.querySelectorAll(".stats-grid .stat-card, .recommendation-grid .recommendation-card"),
   ];
+
+  if (quotePanel) {
+    quotePanel.classList.add("quote-reveal-target");
+  }
 
   revealTargets.forEach((target, index) => {
     target.classList.add("home-reveal-target");
@@ -29,6 +34,9 @@
 
   if (reduceMotion) {
     revealTargets.forEach((target) => target.classList.add("is-visible"));
+    if (quotePanel) {
+      quotePanel.classList.add("is-visible");
+    }
     return;
   }
 
@@ -45,6 +53,10 @@
   );
 
   revealTargets.forEach((target) => revealObserver.observe(target));
+
+  if (quotePanel) {
+    revealObserver.observe(quotePanel);
+  }
 
   const tiltTargets = [
     ...document.querySelectorAll(".stats-grid .stat-card, .recommendation-grid .recommendation-card"),
@@ -64,6 +76,26 @@
       target.style.removeProperty("--home-tilt-y");
     });
   });
+
+  if (recommendationGrid) {
+    const recommendationCards = [
+      ...recommendationGrid.querySelectorAll(".recommendation-card"),
+    ];
+
+    recommendationCards.forEach((card) => {
+      card.addEventListener("pointerenter", () => {
+        recommendationGrid.classList.add("is-spotlight-active");
+        recommendationCards.forEach((item) => {
+          item.classList.toggle("is-focused", item === card);
+        });
+      });
+    });
+
+    recommendationGrid.addEventListener("pointerleave", () => {
+      recommendationGrid.classList.remove("is-spotlight-active");
+      recommendationCards.forEach((item) => item.classList.remove("is-focused"));
+    });
+  }
 
   if (!statsGrid) {
     return;
