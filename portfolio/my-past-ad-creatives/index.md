@@ -267,7 +267,7 @@ alt_url: /fr/portfolio/
     <article class="ad-creative-card">
       <div class="ad-creative-media">
         <video controls preload="metadata" playsinline>
-          <source src="/assets/images/meta-ads/0917-copy-copy%20(1)._UGCmov.mov" type="video/quicktime">
+          <source src="/assets/videos/meta-ads/ugc-creative-02.mp4" type="video/mp4">
         </video>
       </div>
       <div class="ad-creative-copy">
