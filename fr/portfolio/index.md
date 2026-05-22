@@ -360,3 +360,24 @@ alt_url: /portfolio/
     </article>
   </div>
 </section>
+
+<section class="page-panel">
+  <div class="section-heading">
+    <div class="eyebrow">Side project</div>
+    <h2>Netflix Anime Top 10 Taiwan</h2>
+    <p class="lede">Un petit projet front-end construit pour travailler une presentation de contenu plus produit : une page de classement anime inspiree de Netflix, avec contenu principal en chinois, option anglaise, miniatures, resumes et compte a rebours vers la mise a jour du lundi a 9 h.</p>
+  </div>
+  <div class="gallery-grid">
+    <article class="gallery-card">
+      <img src="{{ '/assets/images/netflix-anime-top10-side-project.svg' | relative_url }}" alt="Preview du side project Netflix Anime Top 10 Taiwan">
+      <div class="gallery-copy">
+        <div class="gallery-title">Page de classement entertainment, pensee d'abord en chinois</div>
+        <p>J'ai concu et publie un projet statique sur GitHub Pages qui transforme une simple liste Top 10 anime en experience web consultable, avec switch bilingue et cartes de classement interactives.</p>
+        <span class="stat-label">Perimetre : HTML, CSS, JavaScript, structure JSON, switch de langue, logique de compte a rebours et deploiement GitHub Pages.</span>
+        <div class="gallery-actions">
+          <a class="gallery-link primary" href="https://adeleine1217.github.io/phoebe-netflix-top-10/" target="_blank" rel="noopener noreferrer">Voir le projet en ligne</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
