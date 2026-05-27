@@ -167,6 +167,10 @@ description: "Une plongée littéraire et musicale dans 'Blackhole' d'IVE, extra
       letter-spacing: 0.1em;
       cursor: pointer;
       transition: all 0.2s;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
     }
     .lang-btn.active, .lang-btn:hover {
       background: var(--accent);
@@ -464,6 +468,10 @@ description: "Une plongée littéraire et musicale dans 'Blackhole' d'IVE, extra
 <!-- Header -->
 <header class="site-header">
   <a href="https://adeleine1217.github.io/" class="logo">Adeleine</a>
+  <div class="lang-toggle" aria-label="Sélecteur de langue">
+    <a class="lang-btn" href="/blog/content/2026-05-27-ive-blackhole/" lang="en" hreflang="en">EN</a>
+    <span class="lang-btn active" lang="fr">FR</span>
+  </div>
 </header>
 
 <!-- Hero -->

@@ -167,6 +167,10 @@ description: "A literary and musical deep-dive into IVE's 'Blackhole' from Reviv
       letter-spacing: 0.1em;
       cursor: pointer;
       transition: all 0.2s;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
     }
     .lang-btn.active, .lang-btn:hover {
       background: var(--accent);
@@ -464,6 +468,10 @@ description: "A literary and musical deep-dive into IVE's 'Blackhole' from Reviv
 <!-- Header -->
 <header class="site-header">
   <a href="https://adeleine1217.github.io/" class="logo">Adeleine</a>
+  <div class="lang-toggle" aria-label="Language switcher">
+    <span class="lang-btn active" lang="en">EN</span>
+    <a class="lang-btn" href="/fr/blog/content/2026-05-27-ive-blackhole/" lang="fr" hreflang="fr">FR</a>
+  </div>
 </header>
 
 <!-- Hero -->
