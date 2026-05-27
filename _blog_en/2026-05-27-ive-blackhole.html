@@ -1,0 +1,671 @@
+---
+layout: null
+title: 'IVE "Blackhole" — The K-Pop Aesthetic Masterpiece of 2026'
+seo_title: 'IVE "Blackhole" — The K-Pop Aesthetic Masterpiece of 2026 | Adeleine'
+date: 2026-05-27
+author: Adeleine Wang
+lang: en
+cover_image: /assets/images/Blogs/ive%20blackhole.jpg
+cover_alt: "IVE members standing on a rooftop at dusk in the Blackhole music video, with a city skyline behind them."
+tags:
+  - Music Essay
+  - K-Pop
+  - IVE
+excerpt: On gravity, grandeur, and what it means when six women step to the edge of the world and pull you in.
+description: "A literary and musical deep-dive into IVE's 'Blackhole' from Revive+ (2026): why this track is a gravitational triumph of K-pop sound design, choreography, and visual craft — analysed by a devoted fan."
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO: English -->
+  <title>IVE "Blackhole" — The K-Pop Aesthetic Masterpiece of 2026 | Adeleine</title>
+  <meta name="description" content="A literary and musical deep-dive into IVE's 'Blackhole' from Revive+ (2026): why this track is a gravitational triumph of K-pop sound design, choreography, and visual craft — analysed by a devoted fan." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="IVE &quot;Blackhole&quot; — The K-Pop Aesthetic Masterpiece of 2026" />
+  <meta property="og:description" content="A literary and musical deep-dive into IVE's 'Blackhole' — why this track is a gravitational triumph of K-pop sound design, choreography, and visual storytelling." />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="/assets/images/Blogs/ive%20blackhole.jpg" />
+  <meta property="article:published_time" content="2026-05-27" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="IVE &quot;Blackhole&quot; — The K-Pop Aesthetic Masterpiece of 2026" />
+  <meta name="twitter:description" content="A literary and musical deep-dive into IVE's Blackhole. Sound design, choreography, visual craft — all analysed with love." />
+  <meta name="twitter:image" content="/assets/images/Blogs/ive%20blackhole.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #07080e;
+      --surface: #0d0f1a;
+      --border: rgba(255,255,255,0.08);
+      --text: #e8e4dc;
+      --muted: #8a8a99;
+      --accent: #c9a96e;
+      --accent2: #7b9fc7;
+      --pink: #d4849a;
+      --glow: rgba(201,169,110,0.15);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.8;
+      font-size: 17px;
+      overflow-x: hidden;
+    }
+
+    /* ── STARFIELD ── */
+    .starfield {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .star {
+      position: absolute;
+      border-radius: 50%;
+      background: white;
+      animation: twinkle var(--d, 4s) infinite ease-in-out var(--delay, 0s);
+      opacity: 0;
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0; transform: scale(0.8); }
+      50% { opacity: var(--op, 0.6); transform: scale(1); }
+    }
+
+    /* ── BLACKHOLE VORTEX ── */
+    .vortex-wrap {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 420px;
+      height: 420px;
+      pointer-events: none;
+    }
+    .vortex {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: radial-gradient(ellipse at center,
+        #000 0%,
+        #000 20%,
+        rgba(50,20,80,0.6) 40%,
+        rgba(100,60,30,0.3) 60%,
+        transparent 75%
+      );
+      animation: spin 24s linear infinite;
+      box-shadow:
+        0 0 60px 20px rgba(80,40,120,0.25),
+        0 0 120px 40px rgba(201,169,110,0.1);
+    }
+    .ring {
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      border: 1.5px solid transparent;
+      background: conic-gradient(
+        rgba(201,169,110,0) 0deg,
+        rgba(201,169,110,0.5) 90deg,
+        rgba(180,120,200,0.4) 180deg,
+        rgba(100,150,220,0.3) 270deg,
+        rgba(201,169,110,0) 360deg
+      ) border-box;
+      animation: spin 18s linear infinite reverse;
+      mask: linear-gradient(white, white) padding-box, linear-gradient(white,white);
+      mask-composite: exclude;
+      -webkit-mask-composite: xor;
+    }
+    @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+    /* ── HEADER ── */
+    .site-header {
+      position: relative;
+      z-index: 10;
+      padding: 2rem 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.2em;
+      color: var(--accent);
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .lang-toggle {
+      display: flex;
+      gap: 0.5rem;
+    }
+    .lang-btn {
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 0.35rem 0.85rem;
+      border-radius: 2rem;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-btn.active, .lang-btn:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #000;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 90vh;
+      display: flex;
+      align-items: flex-end;
+      padding: 0 2.5rem 5rem;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('/assets/images/Blogs/ive%20blackhole.jpg');
+      background-size: cover;
+      background-position: center top;
+      filter: brightness(0.35) saturate(0.7);
+      z-index: 0;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        transparent 30%,
+        var(--bg) 100%
+      );
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 820px;
+    }
+    .hero-tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      padding: 0.3rem 0.9rem;
+      border-radius: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3.5rem, 8vw, 7rem);
+      font-weight: 300;
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+    .hero-title span { color: var(--accent); font-style: italic; }
+    .hero-subtitle {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 550px;
+      line-height: 1.6;
+    }
+    .hero-meta {
+      margin-top: 2rem;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .hero-meta-item {
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+    .hero-meta-item strong { color: var(--text); }
+
+    /* ── MAIN CONTENT ── */
+    .container {
+      position: relative;
+      z-index: 5;
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .article-body {
+      padding: 5rem 0 8rem;
+    }
+
+    /* ── LANG CONTENT ── */
+    [data-lang] { display: none; }
+    [data-lang].visible { display: block; }
+
+    /* ── SECTIONS ── */
+    section { margin-bottom: 5rem; }
+
+    .section-label {
+      font-size: 0.68rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+      max-width: 80px;
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 300;
+      line-height: 1.15;
+      margin-bottom: 1.8rem;
+      color: var(--text);
+    }
+    h2 em { color: var(--accent); font-style: italic; }
+
+    h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--accent2);
+      margin: 2.5rem 0 1rem;
+    }
+
+    p { margin-bottom: 1.4rem; color: var(--text); }
+    p:last-child { margin-bottom: 0; }
+
+    /* ── PULL QUOTE ── */
+    .pull-quote {
+      margin: 3.5rem 0;
+      padding: 2.5rem 3rem;
+      border-left: 3px solid var(--accent);
+      background: rgba(201,169,110,0.05);
+      border-radius: 0 8px 8px 0;
+    }
+    .pull-quote p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-style: italic;
+      font-weight: 300;
+      line-height: 1.5;
+      color: var(--accent);
+      margin: 0;
+    }
+    .pull-quote cite {
+      display: block;
+      margin-top: 0.8rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-style: normal;
+    }
+
+    /* ── CRITIC CARDS ── */
+    .critic-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin: 2.5rem 0;
+    }
+    @media (max-width: 600px) { .critic-grid { grid-template-columns: 1fr; } }
+    .critic-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
+    .critic-card .score {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.5rem;
+      color: var(--accent);
+      font-weight: 300;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .critic-card .source {
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.8rem;
+    }
+    .critic-card p { font-size: 0.88rem; color: var(--muted); margin: 0; line-height: 1.6; }
+
+    /* ── MEMBER CARDS ── */
+    .member-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 600px) { .member-grid { grid-template-columns: 1fr 1fr; } }
+    .member-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.4rem 1.2rem;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .member-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .member-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem;
+      font-weight: 400;
+      color: var(--text);
+      margin-bottom: 0.2rem;
+    }
+    .member-hanja { font-size: 0.75rem; color: var(--muted); margin-bottom: 0.6rem; letter-spacing: 0.05em; }
+    .member-role {
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.8rem;
+    }
+    .member-desc { font-size: 0.84rem; color: var(--muted); line-height: 1.6; margin: 0; }
+
+    /* ── DIVIDER ── */
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: 3.5rem 0;
+      color: var(--muted);
+      font-size: 0.8rem;
+      letter-spacing: 0.2em;
+    }
+    .divider::before, .divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ── VIDEO EMBED ── */
+    .video-wrap {
+      margin: 3rem 0;
+      border-radius: 10px;
+      overflow: hidden;
+      aspect-ratio: 16/9;
+      border: 1px solid var(--border);
+    }
+    .video-wrap iframe { width: 100%; height: 100%; display: block; border: none; }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 3rem 2.5rem;
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--muted);
+      position: relative;
+      z-index: 5;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+
+    /* ── ANIMATIONS ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .fade-in.in-view { opacity: 1; transform: none; }
+
+    /* ── HIGHLIGHT ── */
+    mark {
+      background: none;
+      color: var(--pink);
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Starfield -->
+<div class="starfield" id="starfield"></div>
+
+<!-- Header -->
+<header class="site-header">
+  <a href="https://adeleine1217.github.io/" class="logo">Adeleine</a>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-tag" data-tag-en="Music Essay · K-Pop">Music Essay · K-Pop</span>
+    <h1 class="hero-title">IVE<br><span>Blackhole</span></h1>
+    <p class="hero-subtitle" id="hero-sub-en">On gravity, grandeur, and what it means when six women step to the edge of the world and pull you in.</p>
+    <div class="hero-meta">
+      <div class="hero-meta-item"><strong>Feb 23, 2026</strong></div>
+      <div class="hero-meta-item">Album: <strong>Revive+</strong></div>
+      <div class="hero-meta-item">Label: <strong>Starship Entertainment</strong></div>
+    </div>
+  </div>
+</section>
+
+<!-- Article Body -->
+<main class="container">
+  <div class="article-body">
+
+    <!-- ══════ ENGLISH ══════ -->
+    <div data-lang="en" class="visible">
+
+      <!-- I. The Pull -->
+      <section class="fade-in">
+        <div class="section-label">I. The Pull</div>
+        <h2>Something That Doesn't Let You Go</h2>
+        <p>There are songs you enjoy, and then there are songs that happen to you. IVE's <em>Blackhole</em> — the lead single off their second studio album <em>Revive+</em>, released February 23, 2026 — belongs to the second category. You press play expecting a comeback, and what you get instead is an event: a three-minute-and-fourteen-second cosmological argument for why this group is one of the most artistically intentional acts in contemporary K-pop.</p>
+        <p>I've listened to this song probably three hundred times since release. Not because I forced myself to, but because every single time I think I've figured it out — every layer catalogued, every vocal choice noted — it opens up again and swallows me whole. That's what a blackhole does, right? The closer you get, the stronger the pull.</p>
+
+        <div class="pull-quote">
+          <p>"It's a resounding pop style, almost Eurovision-esque in its bigness — and it's also a sound that brought K-pop Demon Hunters' Golden to such great heights. IVE reclaim it here… with a few twists."</p>
+          <cite>— The Bias List, Feb 2026 (8.5 / Grade B)</cite>
+        </div>
+      </section>
+
+      <!-- II. Sound Design -->
+      <section class="fade-in">
+        <div class="section-label">II. Sound Architecture</div>
+        <h2>The Engineering of <em>Enormity</em></h2>
+        <p>Let's talk about the production first, because <em>Blackhole</em> is first and foremost a feat of sound engineering. Composed by Lee Chae-heon, Sophie Rose, Sarah Troy, Kristin Carpenter, and MLite, the track operates less like a pop song and more like a piece of structural architecture — built in tension, designed to expand.</p>
+        <p>The opening verse doesn't ease you in. It <em>drops</em> you into something already in motion: a low, tectonic percussion bed, synth lines that feel pulled rather than played, and a melodic phrase that never quite resolves. There's a deliberate withholding happening here. The music is asking you to wait. And the wait is agonising in the best possible way.</p>
+        <p>Then the pre-chorus arrives, and everything changes. The percussion thunders upward. The production stacks — strings, a bass pulse that you feel in your chest, those signature IVE choral harmonics — and the whole thing climbs toward something almost unbearably anthemic. <mark>The pre-chorus of Blackhole is, genuinely, one of the most well-constructed sixty seconds in K-pop this year.</mark> It doesn't just build; it transforms.</p>
+
+        <h3>The Chorus Debate</h3>
+        <p>Critics, including The Bias List's Nick, have noted that the chorus — centred on the "La, la, la-la, love flame" refrain — feels comparatively restrained after the pre-chorus's explosive ascent. And I understand that take. On first listen, it reads as a drop in momentum.</p>
+        <p>But here's what I've come to believe: the restraint is the point. IVE have always understood that in maximalist pop, negative space is an instrument. The "empty" chorus creates a kind of echo chamber — it's the event horizon before the full gravitational collapse. By the third time you hear it, layered over richer production, it clicks into place with the satisfying finality of something engineered to land exactly that way. <mark>The chorus isn't a missed opportunity. It's delayed detonation.</mark></p>
+        <p>The structural daring of <em>Blackhole</em> also lies in its refusal of repetition: the second chorus is a streamlined, accelerated version of the first — same bones, different velocity. This is the kind of compositional intelligence that separates art from product.</p>
+      </section>
+
+      <!-- III. Critics -->
+      <section class="fade-in">
+        <div class="section-label">III. Critical Reception</div>
+        <h2>What the World Is Saying</h2>
+
+        <div class="critic-grid">
+          <div class="critic-card">
+            <div class="score">8.5</div>
+            <div class="source">The Bias List · Feb 2026</div>
+            <p>"Definitely my favorite IVE title track in a while. Small structural shifts keep the track engaging and will likely play well in the long run."</p>
+          </div>
+          <div class="critic-card">
+            <div class="score">✦ Fan</div>
+            <div class="source">Album of the Year · User Reviews</div>
+            <p>"Pretty good song with a big and epic sound to it. The Music Video is amazing too."</p>
+          </div>
+          <div class="critic-card">
+            <div class="score">✦ Fan</div>
+            <div class="source">The Bias List Comments</div>
+            <p>"I got chills multiple times listening to this from the vocal moments alone. IVE really lean into a real sense of drama here."</p>
+          </div>
+          <div class="critic-card">
+            <div class="score">✦ Fan</div>
+            <div class="source">Community</div>
+            <p>"Sounds like an 'I Am'-ified version of 'Eleven'. This is textbook IVE — I can hear Eleven, I can feel I AM, I can see After Like all over the video."</p>
+          </div>
+        </div>
+
+        <p>The through-line in criticism — both positive and questioning — is <em>Blackhole</em>'s relationship to IVE's own canon. Comparisons to <em>I Am</em> (2023), <em>Eleven</em> (2021), and <em>After Like</em> (2022) aren't accusations of self-imitation. They're recognitions of something rarer: a group that has developed, over five years, a genuinely distinctive sonic signature. The "IVE sound" — symphonic, percussive, self-possessed — is not a formula. It's a language. And <em>Blackhole</em> is one of the most fluent sentences they've ever written in it.</p>
+      </section>
+
+      <!-- IV. Visual -->
+      <section class="fade-in">
+        <div class="section-label">IV. Visual World</div>
+        <h2>Six Women at the <em>Edge of Everything</em></h2>
+        <p>The music video is, simply put, one of the most visually coherent things IVE have ever put out. Filmed atop a building at dusk — Seoul glittering beneath them, sky bruising orange and violet — the six members stand at a railing like figures at the prow of something enormous. They're not performing for the camera. They own the frame.</p>
+        <p>The styling deserves its own essay. Each member is dressed in a distinct palette and silhouette — a full-length fur coat in sand tones, a hot pink suit, a black leather jacket with faux-fur hem, a cream duster over red — yet the ensemble reads as a single, composed image. This is not an accident. The costume direction of <em>Blackhole</em> achieves something rare: six individual visual identities that, placed together, form a unified aesthetic thesis about power and femininity.</p>
+        <p>The city backdrop is not decorative. It is thematic. A blackhole needs mass to collapse around; IVE give us an entire metropolis as the gravitational body. The rooftop stage says: we are above all of this, and we are pulling it toward us.</p>
+
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/1Lmy7qwmSMc" title="IVE - BLACKHOLE Music Video" allowfullscreen
+            alt="IVE 'Blackhole' official music video — six members in fashion-forward styling atop a skyscraper at dusk with Seoul cityscape in background"></iframe>
+        </div>
+      </section>
+
+      <!-- V. Choreography -->
+      <section class="fade-in">
+        <div class="section-label">V. Movement & Stage</div>
+        <h2>The Body as <em>Architecture</em></h2>
+        <p>If you haven't watched the stage performance of <em>Blackhole</em>, you are genuinely missing half the piece. The choreography — like the best IVE choreo — is not designed to impress. It's designed to <em>mean something</em>.</p>
+        <p>The pre-chorus formation is the centrepiece: a simultaneous shoulder-drop and reach that echoes the musical tension perfectly. When the percussion hits, the bodies snap — not into chaos, but into geometry. IVE are a group that understands collective shape. Six bodies arranged with the same precision as the six instruments in the production mix.</p>
+        <p>The centre formations during the chorus are open, asymmetric — pulling apart and snapping back, orbiting rather than anchoring. It's choreographic physics: the dancers behaving the way matter behaves near a gravitational anomaly. Everything is being pulled, but nothing falls.</p>
+        <p>The stage design at year-end performances layered the rooftop concept with dramatic backlighting — shafts of amber and deep indigo cutting across the formation, creating a silhouette effect that reduced the performance to pure shape and intention. On those stages, <em>Blackhole</em> stopped being a comeback and became a monument.</p>
+      </section>
+
+      <!-- VI. Members -->
+      <section class="fade-in">
+        <div class="section-label">VI. The Six</div>
+        <h2>Who Are These <em>Girls</em>?</h2>
+        <p>Part of what makes <em>Blackhole</em> work as a vocal and performance piece is the way each member's timbre is deployed in service of the whole. Briefly:</p>
+
+        <div class="member-grid">
+          <div class="member-card">
+            <div class="member-name">Yujin</div>
+            <div class="member-hanja">안유진 · Leader</div>
+            <div class="member-role">Lead Vocalist · Main Dancer</div>
+            <p class="member-desc">The backbone of IVE. Her voice is clear and centring — warm without sentimentality. As leader, she carries the group's emotional register with quiet authority. Ex-IZ*ONE.</p>
+          </div>
+          <div class="member-card">
+            <div class="member-name">Gaeul</div>
+            <div class="member-hanja">가을 · Eldest</div>
+            <div class="member-role">Main Dancer · Lead Rapper</div>
+            <p class="member-desc">The group's anchor in motion. Gaeul's stage presence is precise and controlled — every line deliberate, every gesture counted. Her rap delivery has a crisp rhythmic authority.</p>
+          </div>
+          <div class="member-card">
+            <div class="member-name">Rei</div>
+            <div class="member-hanja">레이 · Japanese Member</div>
+            <div class="member-role">Main Rapper · Sub Vocalist</div>
+            <p class="member-desc">Rei brings a distinct tonal personality — her voice sits differently in the mix, sharper and more percussive. Her rap sections punctuate the sound with a different density.</p>
+          </div>
+          <div class="member-card">
+            <div class="member-name">Wonyoung</div>
+            <div class="member-hanja">장원영 · Center</div>
+            <div class="member-role">Center · Visual · Lead Dancer</div>
+            <p class="member-desc">The face and gravitational centre of IVE. Wonyoung doesn't perform; she simply exists and the camera reorganises itself around her. One of the most globally recognised K-pop idols of the generation.</p>
+          </div>
+          <div class="member-card">
+            <div class="member-name">Liz</div>
+            <div class="member-hanja">리즈 · Jeju-born</div>
+            <div class="member-role">Main Vocalist · Lead Dancer</div>
+            <p class="member-desc">The vocal architecture of IVE. When the production needs to soar, it's Liz who carries it there — a rich, soulful tone with genuine power behind the warmth. Her Melon-confirmed main vocal position is not honorary.</p>
+          </div>
+          <div class="member-card">
+            <div class="member-name">Leeseo</div>
+            <div class="member-hanja">이서 · Maknae</div>
+            <div class="member-role">Lead Vocalist · Lead Dancer</div>
+            <p class="member-desc">Born 2007, performing at the level of a ten-year veteran. Leeseo's voice is lighter, with a crystalline quality that sits in the upper register of IVE's harmonic stack like a crown. She is fresh energy made physical.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- VII. Coda -->
+      <section class="fade-in">
+        <div class="section-label">VII. Coda</div>
+        <h2>Why <em>Blackhole</em> Matters</h2>
+        <p>K-pop is full of good songs. It is not full of songs that feel like they could not have been made by anyone else. <em>Blackhole</em> is the latter. It is the product of a group that has, across five years and nine major singles, built a sonic identity so distinctive that even its critics use it as the reference frame for praise: it sounds like IVE, at their best, being more IVE than ever.</p>
+        <p>The track is a gravitational argument — for IVE's artistry, for the intelligence of Korean pop production, for the idea that maximalism and craft are not opposites. Every element of <em>Blackhole</em> is intentional: the restrained chorus that earns its repetition, the pre-chorus that could hold up a cathedral, the choreography that makes physics beautiful, and six women on a rooftop at the end of the world, dressed like art, refusing to fall.</p>
+        <p>I love these girls. I will still be listening to this song in ten years. And it will still be pulling me in.</p>
+
+        <div class="divider">✦</div>
+      </section>
+
+    </div><!-- /EN -->
+
+  </div><!-- /article-body -->
+</main>
+
+<footer>
+  <p>Written with love by <a href="https://adeleine1217.github.io/">Adeleine</a> · 2026</p>
+  <p style="margin-top:0.5rem;">IVE — <em>Blackhole</em> · Revive+ (Starship Entertainment / Columbia, 2026)</p>
+</footer>
+
+<script>
+  // ── Starfield
+  const sf = document.getElementById('starfield');
+  for (let i = 0; i < 140; i++) {
+    const s = document.createElement('div');
+    s.className = 'star';
+    const size = Math.random() * 2.2 + 0.5;
+    s.style.cssText = `
+      width:${size}px; height:${size}px;
+      left:${Math.random()*100}%;
+      top:${Math.random()*100}%;
+      --d:${(Math.random()*5+2).toFixed(1)}s;
+      --delay:-${(Math.random()*6).toFixed(1)}s;
+      --op:${(Math.random()*0.55+0.25).toFixed(2)};
+    `;
+    sf.appendChild(s);
+  }
+
+  // ── Intersection Observer for fade-in
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in-view');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
