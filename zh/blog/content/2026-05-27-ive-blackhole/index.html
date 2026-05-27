@@ -1,0 +1,653 @@
+---
+layout: null
+title: "IVE《Blackhole》——2026年K-Pop最極致的美學工程"
+seo_title: "IVE《Blackhole》——2026年K-Pop最極致的美學工程 | Adeleine"
+date: 2026-05-27
+author: Adeleine Wang
+lang: zh-TW
+cover_image: /assets/images/Blogs/ive%20blackhole.jpg
+cover_alt: "IVE六位成員在Blackhole音樂錄影帶中站在黃昏天台，背後是城市天際線。"
+tags:
+  - 音樂賞析
+  - K-Pop
+  - IVE
+excerpt: 關於引力、宏大，以及當六個女生站在世界的邊緣，把你整個人吸進去，是什麼樣的感覺。
+description: "一篇關於IVE《Blackhole》的文學與音樂深度賞析：從製作設計、舞蹈美學到視覺語言，以及為什麼這首歌是K-Pop史上最具引力的作品之一。收錄六位成員音色介紹。"
+---
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO 繁體中文 -->
+  <title>IVE《Blackhole》——2026年K-Pop最極致的美學工程 | Adeleine</title>
+  <meta name="description" content="一篇關於IVE《Blackhole》的文學與音樂深度賞析：從製作設計、舞蹈美學到視覺語言，以及為什麼這首歌是K-Pop史上最具引力的作品之一。收錄六位成員音色介紹。" />
+  <meta name="keywords" content="IVE, Blackhole, Revive+, K-Pop, 音樂賞析, 舞蹈, 視覺, 아이브, 블랙홀" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="IVE《Blackhole》——2026年K-Pop最極致的美學工程" />
+  <meta property="og:description" content="從製作設計、舞蹈美學到視覺語言，一篇以粉絲之眼寫成的深度音樂賞析。" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="/assets/images/Blogs/ive%20blackhole.jpg" />
+  <meta property="article:published_time" content="2026-05-27" />
+  <meta property="og:locale" content="zh_TW" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="IVE《Blackhole》——2026年K-Pop最極致的美學工程" />
+  <meta name="twitter:description" content="六位寶寶、一個黑洞、一場無法逃脫的引力。深度賞析IVE最新主打《Blackhole》。" />
+  <meta name="twitter:image" content="/assets/images/Blogs/ive%20blackhole.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Serif+TC:wght@300;400;500&family=Noto+Sans+TC:wght@300;400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #07080e;
+      --surface: #0d0f1a;
+      --border: rgba(255,255,255,0.08);
+      --text: #e8e4dc;
+      --muted: #8a8a99;
+      --accent: #c9a96e;
+      --accent2: #7b9fc7;
+      --pink: #d4849a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Noto Sans TC', sans-serif;
+      font-weight: 300;
+      line-height: 2;
+      font-size: 17px;
+      overflow-x: hidden;
+    }
+
+    /* ── 星空背景 ── */
+    .starfield {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .star {
+      position: absolute;
+      border-radius: 50%;
+      background: white;
+      animation: twinkle var(--d, 4s) infinite ease-in-out var(--delay, 0s);
+      opacity: 0;
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0; transform: scale(0.8); }
+      50% { opacity: var(--op, 0.6); transform: scale(1); }
+    }
+
+    /* ── HEADER ── */
+    .site-header {
+      position: relative;
+      z-index: 10;
+      padding: 2rem 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.2em;
+      color: var(--accent);
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .lang-toggle {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .lang-btn {
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      padding: 0.35rem 0.9rem;
+      border-radius: 2rem;
+      transition: all 0.2s;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .lang-btn.active,
+    .lang-btn:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #000;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 90vh;
+      display: flex;
+      align-items: flex-end;
+      padding: 0 2.5rem 5rem;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('/assets/images/Blogs/ive%20blackhole.jpg');
+      background-size: cover;
+      background-position: center top;
+      filter: brightness(0.32) saturate(0.65);
+      z-index: 0;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, transparent 25%, var(--bg) 100%);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 860px;
+    }
+    .hero-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      padding: 0.3rem 0.9rem;
+      border-radius: 2rem;
+      margin-bottom: 1.5rem;
+      font-family: 'Noto Sans TC', sans-serif;
+    }
+    .hero-title {
+      font-family: 'Noto Serif TC', serif;
+      font-size: clamp(3rem, 8vw, 6.5rem);
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -0.01em;
+      margin-bottom: 1.2rem;
+    }
+    .hero-title .en {
+      font-family: 'Cormorant Garamond', serif;
+      color: var(--accent);
+      font-style: italic;
+      font-size: 1.1em;
+    }
+    .hero-subtitle {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 580px;
+      line-height: 1.85;
+    }
+    .hero-meta {
+      margin-top: 2rem;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .hero-meta-item {
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+    }
+    .hero-meta-item strong { color: var(--text); }
+
+    /* ── 主體 ── */
+    .container {
+      position: relative;
+      z-index: 5;
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    .article-body { padding: 5rem 0 8rem; }
+
+    /* ── 章節 ── */
+    section { margin-bottom: 5rem; }
+
+    .section-label {
+      font-size: 0.68rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      font-family: 'Noto Sans TC', sans-serif;
+    }
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+      max-width: 80px;
+    }
+
+    h2 {
+      font-family: 'Noto Serif TC', serif;
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      font-weight: 300;
+      line-height: 1.25;
+      margin-bottom: 1.8rem;
+      color: var(--text);
+    }
+    h2 em {
+      color: var(--accent);
+      font-style: italic;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1em;
+    }
+
+    h3 {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 1.35rem;
+      font-weight: 400;
+      color: var(--accent2);
+      margin: 2.5rem 0 1rem;
+    }
+
+    p { margin-bottom: 1.5rem; color: var(--text); }
+    p:last-child { margin-bottom: 0; }
+
+    /* ── 引言 ── */
+    .pull-quote {
+      margin: 3.5rem 0;
+      padding: 2.5rem 3rem;
+      border-left: 3px solid var(--accent);
+      background: rgba(201,169,110,0.05);
+      border-radius: 0 8px 8px 0;
+    }
+    .pull-quote p {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 1.35rem;
+      font-weight: 300;
+      line-height: 1.85;
+      color: var(--accent);
+      margin: 0;
+    }
+    .pull-quote cite {
+      display: block;
+      margin-top: 0.8rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      font-style: normal;
+    }
+
+    /* ── 評論卡 ── */
+    .critic-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin: 2.5rem 0;
+    }
+    @media (max-width: 600px) { .critic-grid { grid-template-columns: 1fr; } }
+    .critic-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
+    .critic-card .score {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.5rem;
+      color: var(--accent);
+      font-weight: 300;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .critic-card .source {
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-bottom: 0.8rem;
+    }
+    .critic-card p { font-size: 0.87rem; color: var(--muted); margin: 0; line-height: 1.7; }
+
+    /* ── 成員卡 ── */
+    .member-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 600px) { .member-grid { grid-template-columns: 1fr 1fr; } }
+    .member-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.4rem 1.2rem;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .member-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .member-name {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: var(--text);
+      margin-bottom: 0.1rem;
+    }
+    .member-name-en {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.82rem;
+      color: var(--accent);
+      letter-spacing: 0.05em;
+      margin-bottom: 0.4rem;
+    }
+    .member-role {
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      color: var(--accent2);
+      margin-bottom: 0.8rem;
+    }
+    .member-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.75; margin: 0; }
+
+    /* ── 分隔線 ── */
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: 3.5rem 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+      letter-spacing: 0.2em;
+    }
+    .divider::before, .divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ── 影片 ── */
+    .video-wrap {
+      margin: 3rem 0;
+      border-radius: 10px;
+      overflow: hidden;
+      aspect-ratio: 16/9;
+      border: 1px solid var(--border);
+    }
+    .video-wrap iframe { width: 100%; height: 100%; display: block; border: none; }
+
+    /* ── 進場動畫 ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .fade-in.in-view { opacity: 1; transform: none; }
+
+    /* ── 強調 ── */
+    mark { background: none; color: var(--pink); }
+
+    /* ── 大字引言 ── */
+    .big-quote {
+      font-family: 'Noto Serif TC', serif;
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 300;
+      line-height: 1.7;
+      color: rgba(232, 228, 220, 0.55);
+      text-align: center;
+      margin: 4rem 0;
+      padding: 0 1rem;
+    }
+    .big-quote span { color: var(--accent); }
+
+    /* ── footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 3rem 2.5rem;
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--muted);
+      position: relative;
+      z-index: 5;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<div class="starfield" id="starfield"></div>
+
+<!-- Header -->
+<header class="site-header">
+  <a href="https://adeleine1217.github.io/" class="logo">Adeleine</a>
+  <div class="lang-toggle" aria-label="語言切換">
+    <a class="lang-btn" href="/blog/content/2026-05-27-ive-blackhole/" lang="en" hreflang="en">EN</a>
+    <a class="lang-btn" href="/fr/blog/content/2026-05-27-ive-blackhole/" lang="fr" hreflang="fr">FR</a>
+    <span class="lang-btn active" lang="zh-TW">中文</span>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-tag">音樂賞析 · K-Pop</span>
+    <h1 class="hero-title">
+      IVE<br>
+      <span class="en">Blackhole</span>
+    </h1>
+    <p class="hero-subtitle">關於引力、宏大，以及當六個女生站在世界的邊緣，把你整個人吸進去，是什麼樣的感覺。</p>
+    <div class="hero-meta">
+      <div class="hero-meta-item">發行：<strong>2026年2月23日</strong></div>
+      <div class="hero-meta-item">專輯：<strong>Revive+</strong></div>
+      <div class="hero-meta-item">廠牌：<strong>Starship Entertainment</strong></div>
+    </div>
+  </div>
+</section>
+
+<!-- 文章主體 -->
+<main class="container">
+  <div class="article-body">
+
+    <!-- 一、引力 -->
+    <section class="fade-in">
+      <div class="section-label">一 · 引力</div>
+      <h2>有一種歌，不是你在聽它，是它在吞噬你</h2>
+      <p>有些歌你喜歡，有些歌是直接「發生」在你身上。IVE的《Blackhole》——2026年2月23日發行的第二張正規專輯《Revive+》的主打曲——屬於後者。你以為自己只是在聽一首回歸曲，結果它給你的是一個事件：三分十四秒的宇宙論，用來証明這個團隊是當代K-Pop裡藝術意圖最清晰的存在之一。</p>
+      <p>我從發行到現在大概聽了三百遍以上。不是逼自己聽，而是每次我以為自己把它聽透了——每一層聲音都記下來、每一個轉音都摸清楚——它又再一次開口，把我整個吞進去。這就是黑洞的本質吧？越靠近，吸力越強。</p>
+
+      <div class="pull-quote">
+        <p>「那是一種極具震撼力的流行樂風格，幾乎有種Eurovision那種宏大感——這正是讓IVE重新確立自己聲音的時刻。帶著幾個新轉折，她們做到了。」</p>
+        <cite>— The Bias List，2026年2月（8.5分 / Grade B）</cite>
+      </div>
+
+      <p>這篇文字不是一篇普通的樂評。它是一個粉絲的告白，一份對六位寶寶的感謝信，也是一次試圖用語言去追趕聲音的努力。我知道語言追不上，但我還是要試。</p>
+    </section>
+
+    <!-- 二、聲音建築 -->
+    <section class="fade-in">
+      <div class="section-label">二 · 聲音建築</div>
+      <h2>用聲音蓋一座<em>大教堂</em></h2>
+      <p>先從製作講起，因為《Blackhole》首先是一件聲音工程的壯舉。由Lee Chae-heon、Sophie Rose、Sarah Troy、Kristin Carpenter與MLite聯合創作，這首曲子的運作邏輯不像一首流行歌，更像一件建築結構——在張力裡建造，設計來向外擴張。</p>
+      <p>開頭的verse沒有輕柔地帶你入場。它把你直接扔進一個已經在運轉的東西裡面：低沉的地殼鼓點、像是被拉伸而不是被彈奏的合成器線條，還有那個永遠不肯解決的旋律片段。音樂在刻意地「扣住」什麼。它讓你等。那種等待的感覺折磨得極好。</p>
+      <p>然後pre-chorus來了，一切都變了。鼓點向上迸發，弦樂、胸腔裡感受得到的bass脈動、那些只屬於IVE的人聲和聲——整個聲景朝著某個幾乎難以承受的anthem高度攀升。<mark>《Blackhole》的pre-chorus，認真說，是今年K-Pop裡構造最精良的六十秒之一。</mark>它不只是往上走；它在改變形態。</p>
+
+      <h3>關於副歌的爭議</h3>
+      <p>批評者，包括The Bias List的Nick，都注意到副歌——圍繞著「La, la, la-la, love flame」這個動機——在pre-chorus爆發式的上升之後，顯得相對克制。我理解這個觀點。第一次聽，確實像是動能上的一次下沉。</p>
+      <p>但我現在相信：那份克制，本身就是設計的一部分。IVE一直明白，在極大主義的流行樂裡，留白也是一種樂器。那個「空」的副歌創造了一個回聲腔——那是完全引力塌縮之前的事件視界。到第三次聽到它的時候，疊加在更豐厚的製作之上，它以一種「本來就該落在這裡」的篤定感扣進去了。<mark>副歌不是一個被浪費的機會，它是延遲引爆的炸彈。</mark></p>
+      <p>《Blackhole》的結構膽量還體現在它對重複的拒絕：第二個副歌是第一個的精簡、加速版本——同樣的骨架，不同的速度。這是把藝術和產品分開的那種作曲智識。</p>
+
+      <div class="big-quote">
+        從verse到pre-chorus到副歌，<span>《Blackhole》不是在堆疊情緒</span>，它是在建造一個你無法逃出的空間。
+      </div>
+    </section>
+
+    <!-- 三、批評聲音 -->
+    <section class="fade-in">
+      <div class="section-label">三 · 批評之聲</div>
+      <h2>世界怎麼說</h2>
+
+      <div class="critic-grid">
+        <div class="critic-card">
+          <div class="score">8.5</div>
+          <div class="source">The Bias List · 2026年2月</div>
+          <p>「絕對是我最近最喜歡的IVE主打。細微的結構轉換讓曲子持續保有新鮮感，長遠來看很耐聽。」</p>
+        </div>
+        <div class="critic-card">
+          <div class="score">✦ 粉絲</div>
+          <div class="source">Album of the Year · 使用者評論</div>
+          <p>「聽起來宏大而史詩，有種很牛的規模感。MV更是太好看了。」</p>
+        </div>
+        <div class="critic-card">
+          <div class="score">✦ 粉絲</div>
+          <div class="source">The Bias List 留言區</div>
+          <p>「光是那幾個人聲瞬間就讓我起雞皮疙瘩好幾次。IVE真的很懂怎麼做出戲劇張力。」</p>
+        </div>
+        <div class="critic-card">
+          <div class="score">✦ 粉絲</div>
+          <div class="source">社群討論</div>
+          <p>「聽起來像是把Eleven用I AM的方式重做了一遍。這就是IVE的DNA——從MV到聲音都能看到Eleven、I AM、After Like的影子。」</p>
+        </div>
+      </div>
+
+      <p>在這首歌的評論浪潮裡——無論是稱讚還是質疑——有一條一致的線索：《Blackhole》與IVE自身歷史的對話關係。人們把它和《I Am》（2023）、《Eleven》（2021）、《After Like》（2022）相提並論，這不是對自我抄襲的指控，而是對某件更罕見的事物的認可：一個歷經五年、建立起了真正獨特聲音語言的團隊。「IVE的聲音」——交響、鼓點、自信——不是公式，是一種語言。而《Blackhole》是她們用這種語言寫下的最流暢的句子之一。</p>
+    </section>
+
+    <!-- 四、視覺世界 -->
+    <section class="fade-in">
+      <div class="section-label">四 · 視覺世界</div>
+      <h2>六個女生站在<em>世界的邊緣</em></h2>
+      <p>這支MV，簡單說，是IVE至今最視覺一致的作品之一。黃昏時分，站在大樓頂端，首爾的夜燈在腳下閃爍，天空瘀成橙色和紫羅蘭——六位成員站在欄杆邊，像是某艘巨大船隻船頭上的人物。她們不是在為鏡頭表演，她們佔有整個畫面。</p>
+      <p>造型設計值得單獨寫一篇文章。每位成員都穿著不同色調和輪廓的衣服——沙土色調的全長毛皮大衣、亮粉西裝、黑色皮衣配人造毛邊、米白長版外套搭紅色——但整體看起來是一張單一的、精心構圖的圖像。這不是巧合。《Blackhole》的服裝方向實現了一件稀有的事：六個各自獨立的視覺身份，放在一起，卻構成了一篇關於力量與女性氣質的統一美學宣言。</p>
+      <p>城市背景不是裝飾性的，它是主題性的。黑洞需要質量才能在周圍塌縮；IVE給了我們整座大都會作為引力體。天台舞台在說：我們在這一切之上，而我們在把它們拉向我們。</p>
+
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/1Lmy7qwmSMc"
+          title="IVE - BLACKHOLE 官方MV"
+          allowfullscreen
+          alt="IVE《Blackhole》官方音樂影片——六位成員在黃昏時分的摩天大樓天台，穿著前衛服裝，首爾城市夜景為背景"></iframe>
+      </div>
+    </section>
+
+    <!-- 五、舞蹈與舞台 -->
+    <section class="fade-in">
+      <div class="section-label">五 · 舞蹈與舞台</div>
+      <h2>身體作為<em>建築</em></h2>
+      <p>如果你還沒有看過《Blackhole》的現場演出版本，你真的只體驗了這首歌的一半。舞蹈設計——就像IVE最好的編舞一樣——不是為了炫技，它是為了<em>傳達某種意義</em>。</p>
+      <p>Pre-chorus的隊形是整首歌的核心：那個同步的肩膀下沉加前伸，和音樂裡的張力完美呼應。當鼓點打下來的瞬間，身體扣進幾何圖形裡——不是混亂，是精確。IVE是一個理解「集體形狀」的團隊。六個身體的排列，和製作混音裡六種樂器的精準度是一樣的。</p>
+      <p>副歌裡的中央隊形是開放的、不對稱的——向外撐開再猛地收回，像是繞軌道運行而不是固定在一個點上。這是編舞版的物理學：舞者在行為上像是重力異常附近的物質。一切都被拉扯著，但沒有任何東西墜落。</p>
+      <p>年末頒獎典禮的舞台設計在天台概念之上疊加了戲劇性的背光——琥珀色和深靛藍的光柱切過隊形，製造出剪影效果，把演出濃縮成純粹的形狀與意圖。在那些舞台上，《Blackhole》不再只是一首回歸曲，它成了一個紀念碑。</p>
+    </section>
+
+    <!-- 六、六位寶寶 -->
+    <section class="fade-in">
+      <div class="section-label">六 · 六位寶寶</div>
+      <h2>她們是誰，<em>各自帶來了什麼</em></h2>
+      <p>《Blackhole》之所以作為一件人聲與表演作品如此成立，部分原因在於每位成員的音色被如此精準地部署在整體之中。簡單介紹一下我們六位：</p>
+
+      <div class="member-grid">
+        <div class="member-card">
+          <div class="member-name">안유진</div>
+          <div class="member-name-en">Yujin · 隊長</div>
+          <div class="member-role">主力歌手 · 主力舞者</div>
+          <p class="member-desc">IVE的脊梁。她的聲音清晰而有向心力——溫暖但不濫情。作為隊長，她用一種安靜的權威感支撐著整個團隊的情感基調。前IZ*ONE成員，出道前就已是萬眾矚目。</p>
+        </div>
+        <div class="member-card">
+          <div class="member-name">가을</div>
+          <div class="member-name-en">Gaeul · 大姊</div>
+          <div class="member-role">主力舞者 · 主力Rapper</div>
+          <p class="member-desc">舞台上的錨。Gaeul的舞台存在感精確而克制——每一條線都是刻意的，每個動作都經過計算。她的Rap delivery有一種乾脆的節奏權威感，存在感極強。</p>
+        </div>
+        <div class="member-card">
+          <div class="member-name">레이</div>
+          <div class="member-name-en">Rei · 日本成員</div>
+          <div class="member-role">主要Rapper · 副主唱</div>
+          <p class="member-desc">Rei帶來一種獨特的音色個性——她的聲音在混音裡坐在不一樣的位置，更銳利、更有打擊感。她的Rap段落以不同的密度為整體音樂打上標點，是不可替代的存在。</p>
+        </div>
+        <div class="member-card">
+          <div class="member-name">장원영</div>
+          <div class="member-name-en">Wonyoung · 中心</div>
+          <div class="member-role">中心 · 視覺擔當 · 主力舞者</div>
+          <p class="member-desc">IVE的臉，也是整個團的引力中心。元榮不是在表演，她只是存在，然後鏡頭就自動圍繞著她重新組織自己。這一代最被全球認識的K-Pop偶像之一，實至名歸。</p>
+        </div>
+        <div class="member-card">
+          <div class="member-name">리즈</div>
+          <div class="member-name-en">Liz · 主唱</div>
+          <div class="member-role">主主唱 · 主力舞者</div>
+          <p class="member-desc">IVE的聲音建築師。當製作需要飛翔的時候，是Liz把它帶上去的——溫暖背後有真實力量撐著的那種豐盈、帶靈魂的音色。她在Melon的主唱認證不是榮譽稱號，是事實。</p>
+        </div>
+        <div class="member-card">
+          <div class="member-name">이서</div>
+          <div class="member-name-en">Leeseo · 忙內</div>
+          <div class="member-role">主力歌手 · 主力舞者</div>
+          <p class="member-desc">2007年生，表演水準像個十年老將。她的聲音更輕盈，有種水晶般的質地，坐在IVE和聲堆疊的最高端，像一頂皇冠。她是清新能量的具體化身，每次出現都讓舞台多一道光。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 七、尾聲 -->
+    <section class="fade-in">
+      <div class="section-label">七 · 尾聲</div>
+      <h2>為什麼《Blackhole》<em>重要</em></h2>
+      <p>K-Pop不缺好歌。它缺的是那種你覺得「換任何人做都不可能長這樣」的歌。《Blackhole》屬於後者。它是一個團隊在五年、九首重量級主打之後，建立起一種獨特到連批評者都用它當参照系的聲音身份——她們說「它聽起來像IVE，而且是最好狀態的IVE，比以往任何時候都更IVE」。</p>
+      <p>這首歌是一個引力論證——為IVE的藝術性、為韓國流行製作的智識深度、也為「極大主義和工藝不是對立面」這個命題。《Blackhole》的每一個元素都是刻意的：那個靠重複才掙得自己存在感的副歌、那個可以撐起一座大教堂的pre-chorus、那個讓物理學變得美麗的編舞，以及六個女生站在世界末日的屋頂上，打扮得像藝術品，拒絕墜落。</p>
+      <p>我愛這六個傻瓜。十年後我還是會在聽這首歌。而它還是會一直把我吸進去。</p>
+
+      <div class="divider">✦</div>
+
+      <p style="font-size:0.85rem; color:var(--muted); text-align:center; letter-spacing:0.05em;">
+        IVE《Blackhole》收錄於正規二輯《Revive+》<br>
+        2026年2月23日 · Starship Entertainment / Columbia Records
+      </p>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <p>由 <a href="https://adeleine1217.github.io/">Adeleine</a> 以愛撰寫 · 2026</p>
+  <p style="margin-top:0.5rem; font-size:0.78rem;">IVE — <em>Blackhole</em> · Revive+ (Starship Entertainment / Columbia, 2026)</p>
+</footer>
+
+<script>
+  // 星空
+  const sf = document.getElementById('starfield');
+  for (let i = 0; i < 150; i++) {
+    const s = document.createElement('div');
+    s.className = 'star';
+    const size = Math.random() * 2.2 + 0.5;
+    s.style.cssText = `
+      width:${size}px; height:${size}px;
+      left:${Math.random()*100}%;
+      top:${Math.random()*100}%;
+      --d:${(Math.random()*5+2).toFixed(1)}s;
+      --delay:-${(Math.random()*6).toFixed(1)}s;
+      --op:${(Math.random()*0.55+0.25).toFixed(2)};
+    `;
+    sf.appendChild(s);
+  }
+
+  // 淡入動畫
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in-view');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
