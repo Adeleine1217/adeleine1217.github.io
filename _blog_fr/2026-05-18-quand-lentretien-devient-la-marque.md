@@ -6,7 +6,7 @@ date: 2026-05-18
 author: Adeleine Wang
 lang: fr
 alt_url: /blog/content/2026-05-18-when-the-interview-becomes-the-brand/
-cover_image: /assets/images/when-interview-becomes-brand-cover.png
+cover_image: /assets/images/Blogs/when-interview-becomes-brand-cover.png
 cover_alt: "Nature morte éditoriale avec des produits de soin haut de gamme, une carte de membre VIP déchirée, des ciseaux dorés et un formulaire d’adhésion annulé."
 tags:
   - strategie de marque
