@@ -1765,6 +1765,52 @@ pre {
   }
 }
 
+@keyframes petite-thinking-pulse {
+  0%,
+  100% {
+    box-shadow: 0 10px 22px rgba(31, 26, 18, 0.08);
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    box-shadow: 0 14px 30px rgba(197, 160, 89, 0.2);
+    transform: translateY(-2px) rotate(-2deg);
+  }
+}
+
+@keyframes petite-dot-bounce {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: translateY(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes petite-heart-float {
+  0% {
+    opacity: 0;
+    transform: translateY(0) translateX(0) scale(0.55) rotate(0deg);
+  }
+
+  18% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform:
+      translateY(calc(-56px - var(--heart-index) * 5px))
+      translateX(calc((var(--heart-index) - 3) * 16px))
+      scale(1)
+      rotate(calc((var(--heart-index) - 3) * 9deg));
+  }
+}
+
 .petite-chat * {
   box-sizing: border-box;
 }
@@ -1899,6 +1945,14 @@ pre {
   box-shadow: 0 10px 22px rgba(31, 26, 18, 0.08);
 }
 
+.petite-chat.is-thinking .petite-chat-avatar {
+  animation: petite-thinking-pulse 1s ease-in-out infinite;
+}
+
+.petite-chat.is-thinking .petite-chat-toggle-mark {
+  border-color: rgba(197, 160, 89, 0.62);
+}
+
 .petite-chat-kicker {
   margin: 0 0 0.3rem;
   color: var(--gold-deep);
@@ -1986,6 +2040,36 @@ pre {
   text-underline-offset: 0.18em;
 }
 
+.petite-chat-typing {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.petite-chat-typing span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.18rem;
+}
+
+.petite-chat-typing i {
+  width: 0.28rem;
+  height: 0.28rem;
+  border-radius: 50%;
+  background: rgba(197, 160, 89, 0.84);
+  animation: petite-dot-bounce 820ms ease-in-out infinite;
+}
+
+.petite-chat-typing i:nth-child(2) {
+  animation-delay: 120ms;
+}
+
+.petite-chat-typing i:nth-child(3) {
+  animation-delay: 240ms;
+}
+
 .petite-chat-bubble-rich {
   width: min(330px, 92%);
   max-width: 92%;
@@ -2059,6 +2143,54 @@ pre {
   box-shadow: 0 8px 18px rgba(31, 26, 18, 0.08);
 }
 
+.petite-chat-quiz {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.45rem;
+}
+
+.petite-chat-quiz button {
+  min-height: 2.25rem;
+  padding: 0.45rem 0.55rem;
+  border: 1px solid rgba(197, 160, 89, 0.3);
+  border-radius: 12px;
+  color: #333339;
+  background: rgba(255, 253, 250, 0.9);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1.25;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.petite-chat-quiz button:hover {
+  transform: translateY(-1px);
+  border-color: rgba(77, 86, 196, 0.36);
+  box-shadow: 0 8px 18px rgba(31, 26, 18, 0.08);
+}
+
+.petite-heart-burst {
+  position: absolute;
+  right: 1.25rem;
+  bottom: 4rem;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+}
+
+.petite-heart-burst span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #b98aa8;
+  font-size: 1rem;
+  line-height: 1;
+  text-shadow: 0 6px 18px rgba(185, 138, 168, 0.22);
+  animation: petite-heart-float 1.25s ease-out both;
+  animation-delay: calc(var(--heart-index) * 55ms);
+}
+
 .petite-chat-prompts {
   display: flex;
   gap: 0.45rem;
@@ -2129,7 +2261,10 @@ pre {
 @media (prefers-reduced-motion: reduce) {
   .petite-chat-toggle,
   .petite-chat.is-open .petite-chat-panel,
-  .petite-chat.is-open .petite-chat-message {
+  .petite-chat.is-open .petite-chat-message,
+  .petite-chat.is-thinking .petite-chat-avatar,
+  .petite-chat-typing i,
+  .petite-heart-burst span {
     animation: none;
   }
 
@@ -2137,7 +2272,8 @@ pre {
   .petite-chat-toggle:hover,
   .petite-chat.is-open .petite-chat-toggle,
   .petite-chat-panel,
-  .petite-chat.is-open .petite-chat-panel {
+  .petite-chat.is-open .petite-chat-panel,
+  .petite-chat-quiz button:hover {
     transform: none;
     transition: none;
   }
@@ -2374,5 +2510,9 @@ pre {
 
   .petite-chat-bubble {
     max-width: 88%;
+  }
+
+  .petite-chat-quiz {
+    grid-template-columns: 1fr;
   }
 }

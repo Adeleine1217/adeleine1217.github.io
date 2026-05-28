@@ -20,7 +20,11 @@
   const dismissedKey = "petite-mignonne-dismissed";
   const autoOpenDelayMs = 900;
   const closeAnimationMs = 220;
+  const thinkingDelayMs = 520;
   let closeTimerId = null;
+  let thinkingTimerId = null;
+  let typingMessage = null;
+  let celebrationTimerId = null;
 
   const copy = {
     en: {
@@ -29,6 +33,7 @@
       fallback:
         "I can help with Adeleine's portfolio, resume, SEO/AEO/GEO work, Meta ads, blog, languages, or contact details. Try asking: What makes Adeleine strong for growth marketing?",
       placeholder: "Ask about Adeleine...",
+      thinking: "Petite Mignonne is thinking",
     },
     fr: {
       greeting:
@@ -36,6 +41,7 @@
       fallback:
         "Je peux aider avec le portfolio, le CV, le SEO/AEO/GEO, les publicites Meta, le blog, les langues ou les coordonnees d'Adeleine. Essayez : Qu'est-ce qui rend Adeleine forte en growth marketing ?",
       placeholder: "Posez une question sur Adeleine...",
+      thinking: "Petite Mignonne reflechit",
     },
     zh: {
       greeting:
@@ -43,6 +49,7 @@
       fallback:
         "我可以回答 Adeleine 的作品集、履歷、SEO/AEO/GEO、Meta 廣告、部落格、語言能力和聯絡方式。你可以問：Adeleine 適合什麼樣的 growth marketing 工作？",
       placeholder: "問我關於 Adeleine 的事...",
+      thinking: "Petite Mignonne 正在想",
     },
   };
 
@@ -94,6 +101,137 @@
     zh:
       '<div class="petite-chat-card"><div class="petite-chat-card-title">Portfolio Tour</div><p>建議你這樣逛 Adeleine 的網站：</p><div class="petite-chat-list"><span>1. Home：定位、成果數字、推薦語。</span><span>2. Resume：經歷、AI workflows、語言能力、核心技能。</span><span>3. Portfolio：growth systems、SEO/AEO/GEO、paid acquisition proof。</span><span>4. Ad Creatives：Meta creative archive 和 testing framework。</span><span>5. Blog：marketing、culture、SEO、AI-assisted growth 文章。</span></div><div class="petite-chat-actions"><a href="/cv/">先看 Resume</a><a href="/portfolio/">打開 Portfolio</a><a href="/blog/">閱讀 Blog</a></div></div>',
   };
+
+  const quizCards = {
+    en:
+      '<div class="petite-chat-card"><div class="petite-chat-card-title">Talent Quiz</div><p>What kind of person are you looking for right now?</p><div class="petite-chat-quiz"><button type="button" data-petite-quiz="seo">SEO growth person</button><button type="button" data-petite-quiz="paid">Paid ads person</button><button type="button" data-petite-quiz="content">Content strategist</button><button type="button" data-petite-quiz="ai">AI workflow builder</button></div></div>',
+    fr:
+      '<div class="petite-chat-card"><div class="petite-chat-card-title">Quiz profil</div><p>Quel type de talent recherchez-vous maintenant ?</p><div class="petite-chat-quiz"><button type="button" data-petite-quiz="seo">Profil SEO growth</button><button type="button" data-petite-quiz="paid">Profil paid ads</button><button type="button" data-petite-quiz="content">Strategie de contenu</button><button type="button" data-petite-quiz="ai">Builder workflows IA</button></div></div>',
+    zh:
+      '<div class="petite-chat-card"><div class="petite-chat-card-title">Talent Quiz</div><p>你現在最想找哪種人才？</p><div class="petite-chat-quiz"><button type="button" data-petite-quiz="seo">SEO growth person</button><button type="button" data-petite-quiz="paid">Paid ads person</button><button type="button" data-petite-quiz="content">Content strategist</button><button type="button" data-petite-quiz="ai">AI workflow builder</button></div></div>',
+  };
+
+  const quizResults = {
+    en: {
+      seo:
+        '<div class="petite-chat-card"><div class="petite-chat-card-title">Match: SEO Growth</div><p>Adeleine is strongest where SEO meets market expansion: multilingual information architecture, AEO/GEO visibility, and content that can win both Google and AI answer engines.</p><div class="petite-chat-list"><span>Best proof: 55.48% organic search share.</span><span>Best proof: average GSC position of 6.4.</span><span>Best proof: 870+ AI-search mentions.</span></div><div class="petite-chat-actions"><a href="/portfolio/">See SEO Proof</a><a href="/cv/">Open Resume</a></div></div>',
+      paid:
+        '<div class="petite-chat-card"><div class="petite-chat-card-title">Match: Paid Ads</div><p>Adeleine can help when you need structured creative testing, UGC-led Meta ads, audience reading, and CPI control in competitive markets.</p><div class="petite-chat-list"><span>Best proof: UGC-led Meta creative workflow.</span><span>Best proof: around $0.66 to $0.98 CPI in iOS-first US/UK markets.</span><span>Best proof: creative archive with testing logic.</span></div><div class="petite-chat-actions"><a href="/portfolio/my-past-ad-creatives/">Ad Creatives</a><a href="/portfolio/">Portfolio</a></div></div>',
+      content:
+        '<div class="petite-chat-card"><div class="petite-chat-card-title">Match: Content Strategy</div><p>Adeleine is a fit if you need editorial systems, bilingual content, trend analysis, and content that supports acquisition instead of just publishing for volume.</p><div class="petite-chat-list"><span>Best proof: Gen Z trend blog and AI-informed editorial planning.</span><span>Best proof: multilingual content operations across English and French.</span><span>Best proof: blog essays that connect culture and growth strategy.</span></div><div class="petite-chat-actions"><a href="/blog/">Read Blog</a><a href="/portfolio/">Content Work</a></div></div>',
+      ai:
+        '<div class="petite-chat-card"><div class="petite-chat-card-title">Match: AI Workflow Builder</div><p>Adeleine is useful when a team needs practical AI workflows for growth work: content pipelines, prompt systems, automated research, and frontend-ready outputs.</p><div class="petite-chat-list"><span>Best proof: n8n / Make workflow thinking.</span><span>Best proof: Claude, Gemini, OpenAI and AI-agent workflows.</span><span>Best proof: SEO/AEO systems designed for AI search behavior.</span></div><div class="petite-chat-actions"><a href="/cv/">AI Stack</a><a href="/portfolio/">Growth Systems</a></div></div>',
+    },
+    fr: {
+      seo:
+        '<div class="petite-chat-card"><div class="petite-chat-card-title">Match : SEO Growth</div><p>Adeleine est particulierement forte quand le SEO rencontre l\'expansion marche : architecture d\'information multilingue, visibilite AEO/GEO et contenus capables de performer sur Google comme dans les moteurs de reponse IA.</p><div class="petite-chat-list"><span>Preuve : 55,48 % de trafic organique.</span><span>Preuve : position GSC moyenne de 6,4.</span><span>Preuve : 870+ mentions AI search.</span></div><div class="petite-chat-actions"><a href="/fr/portfolio/">Voir les preuves SEO</a><a href="/fr/cv/">Ouvrir le CV</a></div></div>',
+      paid:
+        '<div class="petite-chat-card"><div class="petite-chat-card-title">Match : Paid Ads</div><p>Adeleine est pertinente si vous cherchez des tests creatives structures, des publicites Meta basees sur l\'UGC, une lecture fine des audiences et le controle du CPI sur des marches competitifs.</p><div class="petite-chat-list"><span>Preuve : workflow creative Meta base sur l\'UGC.</span><span>Preuve : environ 0,66 a 0,98 USD de CPI sur les marches iOS US/UK.</span><span>Preuve : archive creative avec logique de test.</span></div><div class="petite-chat-actions"><a href="/fr/portfolio/my-past-ad-creatives/">Ads Creatives</a><a href="/fr/portfolio/">Portfolio</a></div></div>',
+      content:
+        '<div class="petite-chat-card"><div class="petite-chat-card-title">Match : Strategie de contenu</div><p>Adeleine est un bon fit si vous avez besoin de systemes editoriaux, de contenu bilingue, d\'analyse de tendances et de contenus qui soutiennent l\'acquisition.</p><div class="petite-chat-list"><span>Preuve : blog Gen Z et planning editorial informe par l\'IA.</span><span>Preuve : operations de contenu multilingues en anglais et francais.</span><span>Preuve : articles reliant culture et strategie growth.</span></div><div class="petite-chat-actions"><a href="/fr/blog/">Lire le blog</a><a href="/fr/portfolio/">Travaux contenu</a></div></div>',
+      ai:
+        '<div class="petite-chat-card"><div class="petite-chat-card-title">Match : Workflows IA</div><p>Adeleine est utile quand une equipe veut des workflows IA concrets pour le growth : pipelines contenu, prompts, recherche automatisee et outputs prets pour le frontend.</p><div class="petite-chat-list"><span>Preuve : logique n8n / Make.</span><span>Preuve : Claude, Gemini, OpenAI et workflows agents IA.</span><span>Preuve : systemes SEO/AEO concus pour la recherche IA.</span></div><div class="petite-chat-actions"><a href="/fr/cv/">Stack IA</a><a href="/fr/portfolio/">Systemes growth</a></div></div>',
+    },
+    zh: {
+      seo:
+        '<div class="petite-chat-card"><div class="petite-chat-card-title">Match：SEO Growth</div><p>如果你需要的是 SEO、AEO/GEO、多語資訊架構和 AI search visibility，Adeleine 很適合。</p><div class="petite-chat-list"><span>證據：55.48% organic search share。</span><span>證據：GSC 平均排名 6.4。</span><span>證據：870+ AI-search mentions。</span></div><div class="petite-chat-actions"><a href="/portfolio/">看 SEO 成果</a><a href="/cv/">看履歷</a></div></div>',
+      paid:
+        '<div class="petite-chat-card"><div class="petite-chat-card-title">Match：Paid Ads</div><p>如果你需要 Meta ads、UGC creative testing、受眾分析和 CPI control，Adeleine 很適合。</p><div class="petite-chat-list"><span>證據：UGC-led Meta creative workflow。</span><span>證據：US/UK iOS 市場約 $0.66 到 $0.98 CPI。</span><span>證據：有完整 ad creative archive 和測試邏輯。</span></div><div class="petite-chat-actions"><a href="/portfolio/my-past-ad-creatives/">看廣告作品</a><a href="/portfolio/">看作品集</a></div></div>',
+      content:
+        '<div class="petite-chat-card"><div class="petite-chat-card-title">Match：Content Strategy</div><p>如果你要找懂 editorial system、雙語內容、趨勢分析和 growth content 的人，Adeleine 很適合。</p><div class="petite-chat-list"><span>證據：Gen Z trend blog 與 AI-informed editorial planning。</span><span>證據：英文與法文內容營運經驗。</span><span>證據：文章能連接 culture 和 growth strategy。</span></div><div class="petite-chat-actions"><a href="/blog/">讀 Blog</a><a href="/portfolio/">看內容作品</a></div></div>',
+      ai:
+        '<div class="petite-chat-card"><div class="petite-chat-card-title">Match：AI Workflow Builder</div><p>如果團隊想把 AI 真的用進 growth 工作流，例如內容 pipeline、prompt system、自動化研究和前端輸出，Adeleine 很適合。</p><div class="petite-chat-list"><span>證據：n8n / Make workflow thinking。</span><span>證據：Claude、Gemini、OpenAI、AI agent workflows。</span><span>證據：為 AI search behavior 設計 SEO/AEO systems。</span></div><div class="petite-chat-actions"><a href="/cv/">看 AI stack</a><a href="/portfolio/">看 growth systems</a></div></div>',
+    },
+  };
+
+  const easterEggs = [
+    {
+      terms: ["bonjour", "salut"],
+      responses: {
+        en: "Bonjour bonjour. Petite Mignonne adjusts her beret, checks the portfolio clipboard, and is ready for a tiny but excellent tour.",
+        fr: "Bonjour bonjour. Petite Mignonne ajuste son beret, verifie son petit clipboard, et se prepare pour une visite du portfolio.",
+        zh: "Bonjour bonjour。Petite Mignonne 扶好貝雷帽，抱緊小剪貼板，準備帶你逛作品集。",
+      },
+    },
+    {
+      terms: ["bubble tea", "boba", "milk tea", "珍奶", "波霸", "奶茶", "perles", "bubble"],
+      responses: {
+        en: "Bubble tea detected. I am technically a portfolio concierge, but emotionally I am 80% tapioca pearls and 20% growth strategy.",
+        fr: "Bubble tea detecte. Techniquement je suis concierge de portfolio, mais emotionnellement je suis 80 % perles de tapioca et 20 % strategie growth.",
+        zh: "偵測到珍奶關鍵字。嚴格來說我是作品集小助理，但精神組成是 80% 珍珠、20% growth strategy。",
+      },
+    },
+    {
+      terms: ["hire adeleine", "hire", "recruit adeleine", "embaucher adeleine", "recruter adeleine", "錄取", "聘請", "合作"],
+      celebrate: true,
+      responses: {
+        en:
+          '<div class="petite-chat-card"><div class="petite-chat-card-title">Excellent choice</div><p>Petite Mignonne approves this hiring instinct. Adeleine brings growth marketing, SEO/AEO/GEO, paid acquisition, AI workflows, and multilingual execution.</p><div class="petite-chat-actions"><a href="/cv/">Resume</a><a href="/portfolio/">Portfolio</a><a href="mailto:hsiaotungw@gmail.com">Email Adeleine</a></div></div>',
+        fr:
+          '<div class="petite-chat-card"><div class="petite-chat-card-title">Excellent choix</div><p>Petite Mignonne approuve cet instinct de recrutement. Adeleine apporte growth marketing, SEO/AEO/GEO, paid acquisition, workflows IA et execution multilingue.</p><div class="petite-chat-actions"><a href="/fr/cv/">CV</a><a href="/fr/portfolio/">Portfolio</a><a href="mailto:hsiaotungw@gmail.com">Contacter Adeleine</a></div></div>',
+        zh:
+          '<div class="petite-chat-card"><div class="petite-chat-card-title">很會選</div><p>Petite Mignonne 認可這個招聘直覺。Adeleine 有 growth marketing、SEO/AEO/GEO、paid acquisition、AI workflows 和多語執行能力。</p><div class="petite-chat-actions"><a href="/cv/">Resume</a><a href="/portfolio/">Portfolio</a><a href="mailto:hsiaotungw@gmail.com">寄信給 Adeleine</a></div></div>',
+      },
+    },
+    {
+      terms: ["petite mignonne", "petite migonne", "mignonne", "小可愛", "petite"],
+      celebrate: true,
+      responses: {
+        en: "You called my name. I am now legally obligated to be extra charming and recommend the strongest portfolio proof first.",
+        fr: "Vous avez prononce mon nom. Je suis maintenant obligee d'etre encore plus charmante et de recommander les meilleures preuves du portfolio.",
+        zh: "你叫了我的名字。Petite Mignonne 現在必須更可愛地幫你推薦最強作品集證據。",
+      },
+    },
+    {
+      terms: ["ai", "ia", "openai", "chatgpt", "llm", "人工智慧", "模型"],
+      responses: {
+        en: "Tiny AI note: I do not use an API key yet. I am a handmade local assistant, which is why I am fast, safe for GitHub Pages, and suspiciously fond of bubble tea.",
+        fr: "Note IA miniature : je n'utilise pas encore de cle API. Je suis une assistante locale faite main, rapide, compatible GitHub Pages, et tres attachee au bubble tea.",
+        zh: "小小 AI 備註：我目前沒有用 API key，是手工設計的本地小助理，所以適合 GitHub Pages，也很安全，並且很愛珍奶。",
+      },
+    },
+    {
+      terms: ["paris", "france", "french", "beret", "beret", "法國", "巴黎", "貝雷帽"],
+      responses: {
+        en: "French signal received. Beret tilted, clipboard polished, portfolio tour ready. Adeleine's France chapter includes Grenoble Ecole de Management and Back Market.",
+        fr: "Signal francais recu. Beret ajuste, clipboard pret, visite du portfolio activee. Le chapitre France d'Adeleine passe par Grenoble Ecole de Management et Back Market.",
+        zh: "收到法式訊號。貝雷帽扶正，小剪貼板準備好。Adeleine 的法國篇章包含 Grenoble Ecole de Management 和 Back Market。",
+      },
+    },
+    {
+      terms: ["secret", "easter egg", "surprise", "彩蛋", "秘密", "驚喜"],
+      responses: {
+        en: "Secret found. Petite Mignonne's hidden KPI is making recruiters smile before they click the resume.",
+        fr: "Secret trouve. Le KPI cache de Petite Mignonne est de faire sourire les recruteurs avant le clic vers le CV.",
+        zh: "找到彩蛋。Petite Mignonne 的隱藏 KPI 是讓招聘方在點履歷前先微笑一下。",
+      },
+    },
+    {
+      terms: ["blackhole", "black hole", "ive", "黑洞"],
+      responses: {
+        en: "Blackhole mode? I can survive a pop-culture event horizon and still route you back to Adeleine's content strategy work.",
+        fr: "Mode blackhole ? Je peux survivre a un horizon culturel tres dense et vous ramener vers le travail content strategy d'Adeleine.",
+        zh: "Blackhole mode？我可以穿越流行文化事件視界，然後把你帶回 Adeleine 的 content strategy 證據。",
+      },
+    },
+    {
+      terms: ["seo queen", "growth queen", "女王"],
+      celebrate: true,
+      responses: {
+        en: "Crown noted. The royal documents are: organic search share, AI-search mentions, Meta creative tests, and a very tidy resume.",
+        fr: "Couronne notee. Les documents royaux : part de trafic organique, mentions AI search, tests creatives Meta et CV bien structure.",
+        zh: "王冠已記錄。王室文件包括：organic search share、AI-search mentions、Meta creative tests，以及很整齊的履歷。",
+      },
+    },
+    {
+      terms: ["hello kitty", "cute", "kawaii", "可愛"],
+      responses: {
+        en: "Cute is a strategy when it lowers friction. Petite Mignonne says: make the interface soft, then let the proof points do the serious work.",
+        fr: "Le cute peut etre une strategie quand il reduit la friction. Petite Mignonne dit : interface douce, preuves solides.",
+        zh: "可愛也是策略，只要它降低互動摩擦。Petite Mignonne 說：介面柔軟一點，成果證據負責認真。",
+      },
+    },
+  ];
 
   const answers = {
     en: {
@@ -196,6 +334,10 @@
       terms: ["tour", "guide", "visit", "visite", "parcours", "導覽", "逛", "帶我看"],
     },
     {
+      intent: "quiz",
+      terms: ["quiz", "personality", "talent", "profil", "test", "測驗", "小測驗", "人才"],
+    },
+    {
       intent: "language",
       terms: ["language", "french", "english", "mandarin", "trilingual", "langue", "語言", "法文", "英文", "中文"],
     },
@@ -257,7 +399,43 @@
       return tourCards[responseLang];
     }
 
+    if (action === "quiz") {
+      return quizCards[responseLang];
+    }
+
     return copy[responseLang].fallback;
+  };
+
+  const hasTerm = (normalized, term) => {
+    if (/^[a-z]{1,2}$/.test(term)) {
+      return new RegExp(`(^|[^a-z])${term}([^a-z]|$)`).test(normalized);
+    }
+
+    return normalized.includes(term);
+  };
+
+  const getEasterEgg = (message, lang) => {
+    const normalized = message.toLowerCase();
+    const match = easterEggs.find(({ terms }) =>
+      terms.some((term) => hasTerm(normalized, term.toLowerCase()))
+    );
+
+    if (!match) {
+      return null;
+    }
+
+    const responseLang = match.responses[lang] ? lang : "en";
+    return {
+      celebrate: Boolean(match.celebrate),
+      html: match.responses[responseLang],
+      intent: "easter",
+      lang: responseLang,
+    };
+  };
+
+  const getQuizResult = (choice, lang) => {
+    const responseLang = quizResults[lang] ? lang : "en";
+    return quizResults[responseLang][choice] || quizCards[responseLang];
   };
 
   const createMessage = (role, html) => {
@@ -280,6 +458,62 @@
     message.appendChild(bubble);
     log.appendChild(message);
     log.scrollTop = log.scrollHeight;
+  };
+
+  const showThinking = (lang) => {
+    if (typingMessage) {
+      typingMessage.remove();
+      typingMessage = null;
+    }
+
+    root.classList.add("is-thinking");
+
+    const message = document.createElement("div");
+    message.className = "petite-chat-message petite-chat-message-bot petite-chat-typing-message";
+
+    const bubble = document.createElement("div");
+    bubble.className = "petite-chat-bubble petite-chat-typing";
+    bubble.innerHTML = `${copy[lang].thinking}<span aria-hidden="true"><i></i><i></i><i></i></span>`;
+
+    message.appendChild(bubble);
+    log.appendChild(message);
+    log.scrollTop = log.scrollHeight;
+    typingMessage = message;
+  };
+
+  const hideThinking = () => {
+    root.classList.remove("is-thinking");
+
+    if (typingMessage) {
+      typingMessage.remove();
+      typingMessage = null;
+    }
+  };
+
+  const celebrateHearts = () => {
+    if (celebrationTimerId) {
+      window.clearTimeout(celebrationTimerId);
+    }
+
+    root.classList.add("is-celebrating");
+
+    const burst = document.createElement("div");
+    burst.className = "petite-heart-burst";
+    burst.setAttribute("aria-hidden", "true");
+
+    ["1", "2", "3", "4", "5"].forEach((index) => {
+      const heart = document.createElement("span");
+      heart.textContent = "♥";
+      heart.style.setProperty("--heart-index", index);
+      burst.appendChild(heart);
+    });
+
+    root.appendChild(burst);
+    celebrationTimerId = window.setTimeout(() => {
+      root.classList.remove("is-celebrating");
+      burst.remove();
+      celebrationTimerId = null;
+    }, 1400);
   };
 
   const readHistory = () => {
@@ -325,22 +559,56 @@
     remember(role, html);
   };
 
-  const findAnswer = (message) => {
+  const getResponse = (message) => {
     const lang = getLanguage(message);
     const normalized = message.toLowerCase();
+    const easterEgg = getEasterEgg(message, lang);
+
+    if (easterEgg) {
+      return easterEgg;
+    }
+
     const match = intentMap.find(({ terms }) =>
-      terms.some((term) => normalized.includes(term))
+      terms.some((term) => hasTerm(normalized, term.toLowerCase()))
     );
 
     if (!match) {
-      return copy[lang].fallback;
+      return { html: copy[lang].fallback, intent: "fallback", lang };
     }
 
-    if (match.intent === "recruiter" || match.intent === "tour") {
-      return getActionResponse(match.intent, lang);
+    if (match.intent === "recruiter" || match.intent === "tour" || match.intent === "quiz") {
+      return {
+        html: getActionResponse(match.intent, lang),
+        intent: match.intent,
+        lang,
+      };
     }
 
-    return answers[lang][match.intent];
+    return {
+      celebrate: match.intent === "contact",
+      html: answers[lang][match.intent],
+      intent: match.intent,
+      lang,
+    };
+  };
+
+  const queueBotResponse = (response) => {
+    if (thinkingTimerId) {
+      window.clearTimeout(thinkingTimerId);
+      hideThinking();
+    }
+
+    showThinking(response.lang);
+    thinkingTimerId = window.setTimeout(() => {
+      hideThinking();
+      addMessage("bot", response.html);
+
+      if (response.celebrate) {
+        celebrateHearts();
+      }
+
+      thinkingTimerId = null;
+    }, thinkingDelayMs);
   };
 
   const sendMessage = (message) => {
@@ -351,18 +619,29 @@
     }
 
     addMessage("user", trimmed);
-    window.setTimeout(() => {
-      addMessage("bot", findAnswer(trimmed));
-    }, 220);
+    queueBotResponse(getResponse(trimmed));
   };
 
   const sendAction = (action, label) => {
     const lang = pageLang === "fr" ? "fr" : "en";
 
     addMessage("user", label);
-    window.setTimeout(() => {
-      addMessage("bot", getActionResponse(action, lang));
-    }, 220);
+    queueBotResponse({
+      html: getActionResponse(action, lang),
+      intent: action,
+      lang,
+    });
+  };
+
+  const sendQuizResult = (choice, label) => {
+    const lang = pageLang === "fr" ? "fr" : "en";
+
+    addMessage("user", label);
+    queueBotResponse({
+      html: getQuizResult(choice, lang),
+      intent: "quiz-result",
+      lang,
+    });
   };
 
   const openChat = (options = {}) => {
@@ -460,6 +739,16 @@
       sendAction(button.dataset.petiteAction, button.textContent);
       input.value = "";
     });
+  });
+
+  log.addEventListener("click", (event) => {
+    const quizButton = event.target.closest("[data-petite-quiz]");
+
+    if (!quizButton) {
+      return;
+    }
+
+    sendQuizResult(quizButton.dataset.petiteQuiz, quizButton.textContent);
   });
 
   document.addEventListener("keydown", (event) => {
