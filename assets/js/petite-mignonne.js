@@ -14,6 +14,9 @@
   const promptButtons = [...root.querySelectorAll("[data-petite-prompt]")];
   const pageLang = root.dataset.pageLang || "en";
   const storageKey = "petite-mignonne-chat";
+  const autoOpenKey = "petite-mignonne-auto-opened";
+  const dismissedKey = "petite-mignonne-dismissed";
+  const autoOpenDelayMs = 900;
   const closeAnimationMs = 220;
   let closeTimerId = null;
 
@@ -189,6 +192,22 @@
     }
   };
 
+  const readFlag = (key) => {
+    try {
+      return window.sessionStorage.getItem(key) === "true";
+    } catch (error) {
+      return false;
+    }
+  };
+
+  const writeFlag = (key) => {
+    try {
+      window.sessionStorage.setItem(key, "true");
+    } catch (error) {
+      return;
+    }
+  };
+
   const remember = (role, html) => {
     const history = readHistory();
     history.push({ role, html });
@@ -227,7 +246,9 @@
     }, 220);
   };
 
-  const openChat = () => {
+  const openChat = (options = {}) => {
+    const { focusInput = true, markAutoOpened = true } = options;
+
     if (closeTimerId) {
       window.clearTimeout(closeTimerId);
       closeTimerId = null;
@@ -239,10 +260,18 @@
     window.requestAnimationFrame(() => {
       root.classList.add("is-open");
     });
-    window.setTimeout(() => input.focus(), 80);
+
+    if (markAutoOpened) {
+      writeFlag(autoOpenKey);
+    }
+
+    if (focusInput) {
+      window.setTimeout(() => input.focus(), 80);
+    }
   };
 
   const closeChat = () => {
+    writeFlag(dismissedKey);
     root.classList.add("is-closing");
     root.classList.remove("is-open");
     toggle.setAttribute("aria-expanded", "false");
@@ -268,6 +297,20 @@
     }
 
     addMessage("bot", copy[lang].greeting);
+  };
+
+  const scheduleAutoOpen = () => {
+    if (readFlag(autoOpenKey) || readFlag(dismissedKey)) {
+      return;
+    }
+
+    window.setTimeout(() => {
+      if (root.classList.contains("is-open") || readFlag(dismissedKey)) {
+        return;
+      }
+
+      openChat({ focusInput: false });
+    }, autoOpenDelayMs);
   };
 
   toggle.addEventListener("click", () => {
@@ -300,4 +343,5 @@
   });
 
   hydrate();
+  scheduleAutoOpen();
 })();
