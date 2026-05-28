@@ -14,6 +14,8 @@
   const promptButtons = [...root.querySelectorAll("[data-petite-prompt]")];
   const pageLang = root.dataset.pageLang || "en";
   const storageKey = "petite-mignonne-chat";
+  const closeAnimationMs = 220;
+  let closeTimerId = null;
 
   const copy = {
     en: {
@@ -226,17 +228,30 @@
   };
 
   const openChat = () => {
+    if (closeTimerId) {
+      window.clearTimeout(closeTimerId);
+      closeTimerId = null;
+    }
+
     panel.hidden = false;
-    root.classList.add("is-open");
+    root.classList.remove("is-closing");
     toggle.setAttribute("aria-expanded", "true");
+    window.requestAnimationFrame(() => {
+      root.classList.add("is-open");
+    });
     window.setTimeout(() => input.focus(), 80);
   };
 
   const closeChat = () => {
-    panel.hidden = true;
+    root.classList.add("is-closing");
     root.classList.remove("is-open");
     toggle.setAttribute("aria-expanded", "false");
-    toggle.focus();
+    closeTimerId = window.setTimeout(() => {
+      panel.hidden = true;
+      root.classList.remove("is-closing");
+      closeTimerId = null;
+      toggle.focus();
+    }, closeAnimationMs);
   };
 
   const hydrate = () => {
@@ -256,10 +271,10 @@
   };
 
   toggle.addEventListener("click", () => {
-    if (panel.hidden) {
-      openChat();
-    } else {
+    if (root.classList.contains("is-open")) {
       closeChat();
+    } else {
+      openChat();
     }
   });
 
@@ -279,7 +294,7 @@
   });
 
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && !panel.hidden) {
+    if (event.key === "Escape" && root.classList.contains("is-open")) {
       closeChat();
     }
   });
