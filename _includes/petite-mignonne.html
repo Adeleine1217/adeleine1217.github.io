@@ -1,15 +1,20 @@
 {% assign petite_lang = page.lang | default: 'en' %}
 <div class="petite-chat" data-petite-chat data-page-lang="{{ petite_lang }}">
   <button class="petite-chat-toggle" type="button" aria-label="{% if petite_lang == 'fr' %}Ouvrir le chat Petite Mignonne{% else %}Open Petite Mignonne chat{% endif %}" aria-expanded="false" data-petite-toggle>
-    <span class="petite-chat-toggle-mark" aria-hidden="true">PM</span>
+    <span class="petite-chat-toggle-mark" aria-hidden="true">
+      <img src="{{ '/assets/images/petite-mignonne.png' | relative_url }}" alt="">
+    </span>
     <span class="petite-chat-toggle-copy">Petite Mignonne</span>
   </button>
 
   <section class="petite-chat-panel" aria-label="{% if petite_lang == 'fr' %}Chat portfolio Petite Mignonne{% else %}Petite Mignonne portfolio chat{% endif %}" hidden data-petite-panel>
     <div class="petite-chat-header">
-      <div>
-        <p class="petite-chat-kicker">Portfolio Concierge</p>
-        <h2>Petite Mignonne</h2>
+      <div class="petite-chat-identity">
+        <img class="petite-chat-avatar" src="{{ '/assets/images/petite-mignonne.png' | relative_url }}" alt="Petite Mignonne">
+        <div>
+          <p class="petite-chat-kicker">Portfolio Concierge</p>
+          <h2>Petite Mignonne</h2>
+        </div>
       </div>
       <button class="petite-chat-close" type="button" aria-label="{% if petite_lang == 'fr' %}Fermer le chat{% else %}Close chat{% endif %}" data-petite-close>{% if petite_lang == 'fr' %}Fermer{% else %}Close{% endif %}</button>
     </div>
