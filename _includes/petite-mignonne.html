@@ -1,0 +1,39 @@
+{% assign petite_lang = page.lang | default: 'en' %}
+<div class="petite-chat" data-petite-chat data-page-lang="{{ petite_lang }}">
+  <button class="petite-chat-toggle" type="button" aria-label="{% if petite_lang == 'fr' %}Ouvrir le chat Petite Mignonne{% else %}Open Petite Mignonne chat{% endif %}" aria-expanded="false" data-petite-toggle>
+    <span class="petite-chat-toggle-mark" aria-hidden="true">PM</span>
+    <span class="petite-chat-toggle-copy">Petite Mignonne</span>
+  </button>
+
+  <section class="petite-chat-panel" aria-label="{% if petite_lang == 'fr' %}Chat portfolio Petite Mignonne{% else %}Petite Mignonne portfolio chat{% endif %}" hidden data-petite-panel>
+    <div class="petite-chat-header">
+      <div>
+        <p class="petite-chat-kicker">Portfolio Concierge</p>
+        <h2>Petite Mignonne</h2>
+      </div>
+      <button class="petite-chat-close" type="button" aria-label="{% if petite_lang == 'fr' %}Fermer le chat{% else %}Close chat{% endif %}" data-petite-close>{% if petite_lang == 'fr' %}Fermer{% else %}Close{% endif %}</button>
+    </div>
+
+    <div class="petite-chat-log" aria-live="polite" data-petite-log></div>
+
+    <div class="petite-chat-prompts" data-petite-prompts>
+      {% if petite_lang == 'fr' %}
+        <button type="button" data-petite-prompt="Que faut-il savoir sur le portfolio d'Adeleine ?">Portfolio</button>
+        <button type="button" data-petite-prompt="Resume le CV d'Adeleine.">CV</button>
+        <button type="button" data-petite-prompt="Parle-moi du travail SEO, AEO et GEO.">SEO / AEO / GEO</button>
+        <button type="button" data-petite-prompt="Comment contacter Adeleine ?">Contact</button>
+      {% else %}
+        <button type="button" data-petite-prompt="What should I know about Adeleine's portfolio?">Portfolio</button>
+        <button type="button" data-petite-prompt="Summarize Adeleine's resume.">Resume</button>
+        <button type="button" data-petite-prompt="Tell me about SEO, AEO, and GEO work.">SEO / AEO / GEO</button>
+        <button type="button" data-petite-prompt="How can I contact Adeleine?">Contact</button>
+      {% endif %}
+    </div>
+
+    <form class="petite-chat-form" data-petite-form>
+      <label class="sr-only" for="petite-chat-input">{% if petite_lang == 'fr' %}Message pour Petite Mignonne{% else %}Message Petite Mignonne{% endif %}</label>
+      <input id="petite-chat-input" type="text" autocomplete="off" placeholder="{% if petite_lang == 'fr' %}Posez une question sur Adeleine...{% else %}Ask about Adeleine...{% endif %}" data-petite-input>
+      <button type="submit">{% if petite_lang == 'fr' %}Envoyer{% else %}Send{% endif %}</button>
+    </form>
+  </section>
+</div>
