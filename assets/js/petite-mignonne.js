@@ -144,6 +144,51 @@
     },
   };
 
+  const kpopEggs = [
+    { terms: ["kpop", "k-pop", "韓星", "韓團", "韓流", "二代", "三代", "四代", "五代", "六代"], artist: "K-pop universe", generation: "2nd gen to new-gen", works: "BIGBANG, Girls' Generation, BTS, BLACKPINK, aespa, IVE, NewJeans, BABYMONSTER, RIIZE, ILLIT" },
+    { terms: ["bigbang", "big bang", "g-dragon", "gdragon", "gd", "taeyang"], artist: "BIGBANG / G-Dragon", generation: "2nd gen", works: "Fantastic Baby, Bang Bang Bang, Crooked, Untitled, 2014" },
+    { terms: ["girls generation", "snsd", "少女時代", "taeyeon"], artist: "Girls' Generation / Taeyeon", generation: "2nd gen", works: "Gee, Genie, I Got a Boy, INVU" },
+    { terms: ["2ne1", "cl"], artist: "2NE1 / CL", generation: "2nd gen", works: "I Am the Best, Come Back Home, Hello Bitches" },
+    { terms: ["shinee", "taemin"], artist: "SHINee / Taemin", generation: "2nd gen", works: "Replay, Sherlock, View, Move" },
+    { terms: ["super junior", "suju"], artist: "Super Junior", generation: "2nd gen", works: "Sorry Sorry, Mr. Simple, Bonamana" },
+    { terms: ["wonder girls"], artist: "Wonder Girls", generation: "2nd gen", works: "Tell Me, Nobody, Why So Lonely" },
+    { terms: ["kara"], artist: "KARA", generation: "2nd gen", works: "Mister, Step, When I Move" },
+    { terms: ["t-ara", "tara"], artist: "T-ARA", generation: "2nd gen", works: "Roly-Poly, Lovey-Dovey, Sugar Free" },
+    { terms: ["tvxq", "dbsk"], artist: "TVXQ", generation: "2nd gen", works: "Mirotic, Rising Sun, Catch Me" },
+    { terms: ["bts", "bangtan", "jungkook", "jimin"], artist: "BTS", generation: "3rd gen", works: "Blood Sweat & Tears, Spring Day, Dynamite, Seven" },
+    { terms: ["blackpink", "jennie", "lisa", "rose", "rosé", "jisoo"], artist: "BLACKPINK", generation: "3rd gen", works: "DDU-DU DDU-DU, Kill This Love, Pink Venom, Mantra, Rockstar, APT." },
+    { terms: ["twice", "nayeon"], artist: "TWICE", generation: "3rd gen", works: "Cheer Up, TT, Fancy, The Feels, POP!" },
+    { terms: ["exo", "kai", "baekhyun"], artist: "EXO", generation: "3rd gen", works: "Growl, Call Me Baby, Love Shot, Mmmh, Bambi" },
+    { terms: ["red velvet", "rv", "seulgi", "wendy", "irene"], artist: "Red Velvet", generation: "3rd gen", works: "Red Flavor, Bad Boy, Psycho, Feel My Rhythm" },
+    { terms: ["seventeen", "svt", "hoshi"], artist: "SEVENTEEN", generation: "3rd gen", works: "Very Nice, Don't Wanna Cry, Super, Maestro" },
+    { terms: ["nct", "nct 127", "nct dream", "wayv"], artist: "NCT", generation: "3rd gen", works: "Cherry Bomb, Kick It, Hot Sauce, Baggy Jeans" },
+    { terms: ["mamamoo", "hwasa"], artist: "MAMAMOO / Hwasa", generation: "3rd gen", works: "Egotistic, Hip, Maria" },
+    { terms: ["got7"], artist: "GOT7", generation: "3rd gen", works: "Just Right, Hard Carry, Lullaby" },
+    { terms: ["aespa", "æspa", "karina", "winter", "ningning", "giselle"], artist: "aespa", generation: "4th gen", works: "Next Level, Savage, Spicy, Drama, Supernova, Armageddon" },
+    { terms: ["ive", "wonyoung", "yujin"], artist: "IVE", generation: "4th gen", works: "ELEVEN, LOVE DIVE, After LIKE, I AM, HEYA" },
+    { terms: ["newjeans", "new jeans", "njz", "hanni", "haerin", "danielle", "minji", "hyein"], artist: "NewJeans", generation: "4th gen", works: "Attention, Hype Boy, Ditto, Super Shy, How Sweet" },
+    { terms: ["le sserafim", "lesserafim", "lsrfm", "sakura", "chaewon"], artist: "LE SSERAFIM", generation: "4th gen", works: "FEARLESS, ANTIFRAGILE, UNFORGIVEN, EASY, CRAZY" },
+    { terms: ["stray kids", "skz", "felix", "hyunjin"], artist: "Stray Kids", generation: "4th gen", works: "God's Menu, MANIAC, S-Class, LALALALA, Chk Chk Boom" },
+    { terms: ["itzy", "yeji", "ryujin"], artist: "ITZY", generation: "4th gen", works: "DALLA DALLA, WANNABE, LOCO, CAKE" },
+    { terms: ["txt", "tomorrow x together", "yeonjun"], artist: "TXT", generation: "4th gen", works: "Crown, Blue Hour, 0X1=LOVESONG, Sugar Rush Ride, Deja Vu" },
+    { terms: ["enhypen", "enha"], artist: "ENHYPEN", generation: "4th gen", works: "Given-Taken, Drunk-Dazed, Bite Me, Sweet Venom" },
+    { terms: ["ateez"], artist: "ATEEZ", generation: "4th gen", works: "Wonderland, Answer, Bouncy, Crazy Form" },
+    { terms: ["gidle", "(g)i-dle", "g-idle", "idle", "soyeon"], artist: "(G)I-DLE", generation: "4th gen", works: "LATATA, TOMBOY, Nxde, Queencard, Super Lady" },
+    { terms: ["nmixx"], artist: "NMIXX", generation: "4th gen", works: "O.O, Love Me Like This, DASH, See That?" },
+    { terms: ["stayc"], artist: "STAYC", generation: "4th gen", works: "ASAP, Stereotype, RUN2U, Teddy Bear" },
+    { terms: ["babymonster", "baby monster", "babymontser", "baemon", "ahyeon"], artist: "BABYMONSTER", generation: "5th gen / new-gen", works: "Batter Up, Sheesh, Forever, Drip" },
+    { terms: ["riize", "wonbin"], artist: "RIIZE", generation: "5th gen / new-gen", works: "Get A Guitar, Love 119, Boom Boom Bass" },
+    { terms: ["zerobaseone", "zb1"], artist: "ZEROBASEONE", generation: "5th gen / new-gen", works: "In Bloom, Crush, Feel the POP" },
+    { terms: ["illit", "magnetic"], artist: "ILLIT", generation: "5th gen / new-gen", works: "Magnetic, Lucky Girl Syndrome, Cherish" },
+    { terms: ["tws"], artist: "TWS", generation: "5th gen / new-gen", works: "plot twist, hey! hey!" },
+    { terms: ["kiss of life", "kiof", "natty"], artist: "KISS OF LIFE", generation: "5th gen / new-gen", works: "Shhh, Midas Touch, Sticky" },
+    { terms: ["boynextdoor", "bnd"], artist: "BOYNEXTDOOR", generation: "5th gen / new-gen", works: "One and Only, Earth Wind & Fire, Nice Guy" },
+    { terms: ["meovv"], artist: "MEOVV", generation: "5th gen / new-gen", works: "MEOW, Toxic" },
+    { terms: ["nct wish"], artist: "NCT WISH", generation: "5th gen / new-gen", works: "WISH, Songbird, Steady" },
+    { terms: ["hearts2hearts", "h2h"], artist: "Hearts2Hearts", generation: "new-gen", works: "The Chase, STYLE" },
+    { terms: ["izna"], artist: "izna", generation: "new-gen", works: "IZNA, TIMEBOMB" },
+  ];
+
   const easterEggs = [
     {
       terms: ["bonjour", "salut"],
@@ -232,6 +277,36 @@
       },
     },
   ];
+
+  const sillyFallbacks = {
+    en: [
+      "Petite Mignonne tilts her beret. I cannot attach that phrase to Adeleine's resume yet, but my tiny clipboard suggests trying Talent Quiz, SEO, paid ads, or contact.",
+      "My bubble tea radar made a soft little pop. That sounds outside the portfolio, but I can still guide you to Adeleine's strongest growth proof.",
+      "This sentence has entered the lavender fog department. I do not have a resume match, but I do have excellent tabs for portfolio, blog, and recruiter mode.",
+      "Petite Mignonne blinks twice, writes 'mysterious keyword' on the clipboard, and politely recommends asking about SEO, Meta ads, content, or AI workflows.",
+      "I tried to file that under Growth Marketing, but it slipped into the pastry drawer. Try Talent Quiz if you want a useful answer with a cute hat.",
+      "That is a very sparkly non-resume phrase. I am going to stand here with my tiny boba and suggest Portfolio Tour.",
+      "Clipboard status: confused but charming. I can answer best about Adeleine's resume, SEO/AEO/GEO, paid ads, content strategy, AI workflows, and contact details.",
+    ],
+    fr: [
+      "Petite Mignonne penche son beret. Je ne relie pas encore cette phrase au CV d'Adeleine, mais mon petit clipboard propose le Quiz profil, le SEO, le paid ads ou le contact.",
+      "Mon radar a bubble tea vient de faire pop. Ce n'est pas vraiment dans le portfolio, mais je peux vous guider vers les meilleures preuves growth d'Adeleine.",
+      "Cette phrase vient d'entrer dans le departement brouillard lavande. Pas de match CV, mais j'ai de tres bons onglets : portfolio, blog et mode recruteur.",
+      "Petite Mignonne cligne des yeux, ecrit 'mot-cle mysterieux' sur son clipboard, puis recommande SEO, Meta ads, contenu ou workflows IA.",
+      "J'ai essaye de classer cela dans Growth Marketing, mais c'est tombe dans le tiroir des patisseries. Essayez le Quiz profil pour une reponse utile avec un petit beret.",
+      "Phrase tres brillante, mais pas tres CV. Je reste ici avec mon bubble tea miniature et je propose la visite guidee.",
+      "Statut clipboard : confuse mais charmante. Je reponds mieux sur le CV, le SEO/AEO/GEO, le paid ads, la strategie contenu, les workflows IA et le contact.",
+    ],
+    zh: [
+      "Petite Mignonne 歪了一下貝雷帽。這句暫時連不到 Adeleine 的履歷，但我的小剪貼板建議你試試 Talent Quiz、SEO、paid ads 或 contact。",
+      "我的珍奶雷達發出小小 pop。這好像不在作品集範圍內，但我還是可以帶你看 Adeleine 最強的 growth 證據。",
+      "這句話進入了薰衣草迷霧部門。暫時沒有履歷匹配，但我有 Portfolio、Blog 和 Recruiter Mode 可以帶路。",
+      "Petite Mignonne 眨了兩下眼，把它記成「神秘關鍵字」，然後禮貌推薦你問 SEO、Meta ads、content 或 AI workflows。",
+      "我試著把它歸類到 Growth Marketing，但它滑進了甜點抽屜。想要有用又可愛的答案，可以試 Talent Quiz。",
+      "這是一句很閃亮但不太履歷的詞。Petite Mignonne 抱著迷你珍奶，建議你點 Portfolio Tour。",
+      "剪貼板狀態：困惑但可愛。我最會回答 Adeleine 的履歷、SEO/AEO/GEO、paid ads、內容策略、AI workflows 和聯絡方式。",
+    ],
+  };
 
   const answers = {
     en: {
@@ -406,9 +481,11 @@
     return copy[responseLang].fallback;
   };
 
+  const escapeRegExp = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
   const hasTerm = (normalized, term) => {
-    if (/^[a-z]{1,2}$/.test(term)) {
-      return new RegExp(`(^|[^a-z])${term}([^a-z]|$)`).test(normalized);
+    if (/^[a-z0-9]{1,3}$/.test(term)) {
+      return new RegExp(`(^|[^a-z0-9])${escapeRegExp(term)}([^a-z0-9]|$)`).test(normalized);
     }
 
     return normalized.includes(term);
@@ -416,6 +493,29 @@
 
   const getEasterEgg = (message, lang) => {
     const normalized = message.toLowerCase();
+    const kpopMatch = kpopEggs.find(({ terms }) =>
+      terms.some((term) => hasTerm(normalized, term.toLowerCase()))
+    );
+
+    if (kpopMatch) {
+      const responses = {
+        en:
+          `<div class="petite-chat-card"><div class="petite-chat-card-title">K-pop signal: ${kpopMatch.artist}</div><p>${kpopMatch.artist} detected. Petite Mignonne files this under ${kpopMatch.generation} trend literacy.</p><div class="petite-chat-list"><span>Representative works: ${kpopMatch.works}.</span><span>Portfolio angle: Adeleine reads pop culture like audience data, then turns it into content strategy.</span></div><div class="petite-chat-actions"><a href="/blog/">Read Blog</a><a href="/portfolio/">Portfolio</a></div></div>`,
+        fr:
+          `<div class="petite-chat-card"><div class="petite-chat-card-title">Signal K-pop : ${kpopMatch.artist}</div><p>${kpopMatch.artist} detecte. Petite Mignonne classe cela dans la culture trend ${kpopMatch.generation}.</p><div class="petite-chat-list"><span>Oeuvres representatives : ${kpopMatch.works}.</span><span>Angle portfolio : Adeleine lit la pop culture comme de la data audience, puis la transforme en strategie contenu.</span></div><div class="petite-chat-actions"><a href="/fr/blog/">Lire le blog</a><a href="/fr/portfolio/">Portfolio</a></div></div>`,
+        zh:
+          `<div class="petite-chat-card"><div class="petite-chat-card-title">K-pop 彩蛋：${kpopMatch.artist}</div><p>偵測到 ${kpopMatch.artist}。Petite Mignonne 把它歸類為 ${kpopMatch.generation} trend literacy。</p><div class="petite-chat-list"><span>代表作品：${kpopMatch.works}。</span><span>作品集角度：Adeleine 會把流行文化當成 audience signal，轉成內容策略和 growth insight。</span></div><div class="petite-chat-actions"><a href="/blog/">讀 Blog</a><a href="/portfolio/">看 Portfolio</a></div></div>`,
+      };
+      const responseLang = responses[lang] ? lang : "en";
+
+      return {
+        celebrate: true,
+        html: responses[responseLang],
+        intent: "kpop",
+        lang: responseLang,
+      };
+    }
+
     const match = easterEggs.find(({ terms }) =>
       terms.some((term) => hasTerm(normalized, term.toLowerCase()))
     );
@@ -436,6 +536,13 @@
   const getQuizResult = (choice, lang) => {
     const responseLang = quizResults[lang] ? lang : "en";
     return quizResults[responseLang][choice] || quizCards[responseLang];
+  };
+
+  const getSillyFallback = (lang) => {
+    const responseLang = sillyFallbacks[lang] ? lang : "en";
+    const options = sillyFallbacks[responseLang];
+    const index = Math.floor(Math.random() * options.length);
+    return options[index];
   };
 
   const createMessage = (role, html) => {
@@ -573,7 +680,7 @@
     );
 
     if (!match) {
-      return { html: copy[lang].fallback, intent: "fallback", lang };
+      return { html: getSillyFallback(lang), intent: "fallback", lang };
     }
 
     if (match.intent === "recruiter" || match.intent === "tour" || match.intent === "quiz") {
